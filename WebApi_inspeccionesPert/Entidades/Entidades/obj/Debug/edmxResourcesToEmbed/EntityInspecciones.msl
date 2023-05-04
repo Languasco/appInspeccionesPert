@@ -1,0 +1,1158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DSIGE_InspeccionesModelStoreContainer" CdmEntityContainer="DSIGE_InspeccionesEntities">
+    <EntitySetMapping Name="LogsNEW_LIST_INSPECCION_CAB_WEB_II">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.LogsNEW_LIST_INSPECCION_CAB_WEB_II">
+        <MappingFragment StoreEntitySet="LogsNEW_LIST_INSPECCION_CAB_WEB_II">
+          <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+          <ScalarProperty Name="fecha_fin" ColumnName="fecha_fin" />
+          <ScalarProperty Name="fecha_Ini" ColumnName="fecha_Ini" />
+          <ScalarProperty Name="opcion" ColumnName="opcion" />
+          <ScalarProperty Name="idRespCorreccion" ColumnName="idRespCorreccion" />
+          <ScalarProperty Name="idInspector" ColumnName="idInspector" />
+          <ScalarProperty Name="idDelegacion" ColumnName="idDelegacion" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Megas">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Megas">
+        <MappingFragment StoreEntitySet="Megas">
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="fecha_movil" ColumnName="fecha_movil" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="bytes" ColumnName="bytes" />
+          <ScalarProperty Name="megaId" ColumnName="megaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prueba">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Prueba">
+        <MappingFragment StoreEntitySet="Prueba">
+          <ScalarProperty Name="Palabra" ColumnName="Palabra" />
+          <ScalarProperty Name="PruebaId" ColumnName="PruebaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AccesoOpciones">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_AccesoOpciones">
+        <MappingFragment StoreEntitySet="tbl_AccesoOpciones">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="permisos_opciones" ColumnName="permisos_opciones" />
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_RegistroAcceso" ColumnName="id_RegistroAcceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Actividad">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Actividad">
+        <MappingFragment StoreEntitySet="tbl_Actividad">
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_Actividad" ColumnName="descripcion_Actividad" />
+          <ScalarProperty Name="codigo_Actividad" ColumnName="codigo_Actividad" />
+          <ScalarProperty Name="id_Actividad" ColumnName="id_Actividad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Anomalia">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Anomalia">
+        <MappingFragment StoreEntitySet="tbl_Anomalia">
+          <ScalarProperty Name="flag_personal_nuevo" ColumnName="flag_personal_nuevo" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="Descripcion_Anomalia_Espana" ColumnName="Descripcion_Anomalia_Espana" />
+          <ScalarProperty Name="ver_Validacion" ColumnName="ver_Validacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="anomalia_Grupo" ColumnName="anomalia_Grupo" />
+          <ScalarProperty Name="anomalia_Valor" ColumnName="anomalia_Valor" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_ValorInspeccion" ColumnName="id_ValorInspeccion" />
+          <ScalarProperty Name="anomalia_orden" ColumnName="anomalia_orden" />
+          <ScalarProperty Name="anomalia_titulo" ColumnName="anomalia_titulo" />
+          <ScalarProperty Name="anomalia_Critica_General" ColumnName="anomalia_Critica_General" />
+          <ScalarProperty Name="anomalia_Critica" ColumnName="anomalia_Critica" />
+          <ScalarProperty Name="descripcion_Anomalia" ColumnName="descripcion_Anomalia" />
+          <ScalarProperty Name="codigo_Anomalia" ColumnName="codigo_Anomalia" />
+          <ScalarProperty Name="id_formato" ColumnName="id_formato" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Anomalia_TipoInspeccion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Anomalia_TipoInspeccion">
+        <MappingFragment StoreEntitySet="tbl_Anomalia_TipoInspeccion">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="Critica_SubAnomalia" ColumnName="Critica_SubAnomalia" />
+          <ScalarProperty Name="Grupo_SubAnomalia" ColumnName="Grupo_SubAnomalia" />
+          <ScalarProperty Name="Orden_SubAnomalia" ColumnName="Orden_SubAnomalia" />
+          <ScalarProperty Name="esSubTitulo_SubAnomalia" ColumnName="esSubTitulo_SubAnomalia" />
+          <ScalarProperty Name="Nombre_SubAnomalia" ColumnName="Nombre_SubAnomalia" />
+          <ScalarProperty Name="Codigo_SubAnomalia" ColumnName="Codigo_SubAnomalia" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+          <ScalarProperty Name="id_TipoInspeccion" ColumnName="id_TipoInspeccion" />
+          <ScalarProperty Name="id_SubAnomalia" ColumnName="id_SubAnomalia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Areas">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Areas">
+        <MappingFragment StoreEntitySet="tbl_Areas">
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_Area" ColumnName="descripcion_Area" />
+          <ScalarProperty Name="id_Area" ColumnName="id_Area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Caracteristica_Vehiculo">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Caracteristica_Vehiculo">
+        <MappingFragment StoreEntitySet="tbl_Caracteristica_Vehiculo">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="aplica_Obs__Caracteristica" ColumnName="aplica_Obs__Caracteristica" />
+          <ScalarProperty Name="aplica_Fecha_Caracteristica" ColumnName="aplica_Fecha_Caracteristica" />
+          <ScalarProperty Name="orden_Caracteristica" ColumnName="orden_Caracteristica" />
+          <ScalarProperty Name="descripcion_Caracteristica" ColumnName="descripcion_Caracteristica" />
+          <ScalarProperty Name="codigo_Caracteristica" ColumnName="codigo_Caracteristica" />
+          <ScalarProperty Name="titulo_Caracteristica" ColumnName="titulo_Caracteristica" />
+          <ScalarProperty Name="id_formato" ColumnName="id_formato" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Caracteristica" ColumnName="id_Caracteristica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cargo_Personal">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Cargo_Personal">
+        <MappingFragment StoreEntitySet="tbl_Cargo_Personal">
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="nombre_cargo_España" ColumnName="nombre_cargo_España" />
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_cargo" ColumnName="nombre_cargo" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cliente">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Cliente">
+        <MappingFragment StoreEntitySet="tbl_Cliente">
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_Cliente" ColumnName="nombre_Cliente" />
+          <ScalarProperty Name="ruc_Cliente" ColumnName="ruc_Cliente" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Definicion_Opciones">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Definicion_Opciones">
+        <MappingFragment StoreEntitySet="tbl_Definicion_Opciones">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="orden_Opcion" ColumnName="orden_Opcion" />
+          <ScalarProperty Name="urlImagen_Opcion" ColumnName="urlImagen_Opcion" />
+          <ScalarProperty Name="nombreParentID" ColumnName="nombreParentID" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="url_opcion" ColumnName="url_opcion" />
+          <ScalarProperty Name="nombre_opcion" ColumnName="nombre_opcion" />
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Delegacion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Delegacion">
+        <MappingFragment StoreEntitySet="tbl_Delegacion">
+          <ScalarProperty Name="id_Personal_Representante" ColumnName="id_Personal_Representante" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_delegacion" ColumnName="nombre_delegacion" />
+          <ScalarProperty Name="codigo_delegacion" ColumnName="codigo_delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpresaColaboradora">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_EmpresaColaboradora">
+        <MappingFragment StoreEntitySet="tbl_EmpresaColaboradora">
+          <ScalarProperty Name="idempresacolaboradora" ColumnName="idempresacolaboradora" />
+          <ScalarProperty Name="Directo_EmpresaColaboradora" ColumnName="Directo_EmpresaColaboradora" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="RazonSocial_EmpresaColaboradora" ColumnName="RazonSocial_EmpresaColaboradora" />
+          <ScalarProperty Name="ruc_EmpresaColaboradora" ColumnName="ruc_EmpresaColaboradora" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Empresas">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Empresas">
+        <MappingFragment StoreEntitySet="tbl_Empresas">
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="direccion_empresa" ColumnName="direccion_empresa" />
+          <ScalarProperty Name="razonsocial_empresa" ColumnName="razonsocial_empresa" />
+          <ScalarProperty Name="ruc_empresa" ColumnName="ruc_empresa" />
+          <ScalarProperty Name="codigo_interno_empresa" ColumnName="codigo_interno_empresa" />
+          <ScalarProperty Name="id_Empresas" ColumnName="id_Empresas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Estados">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Estados">
+        <MappingFragment StoreEntitySet="tbl_Estados">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="forecolor_estado" ColumnName="forecolor_estado" />
+          <ScalarProperty Name="Backcolor_estado" ColumnName="Backcolor_estado" />
+          <ScalarProperty Name="orden_estado" ColumnName="orden_estado" />
+          <ScalarProperty Name="descripcion_tipoproceso_estado" ColumnName="descripcion_tipoproceso_estado" />
+          <ScalarProperty Name="tipoproceso_estado" ColumnName="tipoproceso_estado" />
+          <ScalarProperty Name="descripcion_estado" ColumnName="descripcion_estado" />
+          <ScalarProperty Name="abreviatura_estado" ColumnName="abreviatura_estado" />
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_FormatoInspeccion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_FormatoInspeccion">
+        <MappingFragment StoreEntitySet="tbl_FormatoInspeccion">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_formato" ColumnName="nombre_formato" />
+          <ScalarProperty Name="id_Formato" ColumnName="id_Formato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_grupo">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_grupo">
+        <MappingFragment StoreEntitySet="tbl_grupo">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_grupo_dominio">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_grupo_dominio">
+        <MappingFragment StoreEntitySet="tbl_grupo_dominio">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_dominio" ColumnName="nombre_dominio" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_grupo_dominio" ColumnName="id_grupo_dominio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inspeccion_Cab">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab">
+        <MappingFragment StoreEntitySet="tbl_Inspeccion_Cab">
+          <ScalarProperty Name="id_OT" ColumnName="id_OT" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="EstadoEmail" ColumnName="EstadoEmail" />
+          <ScalarProperty Name="fecha_EnvioEmail" ColumnName="fecha_EnvioEmail" />
+          <ScalarProperty Name="conjuntas" ColumnName="conjuntas" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="id_Inspeccion_Relacionada" ColumnName="id_Inspeccion_Relacionada" />
+          <ScalarProperty Name="Obs_Levantada" ColumnName="Obs_Levantada" />
+          <ScalarProperty Name="id_Personal_Inspeccionado" ColumnName="id_Personal_Inspeccionado" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_NivelInspeccion" ColumnName="id_NivelInspeccion" />
+          <ScalarProperty Name="placa_Inspeccion" ColumnName="placa_Inspeccion" />
+          <ScalarProperty Name="id_Personal_Coordinador" ColumnName="id_Personal_Coordinador" />
+          <ScalarProperty Name="id_Area" ColumnName="id_Area" />
+          <ScalarProperty Name="trabajoArealizar_Inspeccion" ColumnName="trabajoArealizar_Inspeccion" />
+          <ScalarProperty Name="actividadOT_Inspeccion" ColumnName="actividadOT_Inspeccion" />
+          <ScalarProperty Name="lugar_Inspeccion" ColumnName="lugar_Inspeccion" />
+          <ScalarProperty Name="nroTrabajadores_Correctiva" ColumnName="nroTrabajadores_Correctiva" />
+          <ScalarProperty Name="id_TipoSancion" ColumnName="id_TipoSancion" />
+          <ScalarProperty Name="sancion_Correctiva" ColumnName="sancion_Correctiva" />
+          <ScalarProperty Name="paralizacion_Correctiva" ColumnName="paralizacion_Correctiva" />
+          <ScalarProperty Name="observacion_Correctiva" ColumnName="observacion_Correctiva" />
+          <ScalarProperty Name="fechaPropuesta_Correctiva" ColumnName="fechaPropuesta_Correctiva" />
+          <ScalarProperty Name="id_Personal_Responsable" ColumnName="id_Personal_Responsable" />
+          <ScalarProperty Name="accionPropuesta_Correctiva" ColumnName="accionPropuesta_Correctiva" />
+          <ScalarProperty Name="descripcion_Inspeccion" ColumnName="descripcion_Inspeccion" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+          <ScalarProperty Name="inspeccionConjunta" ColumnName="inspeccionConjunta" />
+          <ScalarProperty Name="iniciofin_Trabajo" ColumnName="iniciofin_Trabajo" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="Resultado_Inspeccion" ColumnName="Resultado_Inspeccion" />
+          <ScalarProperty Name="id_TipoInspeccion" ColumnName="id_TipoInspeccion" />
+          <ScalarProperty Name="id_Personal_JefeObra" ColumnName="id_Personal_JefeObra" />
+          <ScalarProperty Name="id_Personal_Inspector" ColumnName="id_Personal_Inspector" />
+          <ScalarProperty Name="cliente_Inspeccion" ColumnName="cliente_Inspeccion" />
+          <ScalarProperty Name="id_Actividad" ColumnName="id_Actividad" />
+          <ScalarProperty Name="numero_Inspeccion" ColumnName="numero_Inspeccion" />
+          <ScalarProperty Name="fecha_Inspeccion" ColumnName="fecha_Inspeccion" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Pais" ColumnName="id_Pais" />
+          <ScalarProperty Name="id_Inspeccion" ColumnName="id_Inspeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inspeccion_Cab_Detalle_Foto">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_Foto">
+        <MappingFragment StoreEntitySet="tbl_Inspeccion_Cab_Detalle_Foto">
+          <ScalarProperty Name="tipo_foto" ColumnName="tipo_foto" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_foto" ColumnName="nombre_foto" />
+          <ScalarProperty Name="id_inspeccion_detalle" ColumnName="id_inspeccion_detalle" />
+          <ScalarProperty Name="id_inspeccion_foto" ColumnName="id_inspeccion_foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inspeccion_Cab_Detalle_SubAnomalia">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_SubAnomalia">
+        <MappingFragment StoreEntitySet="tbl_Inspeccion_Cab_Detalle_SubAnomalia">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_SubAnomalia" ColumnName="id_SubAnomalia" />
+          <ScalarProperty Name="id_inspeccion_detalle" ColumnName="id_inspeccion_detalle" />
+          <ScalarProperty Name="id_inspeccion_SubAnomalia" ColumnName="id_inspeccion_SubAnomalia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NivelInspeccion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_NivelInspeccion">
+        <MappingFragment StoreEntitySet="tbl_NivelInspeccion">
+          <ScalarProperty Name="diasEmail_NivelInspecccion" ColumnName="diasEmail_NivelInspecccion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ColorFuente_NivelInspeccion" ColumnName="ColorFuente_NivelInspeccion" />
+          <ScalarProperty Name="ColorFondo_NivelInspeccion" ColumnName="ColorFondo_NivelInspeccion" />
+          <ScalarProperty Name="cantidadDias_NivelInspeccion" ColumnName="cantidadDias_NivelInspeccion" />
+          <ScalarProperty Name="descripcion_NivelInspeccion" ColumnName="descripcion_NivelInspeccion" />
+          <ScalarProperty Name="id_NivelInspeccion" ColumnName="id_NivelInspeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OT">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_OT">
+        <MappingFragment StoreEntitySet="tbl_OT">
+          <ScalarProperty Name="existe" ColumnName="existe" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_Actividad" ColumnName="id_Actividad" />
+          <ScalarProperty Name="id_Personal_Coordinador" ColumnName="id_Personal_Coordinador" />
+          <ScalarProperty Name="id_Personal_JefeObra" ColumnName="id_Personal_JefeObra" />
+          <ScalarProperty Name="id_Pais" ColumnName="id_Pais" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="Tipo_OT" ColumnName="Tipo_OT" />
+          <ScalarProperty Name="nombre_ot" ColumnName="nombre_ot" />
+          <ScalarProperty Name="codigo_ot" ColumnName="codigo_ot" />
+          <ScalarProperty Name="id_OT" ColumnName="id_OT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pais">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_pais">
+        <MappingFragment StoreEntitySet="tbl_pais">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="iso" ColumnName="iso" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Perfil">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Perfil">
+        <MappingFragment StoreEntitySet="tbl_Perfil">
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="des_perfil" ColumnName="des_perfil" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_perfil_accesos">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_perfil_accesos">
+        <MappingFragment StoreEntitySet="tbl_perfil_accesos">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="permisos_opciones" ColumnName="permisos_opciones" />
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="id_Perfil_Acceso" ColumnName="id_Perfil_Acceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personal">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Personal">
+        <MappingFragment StoreEntitySet="tbl_Personal">
+          <ScalarProperty Name="codigo_personal" ColumnName="codigo_personal" />
+          <ScalarProperty Name="delete" ColumnName="delete" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+          <ScalarProperty Name="Alter" ColumnName="Alter" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="id_Pais" ColumnName="id_Pais" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="envio_Online" ColumnName="envio_Online" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="Contrasenia_sistema" ColumnName="Contrasenia_sistema" />
+          <ScalarProperty Name="login_Sistema" ColumnName="login_Sistema" />
+          <ScalarProperty Name="email_personal" ColumnName="email_personal" />
+          <ScalarProperty Name="fechaCese_Personal" ColumnName="fechaCese_Personal" />
+          <ScalarProperty Name="tipoPersonal" ColumnName="tipoPersonal" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="fechaIngreso_Personal" ColumnName="fechaIngreso_Personal" />
+          <ScalarProperty Name="nombres_Personal" ColumnName="nombres_Personal" />
+          <ScalarProperty Name="apellidos_Personal" ColumnName="apellidos_Personal" />
+          <ScalarProperty Name="nroDoc_Personal" ColumnName="nroDoc_Personal" />
+          <ScalarProperty Name="tipoDoc_Personal" ColumnName="tipoDoc_Personal" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Personal_Cargo">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Tbl_Personal_Cargo">
+        <MappingFragment StoreEntitySet="Tbl_Personal_Cargo">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_CargoPersonal" ColumnName="descripcion_CargoPersonal" />
+          <ScalarProperty Name="codigoInterno_CargoPersonal" ColumnName="codigoInterno_CargoPersonal" />
+          <ScalarProperty Name="id_CargoPersonal" ColumnName="id_CargoPersonal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personal_Delegacion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Personal_Delegacion">
+        <MappingFragment StoreEntitySet="tbl_Personal_Delegacion">
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+          <ScalarProperty Name="id_personal_Delegacion" ColumnName="id_personal_Delegacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Proyecto">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Proyecto">
+        <MappingFragment StoreEntitySet="tbl_Proyecto">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="id_Personal_JefeObra" ColumnName="id_Personal_JefeObra" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_proyecto" ColumnName="nombre_proyecto" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Proyecto_EmpresaColaboradora">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Proyecto_EmpresaColaboradora">
+        <MappingFragment StoreEntitySet="tbl_Proyecto_EmpresaColaboradora">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Proyecto_EmpresaColaboradora" ColumnName="id_Proyecto_EmpresaColaboradora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tipo_Inspeccion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Tipo_Inspeccion">
+        <MappingFragment StoreEntitySet="tbl_Tipo_Inspeccion">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_TipoInspeccion" ColumnName="descripcion_TipoInspeccion" />
+          <ScalarProperty Name="id_TipoInspeccion" ColumnName="id_TipoInspeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tipo_Sancion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Tipo_Sancion">
+        <MappingFragment StoreEntitySet="tbl_Tipo_Sancion">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_TipoSancion" ColumnName="descripcion_TipoSancion" />
+          <ScalarProperty Name="id_TipoSancion" ColumnName="id_TipoSancion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuarios">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_usuarios">
+        <MappingFragment StoreEntitySet="tbl_usuarios">
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+          <ScalarProperty Name="fechaInicioSesion" ColumnName="fechaInicioSesion" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="imei" ColumnName="imei" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="contrasenia_login" ColumnName="contrasenia_login" />
+          <ScalarProperty Name="usuario_login" ColumnName="usuario_login" />
+          <ScalarProperty Name="correo_electronico" ColumnName="correo_electronico" />
+          <ScalarProperty Name="datos_personales" ColumnName="datos_personales" />
+          <ScalarProperty Name="nro_documento" ColumnName="nro_documento" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuarios_configuracion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_usuarios_configuracion">
+        <MappingFragment StoreEntitySet="tbl_usuarios_configuracion">
+          <ScalarProperty Name="id_OT" ColumnName="id_OT" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresas" ColumnName="id_Empresas" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_usuario_configuracion" ColumnName="id_usuario_configuracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuarios_configuracion2">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_usuarios_configuracion2">
+        <MappingFragment StoreEntitySet="tbl_usuarios_configuracion2">
+          <ScalarProperty Name="id_OT" ColumnName="id_OT" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresas" ColumnName="id_Empresas" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_usuario_configuracion" ColumnName="id_usuario_configuracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Valor_Inspeccion">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Valor_Inspeccion">
+        <MappingFragment StoreEntitySet="tbl_Valor_Inspeccion">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion_ValorInspeccion" ColumnName="descripcion_ValorInspeccion" />
+          <ScalarProperty Name="id_ValorInspeccion" ColumnName="id_ValorInspeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Versiones">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Versiones">
+        <MappingFragment StoreEntitySet="Versiones">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logstbl_Inspeccion_Cab">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab">
+        <MappingFragment StoreEntitySet="Logstbl_Inspeccion_Cab">
+          <ScalarProperty Name="conjuntas" ColumnName="conjuntas" />
+          <ScalarProperty Name="id_actividad" ColumnName="id_actividad" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="fecha_Inspeccion" ColumnName="fecha_Inspeccion" />
+          <ScalarProperty Name="nroTrabajadores_Correctiva" ColumnName="nroTrabajadores_Correctiva" />
+          <ScalarProperty Name="id_TipoSancion" ColumnName="id_TipoSancion" />
+          <ScalarProperty Name="sancion_Correctiva" ColumnName="sancion_Correctiva" />
+          <ScalarProperty Name="paralizacion_Correctiva" ColumnName="paralizacion_Correctiva" />
+          <ScalarProperty Name="observacion_Correctiva" ColumnName="observacion_Correctiva" />
+          <ScalarProperty Name="fechaPropuesta_Correctiva" ColumnName="fechaPropuesta_Correctiva" />
+          <ScalarProperty Name="id_Personal_Responsable" ColumnName="id_Personal_Responsable" />
+          <ScalarProperty Name="accionPropuesta_Correctiva" ColumnName="accionPropuesta_Correctiva" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+          <ScalarProperty Name="iniciofin_Trabajo" ColumnName="iniciofin_Trabajo" />
+          <ScalarProperty Name="Resultado_Inspeccion" ColumnName="Resultado_Inspeccion" />
+          <ScalarProperty Name="id_TipoInspeccion" ColumnName="id_TipoInspeccion" />
+          <ScalarProperty Name="id_NivelInspeccion" ColumnName="id_NivelInspeccion" />
+          <ScalarProperty Name="placa_Inspeccion" ColumnName="placa_Inspeccion" />
+          <ScalarProperty Name="id_Personal_JefeObra" ColumnName="id_Personal_JefeObra" />
+          <ScalarProperty Name="id_Personal_Coordinador" ColumnName="id_Personal_Coordinador" />
+          <ScalarProperty Name="id_Area" ColumnName="id_Area" />
+          <ScalarProperty Name="id_Personal_Inspeccionado" ColumnName="id_Personal_Inspeccionado" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="trabajoArealizar_Inspeccion" ColumnName="trabajoArealizar_Inspeccion" />
+          <ScalarProperty Name="actividadOT_Inspeccion" ColumnName="actividadOT_Inspeccion" />
+          <ScalarProperty Name="lugar_Inspeccion" ColumnName="lugar_Inspeccion" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="id_Personal_Inspector" ColumnName="id_Personal_Inspector" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="ResultadoId" ColumnName="ResultadoId" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logstbl_Inspeccion_Cab_Detalle_Foto">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab_Detalle_Foto">
+        <MappingFragment StoreEntitySet="Logstbl_Inspeccion_Cab_Detalle_Foto">
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="nombre_foto" ColumnName="nombre_foto" />
+          <ScalarProperty Name="id_inspeccion_detalle" ColumnName="id_inspeccion_detalle" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logstbl_tbl_Inspeccion_Cab_Detalle">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Logstbl_tbl_Inspeccion_Cab_Detalle">
+        <MappingFragment StoreEntitySet="Logstbl_tbl_Inspeccion_Cab_Detalle">
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fechaPropuesta_Correctiva" ColumnName="fechaPropuesta_Correctiva" />
+          <ScalarProperty Name="accionPropuesta_Correctiva" ColumnName="accionPropuesta_Correctiva" />
+          <ScalarProperty Name="descripcion_levantamiento" ColumnName="descripcion_levantamiento" />
+          <ScalarProperty Name="foto_levantamiento" ColumnName="foto_levantamiento" />
+          <ScalarProperty Name="levantamiento" ColumnName="levantamiento" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_anomalia" ColumnName="id_anomalia" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_inspeccion" ColumnName="id_inspeccion" />
+          <ScalarProperty Name="id_inspeccion_detalle" ColumnName="id_inspeccion_detalle" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DATA_IMPORTADO_NEW">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.T_DATA_IMPORTADO_NEW">
+        <MappingFragment StoreEntitySet="T_DATA_IMPORTADO_NEW">
+          <ScalarProperty Name="usuarioxx" ColumnName="usuarioxx" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nro_Documento" ColumnName="Nro_Documento" />
+          <ScalarProperty Name="Tipo_documento" ColumnName="Tipo_documento" />
+          <ScalarProperty Name="Nombre_Empresa_Colaboradora" ColumnName="Nombre_Empresa_Colaboradora" />
+          <ScalarProperty Name="RUC_Empresa_Colaboradora" ColumnName="RUC_Empresa_Colaboradora" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="Delegacion" ColumnName="Delegacion" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="Nombre_Empresa" ColumnName="Nombre_Empresa" />
+          <ScalarProperty Name="RUC_Empresa" ColumnName="RUC_Empresa" />
+          <ScalarProperty Name="id_Empresas" ColumnName="id_Empresas" />
+          <ScalarProperty Name="Nombre_Grupo" ColumnName="Nombre_Grupo" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="Nombre_Pais" ColumnName="Nombre_Pais" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_USUARIO_BORRADO">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.T_USUARIO_BORRADO">
+        <MappingFragment StoreEntitySet="T_USUARIO_BORRADO">
+          <ScalarProperty Name="fechaInicioSesion" ColumnName="fechaInicioSesion" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="imei" ColumnName="imei" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="contrasenia_login" ColumnName="contrasenia_login" />
+          <ScalarProperty Name="usuario_login" ColumnName="usuario_login" />
+          <ScalarProperty Name="correo_electronico" ColumnName="correo_electronico" />
+          <ScalarProperty Name="datos_personales" ColumnName="datos_personales" />
+          <ScalarProperty Name="nro_documento" ColumnName="nro_documento" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AccesoOpciones_1">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_AccesoOpciones_1">
+        <MappingFragment StoreEntitySet="tbl_AccesoOpciones_1">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="permisos_opciones" ColumnName="permisos_opciones" />
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_RegistroAcceso" ColumnName="id_RegistroAcceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_anomalia_4">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_anomalia_4">
+        <MappingFragment StoreEntitySet="tbl_anomalia_4">
+          <ScalarProperty Name="ver_Validacion" ColumnName="ver_Validacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="anomalia_Grupo" ColumnName="anomalia_Grupo" />
+          <ScalarProperty Name="anomalia_Valor" ColumnName="anomalia_Valor" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_ValorInspeccion" ColumnName="id_ValorInspeccion" />
+          <ScalarProperty Name="anomalia_orden" ColumnName="anomalia_orden" />
+          <ScalarProperty Name="anomalia_titulo" ColumnName="anomalia_titulo" />
+          <ScalarProperty Name="anomalia_Critica_General" ColumnName="anomalia_Critica_General" />
+          <ScalarProperty Name="anomalia_Critica" ColumnName="anomalia_Critica" />
+          <ScalarProperty Name="descripcion_Anomalia" ColumnName="descripcion_Anomalia" />
+          <ScalarProperty Name="codigo_Anomalia" ColumnName="codigo_Anomalia" />
+          <ScalarProperty Name="id_formato" ColumnName="id_formato" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Anomalia_Back">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Anomalia_Back">
+        <MappingFragment StoreEntitySet="tbl_Anomalia_Back">
+          <ScalarProperty Name="anomalia_Grupo" ColumnName="anomalia_Grupo" />
+          <ScalarProperty Name="anomalia_Valor" ColumnName="anomalia_Valor" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_ValorInspeccion" ColumnName="id_ValorInspeccion" />
+          <ScalarProperty Name="anomalia_orden" ColumnName="anomalia_orden" />
+          <ScalarProperty Name="anomalia_titulo" ColumnName="anomalia_titulo" />
+          <ScalarProperty Name="anomalia_Critica_General" ColumnName="anomalia_Critica_General" />
+          <ScalarProperty Name="anomalia_Critica" ColumnName="anomalia_Critica" />
+          <ScalarProperty Name="descripcion_Anomalia" ColumnName="descripcion_Anomalia" />
+          <ScalarProperty Name="codigo_Anomalia" ColumnName="codigo_Anomalia" />
+          <ScalarProperty Name="id_formato" ColumnName="id_formato" />
+          <ScalarProperty Name="id_Anomalia" ColumnName="id_Anomalia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Anomalia_SMS">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Anomalia_SMS">
+        <MappingFragment StoreEntitySet="tbl_Anomalia_SMS">
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="numero_celular" ColumnName="numero_celular" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_ot" ColumnName="id_ot" />
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_anomalia_sms" ColumnName="id_anomalia_sms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_devolucion_campo">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_devolucion_campo">
+        <MappingFragment StoreEntitySet="tbl_devolucion_campo">
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="Campo" ColumnName="Campo" />
+          <ScalarProperty Name="devolucionID" ColumnName="devolucionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Frecuencia">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Tbl_Frecuencia">
+        <MappingFragment StoreEntitySet="Tbl_Frecuencia">
+          <ScalarProperty Name="frecuencia_Valor" ColumnName="frecuencia_Valor" />
+          <ScalarProperty Name="frecuencia_Fin" ColumnName="frecuencia_Fin" />
+          <ScalarProperty Name="frecuencia_Ini" ColumnName="frecuencia_Ini" />
+          <ScalarProperty Name="id_frecuencia" ColumnName="id_frecuencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Reporte_Cobra">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Tbl_Reporte_Cobra">
+        <MappingFragment StoreEntitySet="Tbl_Reporte_Cobra">
+          <ScalarProperty Name="subContrata" ColumnName="subContrata" />
+          <ScalarProperty Name="propia" ColumnName="propia" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="nro_trabajadoresSancionados" ColumnName="nro_trabajadoresSancionados" />
+          <ScalarProperty Name="tipoSancion" ColumnName="tipoSancion" />
+          <ScalarProperty Name="sancion" ColumnName="sancion" />
+          <ScalarProperty Name="paralizacionTrabajos" ColumnName="paralizacionTrabajos" />
+          <ScalarProperty Name="noEliminar2" ColumnName="noEliminar2" />
+          <ScalarProperty Name="fecha_Cierre_Corr" ColumnName="fecha_Cierre_Corr" />
+          <ScalarProperty Name="fecha_Prop_Corr" ColumnName="fecha_Prop_Corr" />
+          <ScalarProperty Name="respCorr" ColumnName="respCorr" />
+          <ScalarProperty Name="accionPropuesta" ColumnName="accionPropuesta" />
+          <ScalarProperty Name="noEliminar" ColumnName="noEliminar" />
+          <ScalarProperty Name="anomalia_critica" ColumnName="anomalia_critica" />
+          <ScalarProperty Name="Decripcion_anomalia" ColumnName="Decripcion_anomalia" />
+          <ScalarProperty Name="aspectoAnomalo" ColumnName="aspectoAnomalo" />
+          <ScalarProperty Name="nro_Anomalias" ColumnName="nro_Anomalias" />
+          <ScalarProperty Name="resp_inspeccion" ColumnName="resp_inspeccion" />
+          <ScalarProperty Name="inspeccion_conjunta" ColumnName="inspeccion_conjunta" />
+          <ScalarProperty Name="incio_final_trabajos" ColumnName="incio_final_trabajos" />
+          <ScalarProperty Name="tipoInspeccion" ColumnName="tipoInspeccion" />
+          <ScalarProperty Name="empresa_resp_subContrata" ColumnName="empresa_resp_subContrata" />
+          <ScalarProperty Name="empresa_resp_propia" ColumnName="empresa_resp_propia" />
+          <ScalarProperty Name="jefeObra" ColumnName="jefeObra" />
+          <ScalarProperty Name="puesto" ColumnName="puesto" />
+          <ScalarProperty Name="autor" ColumnName="autor" />
+          <ScalarProperty Name="semana" ColumnName="semana" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="nro_inspeccion" ColumnName="nro_inspeccion" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="actividad" ColumnName="actividad" />
+          <ScalarProperty Name="delegacion" ColumnName="delegacion" />
+          <ScalarProperty Name="zona" ColumnName="zona" />
+          <ScalarProperty Name="fecha_insp" ColumnName="fecha_insp" />
+          <ScalarProperty Name="nro_visita" ColumnName="nro_visita" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tipo_Documento">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Tipo_Documento">
+        <MappingFragment StoreEntitySet="tbl_Tipo_Documento">
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="nombre_documento" ColumnName="nombre_documento" />
+          <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+          <ScalarProperty Name="id_Tipo_Documento" ColumnName="id_Tipo_Documento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuarios_Registrados">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_usuarios_Registrados">
+        <MappingFragment StoreEntitySet="tbl_usuarios_Registrados">
+          <ScalarProperty Name="fechaRechazo" ColumnName="fechaRechazo" />
+          <ScalarProperty Name="fechaAprobacion" ColumnName="fechaAprobacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Pais" ColumnName="id_Pais" />
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+          <ScalarProperty Name="nro_Documento" ColumnName="nro_Documento" />
+          <ScalarProperty Name="id_usuario_Registrado" ColumnName="id_usuario_Registrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Temp_Frecuencia">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Temp_Frecuencia">
+        <MappingFragment StoreEntitySet="Temp_Frecuencia">
+          <ScalarProperty Name="Frecuencia" ColumnName="Frecuencia" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Anomalia" ColumnName="Anomalia" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tempo_ec">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tempo_ec">
+        <MappingFragment StoreEntitySet="tempo_ec">
+          <ScalarProperty Name="Directo_EmpresaColaboradora" ColumnName="Directo_EmpresaColaboradora" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="RazonSocial_EmpresaColaboradora" ColumnName="RazonSocial_EmpresaColaboradora" />
+          <ScalarProperty Name="ruc_EmpresaColaboradora" ColumnName="ruc_EmpresaColaboradora" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMPORAL_Cargo">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.TEMPORAL_Cargo">
+        <MappingFragment StoreEntitySet="TEMPORAL_Cargo">
+          <ScalarProperty Name="CargoEsp" ColumnName="CargoEsp" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMPORAL_Cargo_Personal">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.TEMPORAL_Cargo_Personal">
+        <MappingFragment StoreEntitySet="TEMPORAL_Cargo_Personal">
+          <ScalarProperty Name="nombre_cargo" ColumnName="nombre_cargo" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="testinspeccions">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.testinspeccions">
+        <MappingFragment StoreEntitySet="testinspeccions">
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="MesName" ColumnName="MesName" />
+          <ScalarProperty Name="DiaAnio" ColumnName="DiaAnio" />
+          <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
+          <ScalarProperty Name="Semana" ColumnName="Semana" />
+          <ScalarProperty Name="DiaMes" ColumnName="DiaMes" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Anio" ColumnName="Anio" />
+          <ScalarProperty Name="cCriticas" ColumnName="cCriticas" />
+          <ScalarProperty Name="cAnomalas" ColumnName="cAnomalas" />
+          <ScalarProperty Name="cCorrectos" ColumnName="cCorrectos" />
+          <ScalarProperty Name="cCantidad" ColumnName="cCantidad" />
+          <ScalarProperty Name="dCritica" ColumnName="dCritica" />
+          <ScalarProperty Name="dCantidad" ColumnName="dCantidad" />
+          <ScalarProperty Name="dAnomala" ColumnName="dAnomala" />
+          <ScalarProperty Name="dCorrecto" ColumnName="dCorrecto" />
+          <ScalarProperty Name="Anomala" ColumnName="Anomala" />
+          <ScalarProperty Name="Correcto" ColumnName="Correcto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Resultado" ColumnName="Resultado" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="ResultadoDetalle" ColumnName="ResultadoDetalle" />
+          <ScalarProperty Name="Personal" ColumnName="Personal" />
+          <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+          <ScalarProperty Name="IdFechaInspeccion" ColumnName="IdFechaInspeccion" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="NivelInspeccion" ColumnName="NivelInspeccion" />
+          <ScalarProperty Name="Coordinador" ColumnName="Coordinador" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="EmpresaColaboradora" ColumnName="EmpresaColaboradora" />
+          <ScalarProperty Name="TipoInspeccion" ColumnName="TipoInspeccion" />
+          <ScalarProperty Name="JefeObra" ColumnName="JefeObra" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="Proyecto" ColumnName="Proyecto" />
+          <ScalarProperty Name="Delegacion" ColumnName="Delegacion" />
+          <ScalarProperty Name="CodDelegacion" ColumnName="CodDelegacion" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Id_Anomalia" ColumnName="Id_Anomalia" />
+          <ScalarProperty Name="Id_Personal" ColumnName="Id_Personal" />
+          <ScalarProperty Name="Id_Inspeccion_Detalle" ColumnName="Id_Inspeccion_Detalle" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="conjuntas" ColumnName="conjuntas" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_NivelInspeccion" ColumnName="id_NivelInspeccion" />
+          <ScalarProperty Name="id_Personal_Coordinador" ColumnName="id_Personal_Coordinador" />
+          <ScalarProperty Name="id_Area" ColumnName="id_Area" />
+          <ScalarProperty Name="id_EmpresaColaboradora" ColumnName="id_EmpresaColaboradora" />
+          <ScalarProperty Name="Resultado_Inspeccion" ColumnName="Resultado_Inspeccion" />
+          <ScalarProperty Name="id_TipoInspeccion" ColumnName="id_TipoInspeccion" />
+          <ScalarProperty Name="id_Personal_JefeObra" ColumnName="id_Personal_JefeObra" />
+          <ScalarProperty Name="id_Personal_Inspector" ColumnName="id_Personal_Inspector" />
+          <ScalarProperty Name="id_Actividad" ColumnName="id_Actividad" />
+          <ScalarProperty Name="fecha_Inspeccion" ColumnName="fecha_Inspeccion" />
+          <ScalarProperty Name="id_Proyecto" ColumnName="id_Proyecto" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Pais" ColumnName="id_Pais" />
+          <ScalarProperty Name="id_Inspeccion" ColumnName="id_Inspeccion" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tmp_Inspeccion_Total">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.Tmp_Inspeccion_Total">
+        <MappingFragment StoreEntitySet="Tmp_Inspeccion_Total">
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+          <ScalarProperty Name="fechaInicioSesion" ColumnName="fechaInicioSesion" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="imei" ColumnName="imei" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="contrasenia_login" ColumnName="contrasenia_login" />
+          <ScalarProperty Name="usuario_login" ColumnName="usuario_login" />
+          <ScalarProperty Name="correo_electronico" ColumnName="correo_electronico" />
+          <ScalarProperty Name="datos_personales" ColumnName="datos_personales" />
+          <ScalarProperty Name="nro_documento" ColumnName="nro_documento" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inspeccion_Cab_Detalle">
+      <EntityTypeMapping TypeName="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle">
+        <MappingFragment StoreEntitySet="tbl_Inspeccion_Cab_Detalle">
+          <ScalarProperty Name="Fecha_Cierre_Correccion" ColumnName="Fecha_Cierre_Correccion" />
+          <ScalarProperty Name="id_detalle_anomalia" ColumnName="id_detalle_anomalia" />
+          <ScalarProperty Name="anomalia_critica" ColumnName="anomalia_critica" />
+          <ScalarProperty Name="personal_sancion" ColumnName="personal_sancion" />
+          <ScalarProperty Name="id_tipoInspeccion" ColumnName="id_tipoInspeccion" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="disponividad_uso" ColumnName="disponividad_uso" />
+          <ScalarProperty Name="id_cargo_personal" ColumnName="id_cargo_personal" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="Resultado_Inspeccion" ColumnName="Resultado_Inspeccion" />
+          <ScalarProperty Name="fechaPropuesta_Correctiva" ColumnName="fechaPropuesta_Correctiva" />
+          <ScalarProperty Name="accionPropuesta_Correctiva" ColumnName="accionPropuesta_Correctiva" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_ValorInspeccion" ColumnName="id_ValorInspeccion" />
+          <ScalarProperty Name="descripcion_levantamiento" ColumnName="descripcion_levantamiento" />
+          <ScalarProperty Name="foto_levantamiento" ColumnName="foto_levantamiento" />
+          <ScalarProperty Name="levantamiento" ColumnName="levantamiento" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_anomalia" ColumnName="id_anomalia" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_inspeccion" ColumnName="id_inspeccion" />
+          <ScalarProperty Name="id_inspeccion_detalle" ColumnName="id_inspeccion_detalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

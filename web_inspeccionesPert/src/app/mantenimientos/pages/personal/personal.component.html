@@ -1,0 +1,292 @@
+
+<div class="card border-left-warning  shadow ">
+    <div class="card-header">
+        <h5 class="headerTitle"> MANTENIMIENTO DE PERSONAL </h5>
+    </div>
+    <div class="card-body ">
+        <div class="formPrincipal mb-1">
+
+            <form [formGroup]="formParamsFiltro">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <label class=" control-label" > Pais</label>
+                        <select class="form-control comboBox" formControlName="id_pais" (change)="changePais($event)">
+                                <option value="0"> [ -- SELECCIONE -- ]</option>
+                                <option [value]="item.id_pais" *ngFor="let item of paises">{{item.Pais}}</option> 
+                            </select>
+                    </div> 
+                    <div class="col-sm-4 col-md-2">
+                        <label class=" control-label" > Sociedad </label>
+                        <select class="form-control comboBox" formControlName="id_grupo" (change)="changeSociedad($event)" >
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_grupo" *ngFor="let item of sociedades">{{item.Grupo}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-4  col-md-3">
+                        <label class=" control-label" > Delegacion </label>
+                        <select class="form-control comboBox" formControlName="id_Delegacion">
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_Delegacion" *ngFor="let item of delegaciones">{{item.Delegacion}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-6  col-md-2">
+                        <label class=" control-label" > Estado </label>
+                        <select class="form-control comboBox" formControlName="estado">
+                            <option value="-1"> [ --SELECCIONE-- ]</option>
+                            <option value="1"> Activo </option>
+                            <option value="0"> Anulado </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="text-center mt-4">
+                            <button class="btn btn-sm  btn-primary" data-toggle="tooltip" title="Mostrar Informacion" (click)="mostrarInformacion()">
+                                <i class="fas fa-search"> </i> Mostrar 
+                            </button>
+                            <!-- <button class="btn btn-sm ml-1  btn-warning" data-toggle="tooltip" title="Nuevo" (click)="nuevo()">
+                                <i class="fas fa-plus"> </i> Nuevo 
+                            </button> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <hr>
+ 
+            <div class="row mb-2" *ngIf="personales.length > 0">
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-control-sm " placeholder="Auto Busquedas" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+            </div>
+
+            <div class="search-results tableFixHead" style="height: 400px;">
+                <table class="table  table-bordered table-hover table-sm ">
+                    <thead class="theadTable ">
+                        <tr style="height: 40px !important;">
+                            <th scope="col">#</th>
+                            <th >Delegacion</th>
+                            <th >Personal</th>
+                            <th >Nro.Documento</th>
+                            <th >Cargo</th>
+                            <th >Estado</th>
+                            <th class="text-center"> ACCION </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of personales |  filter: filtrarMantenimiento  ; index as j" [ngStyle]="{'color': item.estado == '0' && 'red'}" >
+                            <td scope="row"> {{j + 1}} </td>
+                            <td>{{item.nombre_delegacion}}</td>
+                            <td>{{item.apellidos_Personal}} {{item.nombres_Personal}} </td>
+                            <td>{{item.nroDoc_Personal}}</td>
+                            <td>{{item.nombre_cargo}}</td>
+                            <td>{{item.estado==1?'Activo':'Anulado'}} </td>
+                            <td class="text-center">
+                                <!-- <span class="badge badge-primary puntero" (click)=" editar(item) " style="padding: 5px;"> Editar </span>
+                                <span class="badge badge-danger puntero ml-2" (click)=" anular(item) " style="padding: 5px;"> Anular </span> -->
+                            </td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="modal fade " id="modal_mantenimiento" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content"  >
+            <div class="modal-body">
+                <div class="p-3 card ">
+                    <div class="d-flex justify-content-between flotante">
+                        <div class=" bd-highlight">
+                            <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                        </div>
+                        <div class=" bd-highlight">
+                            <h5 class="headerTitleModal"> REGISTRO DE ANOMALIA </h5>
+                        </div>
+                        <div class=" bd-highlight">
+                            <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                        </div>
+                    </div>
+                </div>
+                <hr style="background-color: white;">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <form [formGroup]="formParams" style=" margin-top: -15px;">
+
+                            <div class="panel-body">
+ 
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label> Pais </label>
+                                        <select class="form-control comboBox" formControlName="id_pais" (change)="changePais($event)">
+                                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                                            <option [value]="item.id_pais" *ngFor="let item of paises">{{item.Pais}}</option> 
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label> Sociedad </label>
+                                        <select class="form-control comboBox" formControlName="id_grupo" >
+                                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                                            <option [value]="item.id_grupo" *ngFor="let item of sociedades">{{item.Grupo}}</option> 
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label> Tipo Formato </label>
+                                        <!-- <select class="form-control comboBox" formControlName="id_formato">
+                                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                                            <option [value]="item.id_Formato" *ngFor="let item of tiposFormatos">{{item.nombre_formato}}</option> 
+                                        </select> -->
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="control-label"> Registro de conformidad</label>
+                                        <br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input puntero"   type="radio" id="inlineRadio1" (click)="registroConformidad(2)"  formControlName="isConforme" name="isConforme" value="1">
+                                            <label class="form-check-label puntero" for="inlineRadio1"> SI </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input puntero" type="radio" id="inlineRadio2" (click)="registroConformidad(0)"  formControlName="isConforme" name="isConforme" value="2">
+                                            <label class="form-check-label puntero" for="inlineRadio2"> NO </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <fieldset class="shadow" *ngIf="formParams.value.isConforme == 2">
+                                    <legend> REGISTRO CONFORMIDAD </legend>
+                                    <div class="panel panel-default">
+                                      <div class="panel-body">
+ 
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label> Sera un titulo </label>
+                                                <input type="text" class="form-control" formControlName="anomalia_titulo"  (keypress)="keyPress($event)"   placeholder="" >
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Pertenece al sociedad </label>
+                                                <input type="text" class="form-control" formControlName="anomalia_Grupo"   (keypress)="keyPress($event)"   placeholder="" >
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Codigo Anomalia </label>
+                                                <input type="text" class="form-control" formControlName="codigo_Anomalia"  maxlength="5"  placeholder="" >
+                                            </div>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label> Descripcion Anomalia </label>
+                                                <input type="text" class="form-control" formControlName="descripcion_Anomalia" maxlength="200" placeholder="" >
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label> Descripcion España </label>
+                                                <input type="text" class="form-control" formControlName="Descripcion_Anomalia_Espana"  maxlength="200" placeholder="" >
+                                            </div> 
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label> Anomalia Critica </label>
+                                                <select class="form-control comboBox" formControlName="anomalia_Critica">
+                                                    <option value="0"> [ --SELECCIONE-- ]</option>
+                                                    <option value="SI"> SI </option>
+                                                    <option value="NO"> NO </option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Anomalia Critica General </label>
+                                                <select class="form-control comboBox" formControlName="anomalia_Critica_General">
+                                                    <option value="0"> [ --SELECCIONE-- ]</option>
+                                                    <option value="SI"> SI </option>
+                                                    <option value="NO"> NO </option>
+                                                </select>
+         
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Sera Validado </label>
+                                                <select class="form-control comboBox" formControlName="ver_Validacion">
+                                                    <option value="0"> [ --SELECCIONE-- ]</option>
+                                                    <option value="SI"> SI </option>
+                                                    <option value="NO"> NO </option>
+                                                </select>
+                                            </div>
+                                        </div>
+ 
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label> Orden </label>
+                                                <input type="text" class="form-control" formControlName="anomalia_orden"  (keypress)="keyPress($event)"   placeholder="" >
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Valor Inspeccion </label>
+                                                <input type="text" class="form-control" formControlName="anomalia_Valor" (keypress)="keyPress($event)"   placeholder="" >
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label> Personal no registrado en el sistema </label>
+                                                <br>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" id="inlineRadio3" (click)="registroPersonal(1)" formControlName="isPersonalNoRegistrado" name="isPersonalNoRegistrado" value="1">
+                                                    <label class="form-check-label" for="inlineRadio3"> SI </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" id="inlineRadio4" (click)="registroPersonal(0)"  formControlName="isPersonalNoRegistrado" name="isPersonalNoRegistrado" value="2">
+                                                    <label class="form-check-label" for="inlineRadio4"> NO </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+          
+                                  </fieldset>
+ 
+                                <div class="row mt-1 mb-2">
+                                    <div class="col-md-6">
+                                        <label> Estado</label>
+                                        <select class="form-control comboBox" formControlName="estado">
+                                            <option value="-1"> [ --SELECCIONE-- ]</option>
+                                            <option value="1"> Activo </option>
+                                            <option value="0"> Anulado </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+ 
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <button class="btn btn-success" (click)="saveUpdate()" title="Guardar la informacion"> <i class="fas fa-save"> Grabar</i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+ 

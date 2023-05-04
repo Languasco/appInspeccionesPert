@@ -1,0 +1,622 @@
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> BANDEJA DE ATENCION DE INSPECCIONES </h5>
+    </div>
+    <div class="card-body">
+
+        <form [formGroup]="formParamsFiltro">
+            <div class="row">
+                <div class="col-sm-4 col-md-2">
+                    <label class=" control-label" > Proyecto</label>
+                    <select class="form-control comboBox" formControlName="id_Proyecto"  >
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_Proyecto" *ngFor="let item of proyectos">{{item.nombre_proyecto}}</option> 
+                        </select>
+                </div> 
+                <div class="col-sm-4 col-md-2">
+                    <label class=" control-label" > Estado </label>
+                    <select class="form-control comboBox" formControlName="estado_inspeccion"  >
+                        <option value="0"> [ -- SELECCIONE -- ]</option>
+                        <option [value]="item.id_Estado" *ngFor="let item of estadosInspeccion">{{item.abreviatura_estado}}</option> 
+                    </select>
+                </div>
+             <div class="col-sm-4  col-md-2">
+                    <label class=" control-label" > Nivel </label>
+                    <select class="form-control comboBox" formControlName="nivelInspeccion">
+                        <option value="0"> [ -- TODOS -- ]</option>
+                        <option [value]="item.id_NivelInspeccion" *ngFor="let item of niveles">{{item.descripcion_NivelInspeccion}}</option> 
+                    </select>
+                </div>
+                 <div class="col-sm-6  col-md-2">
+                    <label class=" control-label" > Inspector </label>
+                     <select class="form-control comboBox" formControlName="inspector">
+                        <option value="0"> [ -- TODOS -- ]</option>
+                        <option [value]="item.id_Personal" *ngFor="let item of inspectores">{{item.apellidos_Personal}}  {{item.nombres_Personal}}  </option> 
+                    </select>
+                </div>
+                  <div class="col-sm-6  col-md-2">
+                    <label class="control-label"> Rango Fecha  </label>
+                    <div class="input-group">
+                        <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_ini"  [bsConfig]="datepiekerConfig">
+                         <span class="input-group-addon">-</span>
+                        <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_fin" [bsConfig]="datepiekerConfig">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <div class="text-center mt-4">
+                        <button class="btn btn-sm  btn-primary" data-toggle="tooltip" title="Mostrar Informacion" (click)="mostrarInformacion()">
+                            <i class="fas fa-search"> </i> Mostrar 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+
+
+        <div class="d-flex justify-content-between" style=" margin-top: -15px;">
+            <div class="p-1 bd-highlight">
+                <button class="btn btn-sm  btn-warning" data-toggle="tooltip" title="Nuevo" (click)="nuevo()">
+                    <i class="fas fa-plus"> </i>  
+                </button>
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm resaltarTexto" placeholder="Buscar" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+            </div>
+            <div class="p-2 bd-highlight"> </div>
+        </div>
+
+        <span class="badge badge-secondary" style=" font-size: 11px; color:white" > * Click en cualquier registro para Editar. </span>
+        
+        <div class="tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+
+                    <tr style="height: 40px !important;">
+                        <th>#</th>
+                        <th>NRO. INSPECCION</th>
+                        <th>FECHA INSP.</th>
+                        <th>CARGO</th>
+                        <th>NOMBRE</th>
+                        <th>JEFE AREA</th>
+                        <th>INSPECTOR</th>
+                        <th>NIVEL</th>
+                        <th>ANOMALIA</th>
+                        <th>LEVANTO OBS</th>
+                        <th>FECHA</th>
+                        <th>NRO. INSP. RELACIONADA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of bandejaAtencionCab |  filter: filtrarMantenimiento  ; index as j" [ngStyle]="{'background-color': item.colorfondo  }" (click)="editar(item)" >
+                        <td > {{j + 1}} </td>
+                        <td >{{item.nro_inspeccion}}</td>
+                        <td >{{item.fecha_inspeccion}}</td>
+                        <td >{{item.cargo}}</td>
+                        <td >{{item.nombre}}</td>
+                        <td >{{item.jefe_area}}</td>
+                        <td >{{item.inspector}}</td>
+                        <td >{{item.nivel}}</td>
+                        <td >{{item.anomalia}}</td>
+                        <td >{{item.levanto_obs}}</td>
+                        <td >{{item.fecha}}</td>
+                        <td >{{item.nro_insp_relacionada}}</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+ 
+    </div>
+</div>
+
+<div class="modal fade " id="modal_proceso" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content"  >
+            <div class="p-3 card  modalHeader">
+                <div class="d-flex justify-content-between flotante">
+                    <div class=" bd-highlight">
+                        <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                    <div class=" bd-highlight">
+                        <h5 class="headerTitleModal"> BANDEJA DE ATENCION DE INSPECCIONES </h5>
+                    </div>
+                    <div class=" bd-highlight">
+                    <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="modal-body">                 
+                <div class="row">
+                    <div class="col-12">
+                        <!-- <div id="formTabs" class="disabledForm"> -->
+                            <div id="formTabs" >
+                            <tabset #staticTabsPrincipal style="font-family: 'Montserrat', sans-serif; color:black im !important " >
+                                <tab heading="Datos Generales" (selectTab)="selectTab($event)">    
+                                    <div class="card" style="border: 1px solid #dcdfe2;">
+                                        <div class="card-body">
+
+                                            <form [formGroup]="formParams" >
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label for="txtcodigo" class="col-lg-12 control-label">Nro. Visita</label>
+                                                        <input type="text" class="form-control disabledForm"   id="txtcodigo" formControlName="id_Inspeccion"  maxlength="20">
+                                                    </div>
+                                                    <div class="col-lg-4 ">
+                                                        <label class="col-lg-12 control-label">Cliente</label>
+                                                        <select class="form-control comboBox"   formControlName="id_Cliente" id="cbo_cliente">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option [value]="item.id_Cliente" *ngFor="let item of clientes"> {{item.nombre_Cliente}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-1">
+                                                    <div class="col-lg-4 ">
+                                                        <label class="col-lg-12 control-label">Empresa Contratista</label>
+                                                        <select class="form-control comboBox"  formControlName="id_EmpresaColaboradora" id="cbo_empresaContratista_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor=" let item of empresasContratistas" [value]="item.id_EmpresaColaboradora">{{item.RazonSocial_EmpresaColaboradora}}</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <label for="txt_Lugar_det" class="col-lg-12 control-label">Lugar</label>
+                                                        <input type="text" class="form-control" id="txt_Lugar_det" formControlName="lugar_Inspeccion"   maxlength="250">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label for="txt_ActividadOt_det" class="col-lg-12 control-label">Actividad OT</label>
+                                                        <input type="text" class="form-control" id="txt_ActividadOt_det" formControlName="actividadOT_Inspeccion"  maxlength="250">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="txt_trabajoRealizar_det" class="col-lg-12 control-label">Trabajo a Realizar</label>
+                                                        <input type="text" class="form-control" id="txt_trabajoRealizar_det" formControlName="trabajoArealizar_Inspeccion"  maxlength="250">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">    
+                                                    <div class="col-lg-6 ">
+                                                        <label class="col-lg-12 control-label">Cargo</label>
+                                                        <select class="form-control comboBox"   formControlName="id_Cargo" id="cbo_cargo_det" (change)="changeCargo($event)">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of cargos" [value]="item.id_Cargo">{{item.nombre_cargo | uppercase}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">
+                                                    <div class="col-lg-6 ">
+                                                        <label class="col-lg-12 control-label">Se inspecciona a</label>
+                                                        <select class="form-control comboBox" formControlName="id_Personal_Inspeccionado" id="cbo_tecnico">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of tecnicos" [value]="item.id_Personal">{{item.apellidos_Personal | uppercase}}   {{item.nombres_Personal | uppercase }}  </option>
+                                                        </select>
+                                                    </div>
+    
+                                                    <div class="col-lg-4 ">
+                                                        <label class="col-lg-12 control-label">Area </label>
+                                                        <select class="form-control comboBox"  formControlName="id_Area" id="cbo_area_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of areas" [value]="item.id_Area">{{item.descripcion_Area}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">
+                                                    <div class="col-lg-6 ">
+                                                        <label class="col-lg-12 control-label">Coordinador</label>
+                                                        <select class="form-control comboBox"   formControlName="id_Personal_Coordinador" id="cbo_cordinador_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of coordinadores" [value]="item.id_Personal">{{item.apellidos_Personal | uppercase}}  {{item.nombres_Personal  | uppercase}}</option>
+                                                        </select>
+                                                    </div>
+    
+                                                    <div class="col-lg-6 ">
+                                                        <label class="col-lg-12 control-label">Jefe de Obras</label>
+                                                        <select class="form-control comboBox"  formControlName="id_Personal_JefeObra" id="cbo_jefeObras_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of jefesObras" [value]="item.id_Personal">{{item.apellidos_Personal | uppercase}}  {{item.nombres_Personal  | uppercase}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+    
+    
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label for="txt_placa_det" class="col-lg-12 control-label">Placa</label>
+                                                        <input type="text" class="form-control" id="txt_placa_det" formControlName="placa_Inspeccion" maxlength="30">
+                                                    </div>
+                                                    <div class="col-lg-4 ">
+                                                        <label class="col-lg-12 control-label">Nivel Inspeccion</label>
+                                                        <select class="form-control comboBox"  formControlName="id_NivelInspeccion" id="cbo_nivelInspeccion_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of niveles" [value]="item.id_NivelInspeccion">{{item.descripcion_NivelInspeccion  | uppercase}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                            </form>
+                                          
+                                        </div>
+                                    </div>    
+                                </tab>
+                                <tab heading="Datos de Inspeccion" (selectTab)="selectTab($event)">
+                                    <div class="card" style="border: 1px solid #dcdfe2;">
+                                        <div id="formInspeccion" class="card-body ">
+
+                                            <form [formGroup]="formParams" >
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class=" control-label">Tipo de Inspección </label>
+                                                        <select class="form-control comboBox" style="width :100%;" formControlName="id_TipoInspeccion" id="cbo_tipoInspeccioon_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option *ngFor="let item of tiposInspecciones" [value]="item.id_TipoInspeccion">{{item.descripcion_TipoInspeccion}}</option>                                  
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <label class="control-label">Es Inicio o Final de Trabajo </label>
+                                                        <select class="form-control comboBox" style="width :100%;" formControlName="iniciofin_Trabajo" id="cbo_Trabajo_ini_fin_det">
+                                                            <option value="0">[--Seleccione--]</option>
+                                                            <option value="SI"> SI </option>
+                                                            <option value="NO"> NO </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+    
+                                                <fieldset class="shadow" >
+                                                    <legend> ACCION CORRECTIVA </legend>
+                                                    <div class="panel panel-default">
+                                                      <div class="panel-body ">
+ 
+                                                        <div class="row" style="margin-top: -15px;">
+                                                            <div class="col-lg-6">
+                                                                <label class="control-label">Resp. Correccion X</label>
+                                                                <select class="form-control comboBox" style="width :100%;" formControlName="id_Personal_Responsable" id="cbo_responsablesCorreccion_det">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option *ngFor="let item of responsablesCorrecciones" [value]="item.id_Personal">{{item.apellidos_Personal | uppercase}}  {{item.nombres_Personal  | uppercase}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>                                            
+                                     
+                                                        <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <label for="txt_observacionCorreccion_det" class="control-label">Observacion </label>
+                                                                <input type="text" class="form-control" id="txt_observacionCorreccion_det" formControlName="observacion_Correctiva" maxlength="250">
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <label class="control-label">Paralizacion Trabajos ? </label>
+                                                                <select class="form-control comboBox" style="width :100%;" formControlName="paralizacion_Correctiva" id="cbo_paralizaciontrabajo_det">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option value="SI"> SI </option>
+                                                                    <option value="NO"> NO </option>
+                                                                </select>
+                                                            </div>
+    
+                                                            <div class="col-lg-6">
+                                                                <label class="control-label">Alguna Sancion ? </label>
+                                                                <select class="form-control comboBox" style="width :100%;" formControlName="sancion_Correctiva" id="cbo_sancion_det">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option value="SI"> SI </option>
+                                                                    <option value="NO"> NO </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <label class="control-label">Tipo de Sancion ?  </label>
+                                                                <select class="form-control comboBox" style="width :100%;" formControlName="id_TipoSancion" id="cbo_tipoSancion_det">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option *ngFor="let item of tiposSanciones" [value]="item.id_TipoSancion">{{item.descripcion_TipoSancion | uppercase}}</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <label for="txt_nroTrabajSanciondados" class="control-label">Nro. Trabaj. Sancionados</label>
+                                                                <input type="number" class="form-control" id="txt_nroTrabajSanciondados" style="width:200px;" formControlName="nroTrabajadores_Correctiva" maxlength="50">
+                                                            </div>
+                                                        </div> 
+                                                      </div>
+                                                    </div>                          
+                                                  </fieldset>
+
+                                            </form>
+
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <div class="p-2 bd-highlight">
+                                                    <button class="btn btn-success" (click)="saveUpdate()" title="Guardar Inspeccion"> <i class="fas fa-save"> Guardar Inspección </i></button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </tab>
+                                <tab heading="Anomalias" (selectTab)="selectTab($event)" *ngIf="id_inspeccion_Global  > 0" >
+                                    <div class="card" style="border: 1px solid #dcdfe2;">
+                                        <div id="formAnomalias" class="card-body ">
+
+                                            <fieldset class="shadow" >
+                                                <legend> RELACION DE ANOMALÍAS-IMAGENES </legend>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-body ">
+ 
+                                                    <form [formGroup]="formParamsAnomalia" >
+                                                        <div class="row">
+                                                            <div class=" col-sm-6 col-lg-4">
+                                                                <label class="control-label">Tipo de Formato </label>
+                                                                <select class="form-control comboBox"   formControlName="id_formato" (change)="changeTipoFormato($event)" id="cbo_Formato">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option *ngFor="let item of tiposFormatos" [value]="item.id_Formato">{{item.nombre_formato  | uppercase}}</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-sm-6  col-lg-4">
+                                                                <label class="control-label">Resultado de Inspección </label>
+                                                                <select class="form-control comboBox"  formControlName="Resultado_Inspeccion" id="cbo_resultadoInspeccion_det"  >
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option value="Correcto"> Correcto </option>
+                                                                    <option value="Anomala"> Anomala </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="row">
+                                                           <div class="col-sm-6  col-lg-6 ">
+                                                                <label class="control-label"> Personal </label>
+                                                                <select class="form-control comboBox mt-1"   formControlName="id_personal" id="cboPersonalAnomalia">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option *ngFor="let item of personalAnomalias" [value]="item.id_personal"> {{item.nroDoc_Personal}}  :  {{item.personal}}</option>
+                                                                </select>
+                                                            </div>
+    
+                                                            <div class="col-sm-6  col-lg-6 ">                                                           
+                                                               <form [formGroup]="formParamsFile"  >
+                                                                    <label class="control-label"> Adjuntar Imagen </label>
+                                                                    <div class="botonFile">
+                                                                        <input type="file" class="form-control-file btn" formControlName="file" accept="image/*" (change)="onFileChange($event)" />
+                                                                    </div>
+                                                                </form>
+                                                            </div>   
+
+                                                        </div>
+                                
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div *ngFor="let fil of filePhoto; let i=index">
+                                                                    <div class="alert alert-danger text-center" *ngIf="fil.status === 'error'">
+                                                                        <h5>Sistemas</h5>
+                                                                        <hr>
+                                                                        <p><small>{{fil.message}}</small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="row" *ngIf="formParamsAnomalia.value.Resultado_Inspeccion == 'Anomala' ">
+                                                            <div class="col-lg-8 ">
+                                                                <label class="control-label">Anomalía </label>
+                                                                <select class="form-control comboBox"   formControlName="id_anomalia" id="cbo_TipoAnomalia_det">
+                                                                    <option value="0">[--Seleccione--]</option>
+                                                                    <option *ngFor="let item of tiposAnomalias" [value]="item.id_Anomalia">{{item.descripcion_Anomalia}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="row" *ngIf="formParamsAnomalia.value.Resultado_Inspeccion == 'Anomala' ">
+                                                            <div class="col-lg-6">
+                                                                <label for="txt_accionPropuesta_det" class=" control-label">Acc. Propuesta</label>
+                                                                <input type="text" class="form-control" id="txt_accionPropuesta_det" formControlName="accionPropuesta_Correctiva" maxlength="250">
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <label for="dtp_fechaPropuesta" class="control-label">Fecha Prop. Correccion </label>
+                                                                <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fechaPropuesta_Correctiva"  [bsConfig]="datepiekerConfig">
+                                                            </div>
+                                                        </div>    
+                                                        <div class="row" *ngIf="formParamsAnomalia.value.Resultado_Inspeccion == 'Anomala' ">
+                                                            <div class="col-lg-6">
+                                                                <label for="txt_descripcionAnomalia" class="control-label">Descripción </label>
+                                                                <input type="text" class="form-control" id="txt_descripcionAnomalia" formControlName="descripcion" maxlength="100">
+                                                            </div>
+                                                        </div>    
+                                                         <div class="d-flex justify-content-center mt-3">
+                                                            <div class="p-2 bd-highlight">
+                                                                <button class="btn btn-primary" (click)="saveUpdate_anomalias()" title="Guardar Anomalias"> <i class="fas fa-save">  </i> Guardar Anomalia </button>
+                                                                <button class="btn btn-sm btn-warning ml-1" (click)="blank_Detalle()"  title ="Limpiar"> <i class="fa fa-plus-circle"> </i> Nueva Anomalia </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                     <hr>
+
+                                                    <div class="tableFixHead">
+                                                        <table class="table  table-hover table-sm">
+                                                            <thead class="theadTable">
+                                            
+                                                                <tr style="height: 40px !important;">
+                                                                    <th>#</th>
+                                                                    <th>NRO. DOC</th>
+                                                                    <th>PERSONAL</th>
+                                                                    <th>ANOMALÍA</th>
+                                                                    <th>DESCRIPCIÓN-ANOMALÍA</th>
+                                                                    <th>FOTO_ANOMALÍA</th>
+                                                                    <th>FOTO_LEVANTAM</th>
+                                                                    <th colspan="3" style="text-align:center">ACCIONES</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr *ngFor="let item of anomaliasInspeccionesDet; index as j">
+                                                                    <td > {{j + 1}} </td>
+                                                                    <td >{{item.nroDoc_Personal}}</td>
+                                                                    <td >
+                                                                        <div style="width: 250px;">
+                                                                            {{item.personal}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td > 
+                                                                        <div style="width: 250px;">
+                                                                            {{item.Anomalia}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td > 
+                                                                        <div style="width: 300px;">
+                                                                            {{item.descripcionAnomalia}}
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">     
+                                                                        <span class="badge badge-primary puntero" *ngIf="item.fotoAnomalia.toUpperCase()   == 'SI'" (click)="abrir_modalFotos(item.id_inspeccion_detalle)" > {{item.fotoAnomalia}} </span>
+                                                                    </td>
+                                                                    <td class="text-center"> 
+                                                                        <span class="badge badge-primary puntero" *ngIf="item.fotoLevantamiento.toUpperCase()   == 'SI'" (click)="abrir_modalFotosLevantamiento(item)" > {{item.fotoLevantamiento}} </span>
+                                                                    </td>
+                                                                    <td >
+                                                                        <button class="btn btn-sm btn-primary"  (click)="editar_anomaliasDet(item)" title="Editar" > <i class="fas fa-edit"> </i>    </button>
+                                                                    </td>
+                                                                    <td >
+                                                                       <button class="btn btn-sm btn-warning" title="Generar Levantamiento" *ngIf="item.Resultado_Inspeccion   == 'Anomala'" (click)="abrir_modalLevantamiento(item)" >   
+                                                                            <i class="fas fa-photo-video"></i>
+                                                                       </button>                                                        
+                                                                    </td>
+                                                                    <td >
+                                                                        <button class="btn btn-sm btn-success" title="Enviar Correo" (click)="abrir_modalCorreo(item)" >   <i class="fas fa-envelope  " title="Enviar Correo" ></i> </button>
+                                                                    </td>                                       
+                                                                </tr> 
+                                                            </tbody>
+                                                        </table>
+                                                    </div>                                           
+                                                  </div>
+                                                </div>                          
+                                            </fieldset>
+                                          
+                                        </div>
+                                    </div>
+                                </tab>
+         
+                            </tabset>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="modalfotos" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="headerTitle"> Visor-Imagenes</h5>
+                <button type="button" class="close" (click)="cerrarModal_fotos()" aria-label="Close">  <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body"> 
+                <div class="row mt-1" *ngFor="let item of fotoSeleccionado">
+                    <div class="col-md-12">
+                        <img [src]='item.ruta_foto' class="card-img" height="500px" width="100%" alt="...">
+                        <b>{{item.descripcion_levantamiento}}</b>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal_fotos()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="modalLevantamiento" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="headerTitle"> Generar Levantamiento</h5>
+                <button type="button" class="close" (click)="cerrarModal_levantamiento()" aria-label="Close">  <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body"> 
+
+                <form [formGroup]="formParamsFile" >
+                    <div class="row">
+                        <div class="col-sm-12 ">                                                         
+                            <label class="control-label"> Adjuntar Imagen </label>
+                            <div class="botonFile">
+                                <input type="file" class="form-control-file btn" formControlName="file" accept="image/*" (change)="onFileChange($event)" />
+                            </div>         
+                        </div>   
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-12 ">                                                           
+                           <label  class="control-label">Observacion </label>
+                           <input type="text" class="form-control"  formControlName="observacion" maxlength="100">
+                       </div>   
+                   </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" (click)="Guardando_LevantamientoAnomalias()" title="Guardar Levantamientos"> <i class="fas fa-save">  </i> Guardar Levantamiento </button>
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal_levantamiento()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="modalCorreo" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="headerTitle"> Enviar correo</h5>
+                <button type="button" class="close" (click)="cerrarModal_correo()" aria-label="Close">  <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body"> 
+
+                <form [formGroup]="formParamsFile" >
+                     <div class="row">
+                       <div class="col-sm-12 ">                                                           
+                           <label  class="control-label">Para </label>
+                           <input type="text" class="form-control"  formControlName="destinatario" maxlength="100">
+                       </div>  
+                    </div>   
+                       <div class="row">
+                            <div class="col-sm-12 ">                                                           
+                                <label  class="control-label">CC </label>
+                                <input type="text" class="form-control"  formControlName="copia" maxlength="100">
+                            </div>   
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-12 ">                                                           
+                                <label  class="control-label">Asunto </label> 
+                                <input type="text" class="form-control"  formControlName="asunto" maxlength="100">
+                            </div>   
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-12 ">                                                           
+                                <label  class="control-label">Mensaje </label> 
+                                <textarea class="form-control" formControlName="mensaje" rows="3"></textarea>
+                            </div>   
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 ">                                                           
+                                <label class="control-label">Tipo de Formato </label>
+                                <select class="form-control comboBox"   formControlName="tipoFormato"  >
+                                    <option value="0">[--Seleccione--]</option>
+                                    <option *ngFor="let item of tiposFormatos" [value]="item.id_Formato">{{item.nombre_formato  | uppercase}}</option>
+                                </select>
+                            </div>   
+                        </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" (click)="enviar_correo()" title="Enviar correo"> <i class="fas fa-save">  </i> Enviar correo </button>
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal_correo()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

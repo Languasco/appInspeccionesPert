@@ -1,0 +1,1885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DSIGE_InspeccionesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="LogsNEW_LIST_INSPECCION_CAB_WEB_II">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_pais" Type="int" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="idDelegacion" Type="varchar(max)" />
+    <Property Name="idInspector" Type="varchar(max)" />
+    <Property Name="idRespCorreccion" Type="varchar(max)" />
+    <Property Name="opcion" Type="int" />
+    <Property Name="fecha_Ini" Type="varchar" MaxLength="10" />
+    <Property Name="fecha_fin" Type="varchar" MaxLength="10" />
+    <Property Name="Fecha_Registro" Type="smalldatetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Logstbl_Inspeccion_Cab' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Logstbl_Inspeccion_Cab">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ResultadoId" Type="int" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="id_Personal_Inspector" Type="int" />
+    <Property Name="id_EmpresaColaboradora" Type="int" />
+    <Property Name="lugar_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="actividadOT_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="trabajoArealizar_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="id_Personal_Inspeccionado" Type="int" />
+    <Property Name="id_Area" Type="int" />
+    <Property Name="id_Personal_Coordinador" Type="int" />
+    <Property Name="id_Personal_JefeObra" Type="int" />
+    <Property Name="placa_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="id_NivelInspeccion" Type="int" />
+    <Property Name="id_TipoInspeccion" Type="int" />
+    <Property Name="Resultado_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="iniciofin_Trabajo" Type="varchar" MaxLength="30" />
+    <Property Name="id_Anomalia" Type="int" />
+    <Property Name="accionPropuesta_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="id_Personal_Responsable" Type="int" />
+    <Property Name="fechaPropuesta_Correctiva" Type="varchar" MaxLength="20" />
+    <Property Name="observacion_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="paralizacion_Correctiva" Type="varchar" MaxLength="30" />
+    <Property Name="sancion_Correctiva" Type="varchar" MaxLength="30" />
+    <Property Name="id_TipoSancion" Type="int" />
+    <Property Name="nroTrabajadores_Correctiva" Type="int" />
+    <Property Name="fecha_Inspeccion" Type="varchar" MaxLength="20" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="latitud" Type="varchar" MaxLength="20" />
+    <Property Name="longitud" Type="varchar" MaxLength="20" />
+    <Property Name="id_actividad" Type="int" />
+    <Property Name="conjuntas" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Logstbl_Inspeccion_Cab_Detalle_Foto' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Logstbl_Inspeccion_Cab_Detalle_Foto">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_inspeccion_detalle" Type="int" />
+    <Property Name="nombre_foto" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Logstbl_tbl_Inspeccion_Cab_Detalle' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Logstbl_tbl_Inspeccion_Cab_Detalle">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_inspeccion_detalle" Type="int" />
+    <Property Name="id_inspeccion" Type="int" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_anomalia" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="500" />
+    <Property Name="valor" Type="varchar" MaxLength="5" />
+    <Property Name="levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="foto_levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="descripcion_levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="accionPropuesta_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="fechaPropuesta_Correctiva" Type="varchar" MaxLength="20" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="20" />
+    <Property Name="latitud" Type="varchar" MaxLength="20" />
+    <Property Name="longitud" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Megas">
+    <Key>
+      <PropertyRef Name="megaId" />
+    </Key>
+    <Property Name="megaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bytes" Type="int" />
+    <Property Name="usuario" Type="int" />
+    <Property Name="fecha_movil" Type="datetime" />
+    <Property Name="fecha_creacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Prueba">
+    <Key>
+      <PropertyRef Name="PruebaId" />
+    </Key>
+    <Property Name="PruebaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Palabra" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.T_DATA_IMPORTADO_NEW' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="T_DATA_IMPORTADO_NEW">
+    <Key>
+      <PropertyRef Name="id_pais" />
+      <PropertyRef Name="id_grupo" />
+      <PropertyRef Name="id_Empresas" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="id_EmpresaColaboradora" />
+      <PropertyRef Name="id_Cargo" />
+      <PropertyRef Name="usuarioxx" />
+    </Key>
+    <Property Name="id_pais" Type="int" Nullable="false" />
+    <Property Name="Nombre_Pais" Type="varchar" MaxLength="100" />
+    <Property Name="id_grupo" Type="int" Nullable="false" />
+    <Property Name="Nombre_Grupo" Type="varchar" MaxLength="100" />
+    <Property Name="id_Empresas" Type="int" Nullable="false" />
+    <Property Name="RUC_Empresa" Type="varchar" MaxLength="20" />
+    <Property Name="Nombre_Empresa" Type="varchar" MaxLength="100" />
+    <Property Name="id_Delegacion" Type="int" Nullable="false" />
+    <Property Name="Delegacion" Type="varchar" MaxLength="50" />
+    <Property Name="id_EmpresaColaboradora" Type="int" Nullable="false" />
+    <Property Name="RUC_Empresa_Colaboradora" Type="varchar" MaxLength="20" />
+    <Property Name="Nombre_Empresa_Colaboradora" Type="varchar" MaxLength="100" />
+    <Property Name="Tipo_documento" Type="varchar" MaxLength="50" />
+    <Property Name="Nro_Documento" Type="varchar" MaxLength="20" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+    <Property Name="Nombres" Type="varchar" MaxLength="100" />
+    <Property Name="id_Cargo" Type="int" Nullable="false" />
+    <Property Name="Cargo" Type="varchar" MaxLength="100" />
+    <Property Name="Estado" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Contrasenia" Type="varchar" MaxLength="20" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="Perfil" Type="varchar" MaxLength="100" />
+    <Property Name="usuarioxx" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.T_USUARIO_BORRADO' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="T_USUARIO_BORRADO">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nro_documento" Type="varchar" MaxLength="20" />
+    <Property Name="datos_personales" Type="varchar" MaxLength="250" />
+    <Property Name="correo_electronico" Type="varchar" MaxLength="200" />
+    <Property Name="usuario_login" Type="varchar" MaxLength="20" />
+    <Property Name="contrasenia_login" Type="varchar" MaxLength="20" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="imei" Type="varchar" MaxLength="20" />
+    <Property Name="version" Type="varchar" MaxLength="10" />
+    <Property Name="fechaInicioSesion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_AccesoOpciones">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_opcion" Type="int" />
+    <Property Name="permisos_opciones" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_AccesoOpciones_1' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_AccesoOpciones_1">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_opcion" Type="int" />
+    <Property Name="permisos_opciones" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Actividad">
+    <Key>
+      <PropertyRef Name="id_Actividad" />
+    </Key>
+    <Property Name="id_Actividad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo_Actividad" Type="varchar" MaxLength="20" />
+    <Property Name="descripcion_Actividad" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_delegacion" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_formato" Type="int" />
+    <Property Name="codigo_Anomalia" Type="varchar" MaxLength="5" />
+    <Property Name="descripcion_Anomalia" Type="varchar" MaxLength="200" />
+    <Property Name="anomalia_Critica" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_Critica_General" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_titulo" Type="int" />
+    <Property Name="anomalia_orden" Type="int" />
+    <Property Name="id_ValorInspeccion" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="anomalia_Valor" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="int" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="ver_Validacion" Type="varchar" MaxLength="5" />
+    <Property Name="Descripcion_Anomalia_Espana" Type="varchar" MaxLength="200" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="flag_personal_nuevo" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_anomalia_4' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_anomalia_4">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_formato" Type="int" />
+    <Property Name="codigo_Anomalia" Type="varchar" MaxLength="5" />
+    <Property Name="descripcion_Anomalia" Type="varchar" MaxLength="200" />
+    <Property Name="anomalia_Critica" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_Critica_General" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_titulo" Type="int" />
+    <Property Name="anomalia_orden" Type="int" />
+    <Property Name="id_ValorInspeccion" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="anomalia_Valor" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="int" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="ver_Validacion" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_Anomalia_Back' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Anomalia_Back">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_formato" Type="int" />
+    <Property Name="codigo_Anomalia" Type="varchar" MaxLength="5" />
+    <Property Name="descripcion_Anomalia" Type="varchar" MaxLength="200" />
+    <Property Name="anomalia_Critica" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_Critica_General" Type="varchar" MaxLength="2" />
+    <Property Name="anomalia_titulo" Type="int" />
+    <Property Name="anomalia_orden" Type="int" />
+    <Property Name="id_ValorInspeccion" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="anomalia_Valor" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_Anomalia_SMS' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Anomalia_SMS">
+    <Key>
+      <PropertyRef Name="id_anomalia_sms" />
+    </Key>
+    <Property Name="id_anomalia_sms" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_pais" Type="int" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_delegacion" Type="int" />
+    <Property Name="id_ot" Type="int" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="numero_celular" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia_TipoInspeccion">
+    <Key>
+      <PropertyRef Name="id_SubAnomalia" />
+    </Key>
+    <Property Name="id_SubAnomalia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_TipoInspeccion" Type="int" Nullable="false" />
+    <Property Name="id_Anomalia" Type="int" Nullable="false" />
+    <Property Name="Codigo_SubAnomalia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre_SubAnomalia" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="esSubTitulo_SubAnomalia" Type="int" Nullable="false" />
+    <Property Name="Orden_SubAnomalia" Type="int" Nullable="false" />
+    <Property Name="Grupo_SubAnomalia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Critica_SubAnomalia" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario_creacion" Type="int" Nullable="false" />
+    <Property Name="fecha_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usuario_edicion" Type="int" Nullable="false" />
+    <Property Name="fecha_edicion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Areas">
+    <Key>
+      <PropertyRef Name="id_Area" />
+    </Key>
+    <Property Name="id_Area" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion_Area" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_delegacion" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Caracteristica_Vehiculo">
+    <Key>
+      <PropertyRef Name="id_Caracteristica" />
+    </Key>
+    <Property Name="id_Caracteristica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_formato" Type="int" />
+    <Property Name="titulo_Caracteristica" Type="int" />
+    <Property Name="codigo_Caracteristica" Type="varchar" MaxLength="10" />
+    <Property Name="descripcion_Caracteristica" Type="varchar" MaxLength="250" />
+    <Property Name="orden_Caracteristica" Type="int" />
+    <Property Name="aplica_Fecha_Caracteristica" Type="int" />
+    <Property Name="aplica_Obs__Caracteristica" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_cargo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_delegacion" Type="int" />
+    <Property Name="nombre_cargo_España" Type="varchar" MaxLength="100" />
+    <Property Name="id_grupo" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Cliente">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruc_Cliente" Type="varchar" MaxLength="20" />
+    <Property Name="nombre_Cliente" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Definicion_Opciones">
+    <Key>
+      <PropertyRef Name="id_opcion" />
+    </Key>
+    <Property Name="id_opcion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_opcion" Type="varchar" MaxLength="150" />
+    <Property Name="url_opcion" Type="varchar" MaxLength="150" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="nombreParentID" Type="varchar" MaxLength="150" />
+    <Property Name="urlImagen_Opcion" Type="varchar" MaxLength="150" />
+    <Property Name="orden_Opcion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Delegacion">
+    <Key>
+      <PropertyRef Name="id_Delegacion" />
+    </Key>
+    <Property Name="id_Delegacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="codigo_delegacion" Type="varchar" MaxLength="20" />
+    <Property Name="nombre_delegacion" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_Personal_Representante" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_devolucion_campo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_devolucion_campo">
+    <Key>
+      <PropertyRef Name="devolucionID" />
+    </Key>
+    <Property Name="devolucionID" Type="int" Nullable="false" />
+    <Property Name="Campo" Type="varchar" MaxLength="100" />
+    <Property Name="Empresa" Type="varchar" MaxLength="100" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="DueDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_EmpresaColaboradora">
+    <Key>
+      <PropertyRef Name="id_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_EmpresaColaboradora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruc_EmpresaColaboradora" Type="varchar" MaxLength="20" />
+    <Property Name="RazonSocial_EmpresaColaboradora" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="Directo_EmpresaColaboradora" Type="int" />
+    <Property Name="idempresacolaboradora" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Empresas">
+    <Key>
+      <PropertyRef Name="id_Empresas" />
+    </Key>
+    <Property Name="id_Empresas" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo_interno_empresa" Type="varchar" MaxLength="20" />
+    <Property Name="ruc_empresa" Type="varchar" MaxLength="20" />
+    <Property Name="razonsocial_empresa" Type="varchar" MaxLength="150" />
+    <Property Name="direccion_empresa" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="abreviatura_estado" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion_estado" Type="varchar" MaxLength="150" />
+    <Property Name="tipoproceso_estado" Type="varchar" MaxLength="20" />
+    <Property Name="descripcion_tipoproceso_estado" Type="varchar" MaxLength="150" />
+    <Property Name="orden_estado" Type="int" />
+    <Property Name="Backcolor_estado" Type="varchar" MaxLength="50" />
+    <Property Name="forecolor_estado" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_FormatoInspeccion">
+    <Key>
+      <PropertyRef Name="id_Formato" />
+    </Key>
+    <Property Name="id_Formato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_formato" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Tbl_Frecuencia' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Tbl_Frecuencia">
+    <Key>
+      <PropertyRef Name="id_frecuencia" />
+      <PropertyRef Name="frecuencia_Ini" />
+      <PropertyRef Name="frecuencia_Fin" />
+      <PropertyRef Name="frecuencia_Valor" />
+    </Key>
+    <Property Name="id_frecuencia" Type="int" Nullable="false" />
+    <Property Name="frecuencia_Ini" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="frecuencia_Fin" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="frecuencia_Valor" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_grupo">
+    <Key>
+      <PropertyRef Name="id_grupo" />
+    </Key>
+    <Property Name="id_grupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_pais" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_grupo_dominio">
+    <Key>
+      <PropertyRef Name="id_grupo_dominio" />
+    </Key>
+    <Property Name="id_grupo_dominio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="nombre_dominio" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab">
+    <Key>
+      <PropertyRef Name="id_Inspeccion" />
+    </Key>
+    <Property Name="id_Inspeccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Pais" Type="int" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="fecha_Inspeccion" Type="datetime" />
+    <Property Name="numero_Inspeccion" Type="varchar" MaxLength="20" />
+    <Property Name="id_Actividad" Type="int" />
+    <Property Name="cliente_Inspeccion" Type="varchar" MaxLength="150" />
+    <Property Name="id_Personal_Inspector" Type="int" />
+    <Property Name="id_Personal_JefeObra" Type="int" />
+    <Property Name="id_TipoInspeccion" Type="int" />
+    <Property Name="Resultado_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="id_EmpresaColaboradora" Type="int" />
+    <Property Name="iniciofin_Trabajo" Type="varchar" MaxLength="30" />
+    <Property Name="inspeccionConjunta" Type="varchar" MaxLength="30" />
+    <Property Name="id_Anomalia" Type="int" />
+    <Property Name="descripcion_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="accionPropuesta_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="id_Personal_Responsable" Type="int" />
+    <Property Name="fechaPropuesta_Correctiva" Type="datetime" />
+    <Property Name="observacion_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="paralizacion_Correctiva" Type="varchar" MaxLength="30" />
+    <Property Name="sancion_Correctiva" Type="varchar" MaxLength="30" />
+    <Property Name="id_TipoSancion" Type="int" />
+    <Property Name="nroTrabajadores_Correctiva" Type="int" />
+    <Property Name="lugar_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="actividadOT_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="trabajoArealizar_Inspeccion" Type="varchar" MaxLength="250" />
+    <Property Name="id_Area" Type="int" />
+    <Property Name="id_Personal_Coordinador" Type="int" />
+    <Property Name="placa_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="id_NivelInspeccion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="id_Personal_Inspeccionado" Type="int" />
+    <Property Name="Obs_Levantada" Type="varchar" MaxLength="200" />
+    <Property Name="id_Inspeccion_Relacionada" Type="int" />
+    <Property Name="id_Cliente" Type="int" />
+    <Property Name="longitud" Type="varchar" MaxLength="20" />
+    <Property Name="latitud" Type="varchar" MaxLength="20" />
+    <Property Name="conjuntas" Type="int" />
+    <Property Name="fecha_EnvioEmail" Type="datetime" />
+    <Property Name="EstadoEmail" Type="varchar" MaxLength="2" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_OT" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle">
+    <Key>
+      <PropertyRef Name="id_inspeccion_detalle" />
+    </Key>
+    <Property Name="id_inspeccion_detalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_inspeccion" Type="int" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_anomalia" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="500" />
+    <Property Name="levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="foto_levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="descripcion_levantamiento" Type="varchar" MaxLength="100" />
+    <Property Name="id_ValorInspeccion" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="accionPropuesta_Correctiva" Type="varchar" MaxLength="250" />
+    <Property Name="fechaPropuesta_Correctiva" Type="datetime" />
+    <Property Name="Resultado_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="latitud" Type="varchar" MaxLength="20" />
+    <Property Name="longitud" Type="varchar" MaxLength="20" />
+    <Property Name="id_cargo_personal" Type="int" />
+    <Property Name="disponividad_uso" Type="varchar" MaxLength="5" />
+    <Property Name="size" Type="int" />
+    <Property Name="id_tipoInspeccion" Type="int" />
+    <Property Name="personal_sancion" Type="int" />
+    <Property Name="anomalia_critica" Type="int" />
+    <Property Name="id_detalle_anomalia" Type="int" />
+    <Property Name="Fecha_Cierre_Correccion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle_Foto">
+    <Key>
+      <PropertyRef Name="id_inspeccion_foto" />
+    </Key>
+    <Property Name="id_inspeccion_foto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_inspeccion_detalle" Type="int" />
+    <Property Name="nombre_foto" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="size" Type="int" />
+    <Property Name="tipo_foto" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle_SubAnomalia">
+    <Key>
+      <PropertyRef Name="id_inspeccion_SubAnomalia" />
+    </Key>
+    <Property Name="id_inspeccion_SubAnomalia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_inspeccion_detalle" Type="int" Nullable="false" />
+    <Property Name="id_SubAnomalia" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario_creacion" Type="int" Nullable="false" />
+    <Property Name="fecha_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usuario_edicion" Type="int" Nullable="false" />
+    <Property Name="fecha_edicion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_NivelInspeccion">
+    <Key>
+      <PropertyRef Name="id_NivelInspeccion" />
+    </Key>
+    <Property Name="id_NivelInspeccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion_NivelInspeccion" Type="varchar" MaxLength="150" />
+    <Property Name="cantidadDias_NivelInspeccion" Type="int" />
+    <Property Name="ColorFondo_NivelInspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="ColorFuente_NivelInspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="diasEmail_NivelInspecccion" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_OT">
+    <Key>
+      <PropertyRef Name="id_OT" />
+    </Key>
+    <Property Name="id_OT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo_ot" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nombre_ot" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Tipo_OT" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="id_Proyecto" Type="int" Nullable="false" />
+    <Property Name="id_Cliente" Type="int" Nullable="false" />
+    <Property Name="id_delegacion" Type="int" Nullable="false" />
+    <Property Name="id_grupo" Type="int" Nullable="false" />
+    <Property Name="id_Pais" Type="int" Nullable="false" />
+    <Property Name="id_Personal_JefeObra" Type="int" Nullable="false" />
+    <Property Name="id_Personal_Coordinador" Type="int" Nullable="false" />
+    <Property Name="id_Actividad" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario_creacion" Type="int" Nullable="false" />
+    <Property Name="fecha_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usuario_edicion" Type="int" Nullable="false" />
+    <Property Name="fecha_edicion" Type="datetime" Nullable="false" />
+    <Property Name="existe" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_pais">
+    <Key>
+      <PropertyRef Name="id_pais" />
+    </Key>
+    <Property Name="id_pais" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iso" Type="varchar" MaxLength="2" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Perfil">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="des_perfil" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_perfil_accesos">
+    <Key>
+      <PropertyRef Name="id_Perfil_Acceso" />
+    </Key>
+    <Property Name="id_Perfil_Acceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="id_opcion" Type="int" />
+    <Property Name="permisos_opciones" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Personal">
+    <Key>
+      <PropertyRef Name="id_Personal" />
+    </Key>
+    <Property Name="id_Personal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="tipoDoc_Personal" Type="varchar" MaxLength="10" />
+    <Property Name="nroDoc_Personal" Type="varchar" MaxLength="20" />
+    <Property Name="apellidos_Personal" Type="varchar" MaxLength="100" />
+    <Property Name="nombres_Personal" Type="varchar" MaxLength="100" />
+    <Property Name="fechaIngreso_Personal" Type="datetime" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="tipoPersonal" Type="varchar" MaxLength="2" />
+    <Property Name="fechaCese_Personal" Type="datetime" />
+    <Property Name="email_personal" Type="varchar" MaxLength="100" />
+    <Property Name="login_Sistema" Type="varchar" MaxLength="50" />
+    <Property Name="Contrasenia_sistema" Type="varchar" MaxLength="50" />
+    <Property Name="id_Perfil" Type="int" />
+    <Property Name="envio_Online" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_Pais" Type="int" />
+    <Property Name="id_EmpresaColaboradora" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Alter" Type="int" />
+    <Property Name="IdPersonal" Type="int" />
+    <Property Name="delete" Type="int" />
+    <Property Name="codigo_personal" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Tbl_Personal_Cargo">
+    <Key>
+      <PropertyRef Name="id_CargoPersonal" />
+    </Key>
+    <Property Name="id_CargoPersonal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigoInterno_CargoPersonal" Type="nchar" MaxLength="10" />
+    <Property Name="descripcion_CargoPersonal" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Personal_Delegacion">
+    <Key>
+      <PropertyRef Name="id_personal_Delegacion" />
+    </Key>
+    <Property Name="id_personal_Delegacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Personal" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Proyecto">
+    <Key>
+      <PropertyRef Name="id_Proyecto" />
+    </Key>
+    <Property Name="id_Proyecto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="nombre_proyecto" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_Personal_JefeObra" Type="int" />
+    <Property Name="id_Cliente" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Proyecto_EmpresaColaboradora">
+    <Key>
+      <PropertyRef Name="id_Proyecto_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_Proyecto_EmpresaColaboradora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="id_EmpresaColaboradora" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Tbl_Reporte_Cobra' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Tbl_Reporte_Cobra">
+    <Key>
+      <PropertyRef Name="zona" />
+      <PropertyRef Name="nro_inspeccion" />
+      <PropertyRef Name="empresa_resp_propia" />
+      <PropertyRef Name="incio_final_trabajos" />
+      <PropertyRef Name="inspeccion_conjunta" />
+      <PropertyRef Name="nro_Anomalias" />
+      <PropertyRef Name="noEliminar" />
+      <PropertyRef Name="fecha_Cierre_Corr" />
+      <PropertyRef Name="noEliminar2" />
+      <PropertyRef Name="propia" />
+      <PropertyRef Name="subContrata" />
+    </Key>
+    <Property Name="nro_visita" Type="varchar" MaxLength="62" />
+    <Property Name="fecha_insp" Type="varchar" MaxLength="10" />
+    <Property Name="zona" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="delegacion" Type="varchar" MaxLength="20" />
+    <Property Name="actividad" Type="varchar" MaxLength="20" />
+    <Property Name="cliente" Type="varchar" MaxLength="150" />
+    <Property Name="nro_inspeccion" Type="int" Nullable="false" />
+    <Property Name="anio" Type="int" />
+    <Property Name="mes" Type="int" />
+    <Property Name="semana" Type="int" />
+    <Property Name="autor" Type="varchar" MaxLength="250" />
+    <Property Name="puesto" Type="varchar" MaxLength="100" />
+    <Property Name="jefeObra" Type="varchar" MaxLength="201" />
+    <Property Name="empresa_resp_propia" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="empresa_resp_subContrata" Type="varchar" MaxLength="150" />
+    <Property Name="tipoInspeccion" Type="varchar" MaxLength="150" />
+    <Property Name="incio_final_trabajos" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="inspeccion_conjunta" Type="int" Nullable="false" />
+    <Property Name="resp_inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="nro_Anomalias" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="aspectoAnomalo" Type="varchar" MaxLength="200" />
+    <Property Name="Decripcion_anomalia" Type="varchar" MaxLength="500" />
+    <Property Name="anomalia_critica" Type="varchar" MaxLength="7" />
+    <Property Name="noEliminar" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="accionPropuesta" Type="varchar" MaxLength="250" />
+    <Property Name="respCorr" Type="varchar" MaxLength="201" />
+    <Property Name="fecha_Prop_Corr" Type="varchar" MaxLength="10" />
+    <Property Name="fecha_Cierre_Corr" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="noEliminar2" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="paralizacionTrabajos" Type="varchar" MaxLength="30" />
+    <Property Name="sancion" Type="varchar" MaxLength="30" />
+    <Property Name="tipoSancion" Type="varchar" MaxLength="150" />
+    <Property Name="nro_trabajadoresSancionados" Type="int" />
+    <Property Name="observaciones" Type="varchar" MaxLength="250" />
+    <Property Name="propia" Type="int" Nullable="false" />
+    <Property Name="subContrata" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_Tipo_Documento' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Tipo_Documento">
+    <Key>
+      <PropertyRef Name="id_Tipo_Documento" />
+      <PropertyRef Name="id_pais" />
+      <PropertyRef Name="nombre_documento" />
+      <PropertyRef Name="estado" />
+      <PropertyRef Name="usuario_creacion" />
+    </Key>
+    <Property Name="id_Tipo_Documento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_pais" Type="int" Nullable="false" />
+    <Property Name="nombre_documento" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario_creacion" Type="int" Nullable="false" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Inspeccion">
+    <Key>
+      <PropertyRef Name="id_TipoInspeccion" />
+    </Key>
+    <Property Name="id_TipoInspeccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion_TipoInspeccion" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Sancion">
+    <Key>
+      <PropertyRef Name="id_TipoSancion" />
+    </Key>
+    <Property Name="id_TipoSancion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion_TipoSancion" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nro_documento" Type="varchar" MaxLength="20" />
+    <Property Name="datos_personales" Type="varchar" MaxLength="250" />
+    <Property Name="correo_electronico" Type="varchar" MaxLength="200" />
+    <Property Name="usuario_login" Type="varchar" MaxLength="20" />
+    <Property Name="contrasenia_login" Type="varchar" MaxLength="20" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="imei" Type="varchar" MaxLength="20" />
+    <Property Name="version" Type="varchar" MaxLength="10" />
+    <Property Name="fechaInicioSesion" Type="datetime" />
+    <Property Name="id_Personal" Type="int" />
+    <Property Name="observacion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios_configuracion">
+    <Key>
+      <PropertyRef Name="id_usuario_configuracion" />
+    </Key>
+    <Property Name="id_usuario_configuracion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="id_pais" Type="int" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_Empresas" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="id_OT" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios_configuracion2">
+    <Key>
+      <PropertyRef Name="id_usuario_configuracion" />
+    </Key>
+    <Property Name="id_usuario_configuracion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="id_pais" Type="int" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="id_Empresas" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="id_OT" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tbl_usuarios_Registrados' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_usuarios_Registrados">
+    <Key>
+      <PropertyRef Name="id_usuario_Registrado" />
+      <PropertyRef Name="nro_Documento" />
+      <PropertyRef Name="id_Personal" />
+      <PropertyRef Name="id_Pais" />
+      <PropertyRef Name="fechaRegistro" />
+      <PropertyRef Name="estado" />
+    </Key>
+    <Property Name="id_usuario_Registrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nro_Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="id_Personal" Type="int" Nullable="false" />
+    <Property Name="id_Pais" Type="int" Nullable="false" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fechaAprobacion" Type="datetime" />
+    <Property Name="fechaRechazo" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Valor_Inspeccion">
+    <Key>
+      <PropertyRef Name="id_ValorInspeccion" />
+    </Key>
+    <Property Name="id_ValorInspeccion" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="descripcion_ValorInspeccion" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="date" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Temp_Frecuencia' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Temp_Frecuencia">
+    <Key>
+      <PropertyRef Name="id_Empresa" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="Anomalia" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Porcentaje" />
+      <PropertyRef Name="Frecuencia" />
+    </Key>
+    <Property Name="id_Empresa" Type="int" Nullable="false" />
+    <Property Name="id_Delegacion" Type="int" Nullable="false" />
+    <Property Name="Anomalia" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="Porcentaje" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Frecuencia" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.tempo_ec' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tempo_ec">
+    <Key>
+      <PropertyRef Name="id_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_EmpresaColaboradora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruc_EmpresaColaboradora" Type="varchar" MaxLength="20" />
+    <Property Name="RazonSocial_EmpresaColaboradora" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="Directo_EmpresaColaboradora" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.TEMPORAL_Cargo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TEMPORAL_Cargo">
+    <Key>
+      <PropertyRef Name="Cargo" />
+      <PropertyRef Name="CargoEsp" />
+    </Key>
+    <Property Name="Cargo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="CargoEsp" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.TEMPORAL_Cargo_Personal' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TEMPORAL_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+      <PropertyRef Name="nombre_cargo" />
+    </Key>
+    <Property Name="id_personal" Type="int" Nullable="false" />
+    <Property Name="nombre_cargo" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.testinspeccions' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="testinspeccions">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Inspeccion" Type="bigint" />
+    <Property Name="id_Pais" Type="int" />
+    <Property Name="id_Delegacion" Type="int" />
+    <Property Name="id_Proyecto" Type="int" />
+    <Property Name="fecha_Inspeccion" Type="datetime" />
+    <Property Name="id_Actividad" Type="int" />
+    <Property Name="id_Personal_Inspector" Type="int" />
+    <Property Name="id_Personal_JefeObra" Type="int" />
+    <Property Name="id_TipoInspeccion" Type="int" />
+    <Property Name="Resultado_Inspeccion" Type="varchar" MaxLength="30" />
+    <Property Name="id_EmpresaColaboradora" Type="int" />
+    <Property Name="id_Area" Type="int" />
+    <Property Name="id_Personal_Coordinador" Type="int" />
+    <Property Name="id_NivelInspeccion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="id_Cliente" Type="int" />
+    <Property Name="conjuntas" Type="int" />
+    <Property Name="id_grupo" Type="int" />
+    <Property Name="Id_Inspeccion_Detalle" Type="bigint" />
+    <Property Name="Id_Personal" Type="int" />
+    <Property Name="Id_Anomalia" Type="int" />
+    <Property Name="Pais" Type="varchar" MaxLength="200" />
+    <Property Name="Grupo" Type="varchar" MaxLength="200" />
+    <Property Name="CodDelegacion" Type="varchar" MaxLength="200" />
+    <Property Name="Delegacion" Type="varchar" MaxLength="200" />
+    <Property Name="Proyecto" Type="varchar" MaxLength="200" />
+    <Property Name="Autor" Type="varchar" MaxLength="200" />
+    <Property Name="JefeObra" Type="varchar" MaxLength="200" />
+    <Property Name="TipoInspeccion" Type="varchar" MaxLength="200" />
+    <Property Name="EmpresaColaboradora" Type="varchar" MaxLength="500" />
+    <Property Name="Area" Type="varchar" MaxLength="200" />
+    <Property Name="Coordinador" Type="varchar" MaxLength="200" />
+    <Property Name="NivelInspeccion" Type="varchar" MaxLength="200" />
+    <Property Name="Cliente" Type="varchar" MaxLength="200" />
+    <Property Name="IdFechaInspeccion" Type="int" />
+    <Property Name="Fecha_Registro" Type="smalldatetime" />
+    <Property Name="Personal" Type="varchar" MaxLength="500" />
+    <Property Name="ResultadoDetalle" Type="varchar" MaxLength="100" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+    <Property Name="Resultado" Type="varchar" MaxLength="30" />
+    <Property Name="Count" Type="int" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Correcto" Type="int" />
+    <Property Name="Anomala" Type="int" />
+    <Property Name="dCorrecto" Type="int" />
+    <Property Name="dAnomala" Type="int" />
+    <Property Name="dCantidad" Type="int" />
+    <Property Name="dCritica" Type="int" />
+    <Property Name="cCantidad" Type="int" />
+    <Property Name="cCorrectos" Type="int" />
+    <Property Name="cAnomalas" Type="int" />
+    <Property Name="cCriticas" Type="int" />
+    <Property Name="Anio" Type="int" />
+    <Property Name="Mes" Type="int" />
+    <Property Name="DiaMes" Type="int" />
+    <Property Name="Semana" Type="int" />
+    <Property Name="DiaSemana" Type="int" />
+    <Property Name="DiaAnio" Type="int" />
+    <Property Name="MesName" Type="varchar" MaxLength="20" />
+    <Property Name="DayName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.Tmp_Inspeccion_Total' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Tmp_Inspeccion_Total">
+    <Key>
+      <PropertyRef Name="id_Empresa" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="id_Empresa" Type="int" Nullable="false" />
+    <Property Name="id_Delegacion" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DSIGE_Inspecciones.dbo.usuario' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nro_documento" Type="varchar" MaxLength="20" />
+    <Property Name="datos_personales" Type="varchar" MaxLength="250" />
+    <Property Name="correo_electronico" Type="varchar" MaxLength="200" />
+    <Property Name="usuario_login" Type="varchar" MaxLength="20" />
+    <Property Name="contrasenia_login" Type="varchar" MaxLength="20" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="imei" Type="varchar" MaxLength="20" />
+    <Property Name="version" Type="varchar" MaxLength="10" />
+    <Property Name="fechaInicioSesion" Type="datetime" />
+    <Property Name="id_Personal" Type="int" />
+  </EntityType>
+  <EntityType Name="Versiones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="10" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <Association Name="FK__tbl_Acces__id_pe__11007AA7">
+    <End Role="tbl_usuarios" Type="Self.tbl_usuarios" Multiplicity="0..1" />
+    <End Role="tbl_AccesoOpciones" Type="Self.tbl_AccesoOpciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="tbl_AccesoOpciones">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Areas__id_de__21D600EE">
+    <End Role="tbl_Delegacion" Type="Self.tbl_Delegacion" Multiplicity="0..1" />
+    <End Role="tbl_Areas" Type="Self.tbl_Areas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_Areas">
+        <PropertyRef Name="id_delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_grupo__id_pa__5E1FF51F">
+    <End Role="tbl_pais" Type="Self.tbl_pais" Multiplicity="0..1" />
+    <End Role="tbl_grupo" Type="Self.tbl_grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_grupo">
+        <PropertyRef Name="id_pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_De__64CCF2AE">
+    <End Role="tbl_Delegacion" Type="Self.tbl_Delegacion" Multiplicity="0..1" />
+    <End Role="tbl_usuarios_configuracion" Type="Self.tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_Delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_gr__62E4AA3C">
+    <End Role="tbl_grupo" Type="Self.tbl_grupo" Multiplicity="0..1" />
+    <End Role="tbl_usuarios_configuracion" Type="Self.tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_pa__61F08603">
+    <End Role="tbl_pais" Type="Self.tbl_pais" Multiplicity="0..1" />
+    <End Role="tbl_usuarios_configuracion" Type="Self.tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_pe__595B4002">
+    <End Role="tbl_Perfil" Type="Self.tbl_Perfil" Multiplicity="0..1" />
+    <End Role="tbl_usuarios" Type="Self.tbl_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Perfil">
+        <PropertyRef Name="id_perfil" />
+      </Principal>
+      <Dependent Role="tbl_usuarios">
+        <PropertyRef Name="id_perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_us__60FC61CA">
+    <End Role="tbl_usuarios" Type="Self.tbl_usuarios" Multiplicity="0..1" />
+    <End Role="tbl_usuarios_configuracion" Type="Self.tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivOt">
+    <End Role="tbl_Actividad" Type="Self.tbl_Actividad" Multiplicity="1" />
+    <End Role="tbl_OT" Type="Self.tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Actividad">
+        <PropertyRef Name="id_Actividad" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_Actividad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DelegaOt">
+    <End Role="tbl_Delegacion" Type="Self.tbl_Delegacion" Multiplicity="1" />
+    <End Role="tbl_OT" Type="Self.tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleInspeccion_To_Inspeccion">
+    <End Role="tbl_Inspeccion_Cab" Type="Self.tbl_Inspeccion_Cab" Multiplicity="0..1" />
+    <End Role="tbl_Inspeccion_Cab_Detalle" Type="Self.tbl_Inspeccion_Cab_Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Inspeccion_Cab">
+        <PropertyRef Name="id_Inspeccion" />
+      </Principal>
+      <Dependent Role="tbl_Inspeccion_Cab_Detalle">
+        <PropertyRef Name="id_inspeccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FotoInspeccion_To_DetalleInspeccion">
+    <End Role="tbl_Inspeccion_Cab_Detalle" Type="Self.tbl_Inspeccion_Cab_Detalle" Multiplicity="0..1" />
+    <End Role="tbl_Inspeccion_Cab_Detalle_Foto" Type="Self.tbl_Inspeccion_Cab_Detalle_Foto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Inspeccion_Cab_Detalle">
+        <PropertyRef Name="id_inspeccion_detalle" />
+      </Principal>
+      <Dependent Role="tbl_Inspeccion_Cab_Detalle_Foto">
+        <PropertyRef Name="id_inspeccion_detalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GrupoOt">
+    <End Role="tbl_grupo" Type="Self.tbl_grupo" Multiplicity="1" />
+    <End Role="tbl_OT" Type="Self.tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaisOt">
+    <End Role="tbl_pais" Type="Self.tbl_pais" Multiplicity="1" />
+    <End Role="tbl_OT" Type="Self.tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_tbl_AccesoOpciones">
+    <End Role="tbl_Definicion_Opciones" Type="Self.tbl_Definicion_Opciones" Multiplicity="0..1" />
+    <End Role="tbl_perfil_accesos" Type="Self.tbl_perfil_accesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Definicion_Opciones">
+        <PropertyRef Name="id_opcion" />
+      </Principal>
+      <Dependent Role="tbl_perfil_accesos">
+        <PropertyRef Name="id_opcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_AccesoOpciones_tbl_Definicion_Opciones">
+    <End Role="tbl_Definicion_Opciones" Type="Self.tbl_Definicion_Opciones" Multiplicity="0..1" />
+    <End Role="tbl_AccesoOpciones" Type="Self.tbl_AccesoOpciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Definicion_Opciones">
+        <PropertyRef Name="id_opcion" />
+      </Principal>
+      <Dependent Role="tbl_AccesoOpciones">
+        <PropertyRef Name="id_opcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_tbl_perfil">
+    <End Role="tbl_Perfil" Type="Self.tbl_Perfil" Multiplicity="0..1" />
+    <End Role="tbl_perfil_accesos" Type="Self.tbl_perfil_accesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Perfil">
+        <PropertyRef Name="id_perfil" />
+      </Principal>
+      <Dependent Role="tbl_perfil_accesos">
+        <PropertyRef Name="id_perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DSIGE_InspeccionesModelStoreContainer">
+    <EntitySet Name="LogsNEW_LIST_INSPECCION_CAB_WEB_II" EntityType="Self.LogsNEW_LIST_INSPECCION_CAB_WEB_II" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Megas" EntityType="Self.Megas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prueba" EntityType="Self.Prueba" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_AccesoOpciones" EntityType="Self.tbl_AccesoOpciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Actividad" EntityType="Self.tbl_Actividad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Anomalia" EntityType="Self.tbl_Anomalia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Anomalia_TipoInspeccion" EntityType="Self.tbl_Anomalia_TipoInspeccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Areas" EntityType="Self.tbl_Areas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Caracteristica_Vehiculo" EntityType="Self.tbl_Caracteristica_Vehiculo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Cargo_Personal" EntityType="Self.tbl_Cargo_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Cliente" EntityType="Self.tbl_Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Definicion_Opciones" EntityType="Self.tbl_Definicion_Opciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Delegacion" EntityType="Self.tbl_Delegacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpresaColaboradora" EntityType="Self.tbl_EmpresaColaboradora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Empresas" EntityType="Self.tbl_Empresas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Estados" EntityType="Self.tbl_Estados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_FormatoInspeccion" EntityType="Self.tbl_FormatoInspeccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_grupo" EntityType="Self.tbl_grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_grupo_dominio" EntityType="Self.tbl_grupo_dominio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Inspeccion_Cab" EntityType="Self.tbl_Inspeccion_Cab" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle" EntityType="Self.tbl_Inspeccion_Cab_Detalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle_Foto" EntityType="Self.tbl_Inspeccion_Cab_Detalle_Foto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle_SubAnomalia" EntityType="Self.tbl_Inspeccion_Cab_Detalle_SubAnomalia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_NivelInspeccion" EntityType="Self.tbl_NivelInspeccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_OT" EntityType="Self.tbl_OT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_pais" EntityType="Self.tbl_pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Perfil" EntityType="Self.tbl_Perfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_perfil_accesos" EntityType="Self.tbl_perfil_accesos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personal" EntityType="Self.tbl_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Personal_Cargo" EntityType="Self.Tbl_Personal_Cargo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personal_Delegacion" EntityType="Self.tbl_Personal_Delegacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Proyecto" EntityType="Self.tbl_Proyecto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Proyecto_EmpresaColaboradora" EntityType="Self.tbl_Proyecto_EmpresaColaboradora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Tipo_Inspeccion" EntityType="Self.tbl_Tipo_Inspeccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Tipo_Sancion" EntityType="Self.tbl_Tipo_Sancion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuarios" EntityType="Self.tbl_usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuarios_configuracion" EntityType="Self.tbl_usuarios_configuracion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuarios_configuracion2" EntityType="Self.tbl_usuarios_configuracion2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Valor_Inspeccion" EntityType="Self.tbl_Valor_Inspeccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Versiones" EntityType="Self.Versiones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logstbl_Inspeccion_Cab" EntityType="Self.Logstbl_Inspeccion_Cab" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Logstbl_Inspeccion_Cab].[IdRegistro] AS [IdRegistro], 
+    [Logstbl_Inspeccion_Cab].[ResultadoId] AS [ResultadoId], 
+    [Logstbl_Inspeccion_Cab].[id_Empresa] AS [id_Empresa], 
+    [Logstbl_Inspeccion_Cab].[id_Delegacion] AS [id_Delegacion], 
+    [Logstbl_Inspeccion_Cab].[id_Proyecto] AS [id_Proyecto], 
+    [Logstbl_Inspeccion_Cab].[id_Personal_Inspector] AS [id_Personal_Inspector], 
+    [Logstbl_Inspeccion_Cab].[id_EmpresaColaboradora] AS [id_EmpresaColaboradora], 
+    [Logstbl_Inspeccion_Cab].[lugar_Inspeccion] AS [lugar_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[actividadOT_Inspeccion] AS [actividadOT_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[trabajoArealizar_Inspeccion] AS [trabajoArealizar_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[id_Cargo] AS [id_Cargo], 
+    [Logstbl_Inspeccion_Cab].[id_Personal_Inspeccionado] AS [id_Personal_Inspeccionado], 
+    [Logstbl_Inspeccion_Cab].[id_Area] AS [id_Area], 
+    [Logstbl_Inspeccion_Cab].[id_Personal_Coordinador] AS [id_Personal_Coordinador], 
+    [Logstbl_Inspeccion_Cab].[id_Personal_JefeObra] AS [id_Personal_JefeObra], 
+    [Logstbl_Inspeccion_Cab].[placa_Inspeccion] AS [placa_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[id_NivelInspeccion] AS [id_NivelInspeccion], 
+    [Logstbl_Inspeccion_Cab].[id_TipoInspeccion] AS [id_TipoInspeccion], 
+    [Logstbl_Inspeccion_Cab].[Resultado_Inspeccion] AS [Resultado_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[iniciofin_Trabajo] AS [iniciofin_Trabajo], 
+    [Logstbl_Inspeccion_Cab].[id_Anomalia] AS [id_Anomalia], 
+    [Logstbl_Inspeccion_Cab].[accionPropuesta_Correctiva] AS [accionPropuesta_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[id_Personal_Responsable] AS [id_Personal_Responsable], 
+    [Logstbl_Inspeccion_Cab].[fechaPropuesta_Correctiva] AS [fechaPropuesta_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[observacion_Correctiva] AS [observacion_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[paralizacion_Correctiva] AS [paralizacion_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[sancion_Correctiva] AS [sancion_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[id_TipoSancion] AS [id_TipoSancion], 
+    [Logstbl_Inspeccion_Cab].[nroTrabajadores_Correctiva] AS [nroTrabajadores_Correctiva], 
+    [Logstbl_Inspeccion_Cab].[fecha_Inspeccion] AS [fecha_Inspeccion], 
+    [Logstbl_Inspeccion_Cab].[id_cliente] AS [id_cliente], 
+    [Logstbl_Inspeccion_Cab].[latitud] AS [latitud], 
+    [Logstbl_Inspeccion_Cab].[longitud] AS [longitud], 
+    [Logstbl_Inspeccion_Cab].[id_actividad] AS [id_actividad], 
+    [Logstbl_Inspeccion_Cab].[conjuntas] AS [conjuntas]
+    FROM [dbo].[Logstbl_Inspeccion_Cab] AS [Logstbl_Inspeccion_Cab]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Logstbl_Inspeccion_Cab_Detalle_Foto" EntityType="Self.Logstbl_Inspeccion_Cab_Detalle_Foto" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Logstbl_Inspeccion_Cab_Detalle_Foto].[IdRegistro] AS [IdRegistro], 
+    [Logstbl_Inspeccion_Cab_Detalle_Foto].[id_inspeccion_detalle] AS [id_inspeccion_detalle], 
+    [Logstbl_Inspeccion_Cab_Detalle_Foto].[nombre_foto] AS [nombre_foto], 
+    [Logstbl_Inspeccion_Cab_Detalle_Foto].[fecha_creacion] AS [fecha_creacion]
+    FROM [dbo].[Logstbl_Inspeccion_Cab_Detalle_Foto] AS [Logstbl_Inspeccion_Cab_Detalle_Foto]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Logstbl_tbl_Inspeccion_Cab_Detalle" EntityType="Self.Logstbl_tbl_Inspeccion_Cab_Detalle" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[IdRegistro] AS [IdRegistro], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[id_inspeccion_detalle] AS [id_inspeccion_detalle], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[id_inspeccion] AS [id_inspeccion], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[id_personal] AS [id_personal], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[id_anomalia] AS [id_anomalia], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[descripcion] AS [descripcion], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[valor] AS [valor], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[levantamiento] AS [levantamiento], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[foto_levantamiento] AS [foto_levantamiento], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[descripcion_levantamiento] AS [descripcion_levantamiento], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[accionPropuesta_Correctiva] AS [accionPropuesta_Correctiva], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[fechaPropuesta_Correctiva] AS [fechaPropuesta_Correctiva], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[usuario_creacion] AS [usuario_creacion], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[fecha_creacion] AS [fecha_creacion], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[latitud] AS [latitud], 
+    [Logstbl_tbl_Inspeccion_Cab_Detalle].[longitud] AS [longitud]
+    FROM [dbo].[Logstbl_tbl_Inspeccion_Cab_Detalle] AS [Logstbl_tbl_Inspeccion_Cab_Detalle]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_DATA_IMPORTADO_NEW" EntityType="Self.T_DATA_IMPORTADO_NEW" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_DATA_IMPORTADO_NEW].[id_pais] AS [id_pais], 
+    [T_DATA_IMPORTADO_NEW].[Nombre_Pais] AS [Nombre_Pais], 
+    [T_DATA_IMPORTADO_NEW].[id_grupo] AS [id_grupo], 
+    [T_DATA_IMPORTADO_NEW].[Nombre_Grupo] AS [Nombre_Grupo], 
+    [T_DATA_IMPORTADO_NEW].[id_Empresas] AS [id_Empresas], 
+    [T_DATA_IMPORTADO_NEW].[RUC_Empresa] AS [RUC_Empresa], 
+    [T_DATA_IMPORTADO_NEW].[Nombre_Empresa] AS [Nombre_Empresa], 
+    [T_DATA_IMPORTADO_NEW].[id_Delegacion] AS [id_Delegacion], 
+    [T_DATA_IMPORTADO_NEW].[Delegacion] AS [Delegacion], 
+    [T_DATA_IMPORTADO_NEW].[id_EmpresaColaboradora] AS [id_EmpresaColaboradora], 
+    [T_DATA_IMPORTADO_NEW].[RUC_Empresa_Colaboradora] AS [RUC_Empresa_Colaboradora], 
+    [T_DATA_IMPORTADO_NEW].[Nombre_Empresa_Colaboradora] AS [Nombre_Empresa_Colaboradora], 
+    [T_DATA_IMPORTADO_NEW].[Tipo_documento] AS [Tipo_documento], 
+    [T_DATA_IMPORTADO_NEW].[Nro_Documento] AS [Nro_Documento], 
+    [T_DATA_IMPORTADO_NEW].[Apellidos] AS [Apellidos], 
+    [T_DATA_IMPORTADO_NEW].[Nombres] AS [Nombres], 
+    [T_DATA_IMPORTADO_NEW].[id_Cargo] AS [id_Cargo], 
+    [T_DATA_IMPORTADO_NEW].[Cargo] AS [Cargo], 
+    [T_DATA_IMPORTADO_NEW].[Estado] AS [Estado], 
+    [T_DATA_IMPORTADO_NEW].[Email] AS [Email], 
+    [T_DATA_IMPORTADO_NEW].[Usuario] AS [Usuario], 
+    [T_DATA_IMPORTADO_NEW].[Contrasenia] AS [Contrasenia], 
+    [T_DATA_IMPORTADO_NEW].[id_perfil] AS [id_perfil], 
+    [T_DATA_IMPORTADO_NEW].[Perfil] AS [Perfil], 
+    [T_DATA_IMPORTADO_NEW].[usuarioxx] AS [usuarioxx]
+    FROM [dbo].[T_DATA_IMPORTADO_NEW] AS [T_DATA_IMPORTADO_NEW]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_USUARIO_BORRADO" EntityType="Self.T_USUARIO_BORRADO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_USUARIO_BORRADO].[id_usuario] AS [id_usuario], 
+    [T_USUARIO_BORRADO].[nro_documento] AS [nro_documento], 
+    [T_USUARIO_BORRADO].[datos_personales] AS [datos_personales], 
+    [T_USUARIO_BORRADO].[correo_electronico] AS [correo_electronico], 
+    [T_USUARIO_BORRADO].[usuario_login] AS [usuario_login], 
+    [T_USUARIO_BORRADO].[contrasenia_login] AS [contrasenia_login], 
+    [T_USUARIO_BORRADO].[id_perfil] AS [id_perfil], 
+    [T_USUARIO_BORRADO].[estado] AS [estado], 
+    [T_USUARIO_BORRADO].[usuario_creacion] AS [usuario_creacion], 
+    [T_USUARIO_BORRADO].[fecha_creacion] AS [fecha_creacion], 
+    [T_USUARIO_BORRADO].[usuario_edicion] AS [usuario_edicion], 
+    [T_USUARIO_BORRADO].[fecha_edicion] AS [fecha_edicion], 
+    [T_USUARIO_BORRADO].[imei] AS [imei], 
+    [T_USUARIO_BORRADO].[version] AS [version], 
+    [T_USUARIO_BORRADO].[fechaInicioSesion] AS [fechaInicioSesion]
+    FROM [dbo].[T_USUARIO_BORRADO] AS [T_USUARIO_BORRADO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_AccesoOpciones_1" EntityType="Self.tbl_AccesoOpciones_1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_AccesoOpciones_1].[id_RegistroAcceso] AS [id_RegistroAcceso], 
+    [tbl_AccesoOpciones_1].[id_personal] AS [id_personal], 
+    [tbl_AccesoOpciones_1].[id_opcion] AS [id_opcion], 
+    [tbl_AccesoOpciones_1].[permisos_opciones] AS [permisos_opciones], 
+    [tbl_AccesoOpciones_1].[estado] AS [estado], 
+    [tbl_AccesoOpciones_1].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_AccesoOpciones_1].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_AccesoOpciones_1].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_AccesoOpciones_1].[fecha_edicion] AS [fecha_edicion]
+    FROM [dbo].[tbl_AccesoOpciones_1] AS [tbl_AccesoOpciones_1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_anomalia_4" EntityType="Self.tbl_anomalia_4" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_anomalia_4].[id_Anomalia] AS [id_Anomalia], 
+    [tbl_anomalia_4].[id_formato] AS [id_formato], 
+    [tbl_anomalia_4].[codigo_Anomalia] AS [codigo_Anomalia], 
+    [tbl_anomalia_4].[descripcion_Anomalia] AS [descripcion_Anomalia], 
+    [tbl_anomalia_4].[anomalia_Critica] AS [anomalia_Critica], 
+    [tbl_anomalia_4].[anomalia_Critica_General] AS [anomalia_Critica_General], 
+    [tbl_anomalia_4].[anomalia_titulo] AS [anomalia_titulo], 
+    [tbl_anomalia_4].[anomalia_orden] AS [anomalia_orden], 
+    [tbl_anomalia_4].[id_ValorInspeccion] AS [id_ValorInspeccion], 
+    [tbl_anomalia_4].[estado] AS [estado], 
+    [tbl_anomalia_4].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_anomalia_4].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_anomalia_4].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_anomalia_4].[fecha_edicion] AS [fecha_edicion], 
+    [tbl_anomalia_4].[anomalia_Valor] AS [anomalia_Valor], 
+    [tbl_anomalia_4].[anomalia_Grupo] AS [anomalia_Grupo], 
+    [tbl_anomalia_4].[id_Empresa] AS [id_Empresa], 
+    [tbl_anomalia_4].[ver_Validacion] AS [ver_Validacion]
+    FROM [dbo].[tbl_anomalia_4] AS [tbl_anomalia_4]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Anomalia_Back" EntityType="Self.tbl_Anomalia_Back" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Anomalia_Back].[id_Anomalia] AS [id_Anomalia], 
+    [tbl_Anomalia_Back].[id_formato] AS [id_formato], 
+    [tbl_Anomalia_Back].[codigo_Anomalia] AS [codigo_Anomalia], 
+    [tbl_Anomalia_Back].[descripcion_Anomalia] AS [descripcion_Anomalia], 
+    [tbl_Anomalia_Back].[anomalia_Critica] AS [anomalia_Critica], 
+    [tbl_Anomalia_Back].[anomalia_Critica_General] AS [anomalia_Critica_General], 
+    [tbl_Anomalia_Back].[anomalia_titulo] AS [anomalia_titulo], 
+    [tbl_Anomalia_Back].[anomalia_orden] AS [anomalia_orden], 
+    [tbl_Anomalia_Back].[id_ValorInspeccion] AS [id_ValorInspeccion], 
+    [tbl_Anomalia_Back].[estado] AS [estado], 
+    [tbl_Anomalia_Back].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_Anomalia_Back].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_Anomalia_Back].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_Anomalia_Back].[fecha_edicion] AS [fecha_edicion], 
+    [tbl_Anomalia_Back].[anomalia_Valor] AS [anomalia_Valor], 
+    [tbl_Anomalia_Back].[anomalia_Grupo] AS [anomalia_Grupo]
+    FROM [dbo].[tbl_Anomalia_Back] AS [tbl_Anomalia_Back]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Anomalia_SMS" EntityType="Self.tbl_Anomalia_SMS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Anomalia_SMS].[id_anomalia_sms] AS [id_anomalia_sms], 
+    [tbl_Anomalia_SMS].[id_pais] AS [id_pais], 
+    [tbl_Anomalia_SMS].[id_grupo] AS [id_grupo], 
+    [tbl_Anomalia_SMS].[id_delegacion] AS [id_delegacion], 
+    [tbl_Anomalia_SMS].[id_ot] AS [id_ot], 
+    [tbl_Anomalia_SMS].[id_usuario] AS [id_usuario], 
+    [tbl_Anomalia_SMS].[id_personal] AS [id_personal], 
+    [tbl_Anomalia_SMS].[numero_celular] AS [numero_celular], 
+    [tbl_Anomalia_SMS].[estado] AS [estado], 
+    [tbl_Anomalia_SMS].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_Anomalia_SMS].[fecha_creacion] AS [fecha_creacion]
+    FROM [dbo].[tbl_Anomalia_SMS] AS [tbl_Anomalia_SMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_devolucion_campo" EntityType="Self.tbl_devolucion_campo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_devolucion_campo].[devolucionID] AS [devolucionID], 
+    [tbl_devolucion_campo].[Campo] AS [Campo], 
+    [tbl_devolucion_campo].[Empresa] AS [Empresa], 
+    [tbl_devolucion_campo].[Nombre] AS [Nombre], 
+    [tbl_devolucion_campo].[DueDate] AS [DueDate]
+    FROM [dbo].[tbl_devolucion_campo] AS [tbl_devolucion_campo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tbl_Frecuencia" EntityType="Self.Tbl_Frecuencia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_Frecuencia].[id_frecuencia] AS [id_frecuencia], 
+    [Tbl_Frecuencia].[frecuencia_Ini] AS [frecuencia_Ini], 
+    [Tbl_Frecuencia].[frecuencia_Fin] AS [frecuencia_Fin], 
+    [Tbl_Frecuencia].[frecuencia_Valor] AS [frecuencia_Valor]
+    FROM [dbo].[Tbl_Frecuencia] AS [Tbl_Frecuencia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tbl_Reporte_Cobra" EntityType="Self.Tbl_Reporte_Cobra" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_Reporte_Cobra].[nro_visita] AS [nro_visita], 
+    [Tbl_Reporte_Cobra].[fecha_insp] AS [fecha_insp], 
+    [Tbl_Reporte_Cobra].[zona] AS [zona], 
+    [Tbl_Reporte_Cobra].[delegacion] AS [delegacion], 
+    [Tbl_Reporte_Cobra].[actividad] AS [actividad], 
+    [Tbl_Reporte_Cobra].[cliente] AS [cliente], 
+    [Tbl_Reporte_Cobra].[nro_inspeccion] AS [nro_inspeccion], 
+    [Tbl_Reporte_Cobra].[anio] AS [anio], 
+    [Tbl_Reporte_Cobra].[mes] AS [mes], 
+    [Tbl_Reporte_Cobra].[semana] AS [semana], 
+    [Tbl_Reporte_Cobra].[autor] AS [autor], 
+    [Tbl_Reporte_Cobra].[puesto] AS [puesto], 
+    [Tbl_Reporte_Cobra].[jefeObra] AS [jefeObra], 
+    [Tbl_Reporte_Cobra].[empresa_resp_propia] AS [empresa_resp_propia], 
+    [Tbl_Reporte_Cobra].[empresa_resp_subContrata] AS [empresa_resp_subContrata], 
+    [Tbl_Reporte_Cobra].[tipoInspeccion] AS [tipoInspeccion], 
+    [Tbl_Reporte_Cobra].[incio_final_trabajos] AS [incio_final_trabajos], 
+    [Tbl_Reporte_Cobra].[inspeccion_conjunta] AS [inspeccion_conjunta], 
+    [Tbl_Reporte_Cobra].[resp_inspeccion] AS [resp_inspeccion], 
+    [Tbl_Reporte_Cobra].[nro_Anomalias] AS [nro_Anomalias], 
+    [Tbl_Reporte_Cobra].[aspectoAnomalo] AS [aspectoAnomalo], 
+    [Tbl_Reporte_Cobra].[Decripcion_anomalia] AS [Decripcion_anomalia], 
+    [Tbl_Reporte_Cobra].[anomalia_critica] AS [anomalia_critica], 
+    [Tbl_Reporte_Cobra].[noEliminar] AS [noEliminar], 
+    [Tbl_Reporte_Cobra].[accionPropuesta] AS [accionPropuesta], 
+    [Tbl_Reporte_Cobra].[respCorr] AS [respCorr], 
+    [Tbl_Reporte_Cobra].[fecha_Prop_Corr] AS [fecha_Prop_Corr], 
+    [Tbl_Reporte_Cobra].[fecha_Cierre_Corr] AS [fecha_Cierre_Corr], 
+    [Tbl_Reporte_Cobra].[noEliminar2] AS [noEliminar2], 
+    [Tbl_Reporte_Cobra].[paralizacionTrabajos] AS [paralizacionTrabajos], 
+    [Tbl_Reporte_Cobra].[sancion] AS [sancion], 
+    [Tbl_Reporte_Cobra].[tipoSancion] AS [tipoSancion], 
+    [Tbl_Reporte_Cobra].[nro_trabajadoresSancionados] AS [nro_trabajadoresSancionados], 
+    [Tbl_Reporte_Cobra].[observaciones] AS [observaciones], 
+    [Tbl_Reporte_Cobra].[propia] AS [propia], 
+    [Tbl_Reporte_Cobra].[subContrata] AS [subContrata]
+    FROM [dbo].[Tbl_Reporte_Cobra] AS [Tbl_Reporte_Cobra]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Tipo_Documento" EntityType="Self.tbl_Tipo_Documento" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Tipo_Documento].[id_Tipo_Documento] AS [id_Tipo_Documento], 
+    [tbl_Tipo_Documento].[id_pais] AS [id_pais], 
+    [tbl_Tipo_Documento].[nombre_documento] AS [nombre_documento], 
+    [tbl_Tipo_Documento].[estado] AS [estado], 
+    [tbl_Tipo_Documento].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_Tipo_Documento].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_Tipo_Documento].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_Tipo_Documento].[fecha_edicion] AS [fecha_edicion]
+    FROM [dbo].[tbl_Tipo_Documento] AS [tbl_Tipo_Documento]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_usuarios_Registrados" EntityType="Self.tbl_usuarios_Registrados" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_usuarios_Registrados].[id_usuario_Registrado] AS [id_usuario_Registrado], 
+    [tbl_usuarios_Registrados].[nro_Documento] AS [nro_Documento], 
+    [tbl_usuarios_Registrados].[id_Personal] AS [id_Personal], 
+    [tbl_usuarios_Registrados].[id_Pais] AS [id_Pais], 
+    [tbl_usuarios_Registrados].[id_Delegacion] AS [id_Delegacion], 
+    [tbl_usuarios_Registrados].[fechaRegistro] AS [fechaRegistro], 
+    [tbl_usuarios_Registrados].[estado] AS [estado], 
+    [tbl_usuarios_Registrados].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_usuarios_Registrados].[fechaAprobacion] AS [fechaAprobacion], 
+    [tbl_usuarios_Registrados].[fechaRechazo] AS [fechaRechazo]
+    FROM [dbo].[tbl_usuarios_Registrados] AS [tbl_usuarios_Registrados]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Temp_Frecuencia" EntityType="Self.Temp_Frecuencia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Temp_Frecuencia].[id_Empresa] AS [id_Empresa], 
+    [Temp_Frecuencia].[id_Delegacion] AS [id_Delegacion], 
+    [Temp_Frecuencia].[Anomalia] AS [Anomalia], 
+    [Temp_Frecuencia].[Cantidad] AS [Cantidad], 
+    [Temp_Frecuencia].[Porcentaje] AS [Porcentaje], 
+    [Temp_Frecuencia].[Frecuencia] AS [Frecuencia]
+    FROM [dbo].[Temp_Frecuencia] AS [Temp_Frecuencia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tempo_ec" EntityType="Self.tempo_ec" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tempo_ec].[id_EmpresaColaboradora] AS [id_EmpresaColaboradora], 
+    [tempo_ec].[ruc_EmpresaColaboradora] AS [ruc_EmpresaColaboradora], 
+    [tempo_ec].[RazonSocial_EmpresaColaboradora] AS [RazonSocial_EmpresaColaboradora], 
+    [tempo_ec].[estado] AS [estado], 
+    [tempo_ec].[usuario_creacion] AS [usuario_creacion], 
+    [tempo_ec].[fecha_creacion] AS [fecha_creacion], 
+    [tempo_ec].[usuario_edicion] AS [usuario_edicion], 
+    [tempo_ec].[fecha_edicion] AS [fecha_edicion], 
+    [tempo_ec].[id_grupo] AS [id_grupo], 
+    [tempo_ec].[Directo_EmpresaColaboradora] AS [Directo_EmpresaColaboradora]
+    FROM [dbo].[tempo_ec] AS [tempo_ec]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TEMPORAL_Cargo" EntityType="Self.TEMPORAL_Cargo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TEMPORAL_Cargo].[Cargo] AS [Cargo], 
+    [TEMPORAL_Cargo].[CargoEsp] AS [CargoEsp]
+    FROM [dbo].[TEMPORAL_Cargo] AS [TEMPORAL_Cargo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TEMPORAL_Cargo_Personal" EntityType="Self.TEMPORAL_Cargo_Personal" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TEMPORAL_Cargo_Personal].[id_personal] AS [id_personal], 
+    [TEMPORAL_Cargo_Personal].[nombre_cargo] AS [nombre_cargo]
+    FROM [dbo].[TEMPORAL_Cargo_Personal] AS [TEMPORAL_Cargo_Personal]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="testinspeccions" EntityType="Self.testinspeccions" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [testinspeccions].[IdRegistro] AS [IdRegistro], 
+    [testinspeccions].[id_Inspeccion] AS [id_Inspeccion], 
+    [testinspeccions].[id_Pais] AS [id_Pais], 
+    [testinspeccions].[id_Delegacion] AS [id_Delegacion], 
+    [testinspeccions].[id_Proyecto] AS [id_Proyecto], 
+    [testinspeccions].[fecha_Inspeccion] AS [fecha_Inspeccion], 
+    [testinspeccions].[id_Actividad] AS [id_Actividad], 
+    [testinspeccions].[id_Personal_Inspector] AS [id_Personal_Inspector], 
+    [testinspeccions].[id_Personal_JefeObra] AS [id_Personal_JefeObra], 
+    [testinspeccions].[id_TipoInspeccion] AS [id_TipoInspeccion], 
+    [testinspeccions].[Resultado_Inspeccion] AS [Resultado_Inspeccion], 
+    [testinspeccions].[id_EmpresaColaboradora] AS [id_EmpresaColaboradora], 
+    [testinspeccions].[id_Area] AS [id_Area], 
+    [testinspeccions].[id_Personal_Coordinador] AS [id_Personal_Coordinador], 
+    [testinspeccions].[id_NivelInspeccion] AS [id_NivelInspeccion], 
+    [testinspeccions].[estado] AS [estado], 
+    [testinspeccions].[id_Cliente] AS [id_Cliente], 
+    [testinspeccions].[conjuntas] AS [conjuntas], 
+    [testinspeccions].[id_grupo] AS [id_grupo], 
+    [testinspeccions].[Id_Inspeccion_Detalle] AS [Id_Inspeccion_Detalle], 
+    [testinspeccions].[Id_Personal] AS [Id_Personal], 
+    [testinspeccions].[Id_Anomalia] AS [Id_Anomalia], 
+    [testinspeccions].[Pais] AS [Pais], 
+    [testinspeccions].[Grupo] AS [Grupo], 
+    [testinspeccions].[CodDelegacion] AS [CodDelegacion], 
+    [testinspeccions].[Delegacion] AS [Delegacion], 
+    [testinspeccions].[Proyecto] AS [Proyecto], 
+    [testinspeccions].[Autor] AS [Autor], 
+    [testinspeccions].[JefeObra] AS [JefeObra], 
+    [testinspeccions].[TipoInspeccion] AS [TipoInspeccion], 
+    [testinspeccions].[EmpresaColaboradora] AS [EmpresaColaboradora], 
+    [testinspeccions].[Area] AS [Area], 
+    [testinspeccions].[Coordinador] AS [Coordinador], 
+    [testinspeccions].[NivelInspeccion] AS [NivelInspeccion], 
+    [testinspeccions].[Cliente] AS [Cliente], 
+    [testinspeccions].[IdFechaInspeccion] AS [IdFechaInspeccion], 
+    [testinspeccions].[Fecha_Registro] AS [Fecha_Registro], 
+    [testinspeccions].[Personal] AS [Personal], 
+    [testinspeccions].[ResultadoDetalle] AS [ResultadoDetalle], 
+    [testinspeccions].[Descripcion] AS [Descripcion], 
+    [testinspeccions].[Resultado] AS [Resultado], 
+    [testinspeccions].[Count] AS [Count], 
+    [testinspeccions].[Row] AS [Row], 
+    [testinspeccions].[Cantidad] AS [Cantidad], 
+    [testinspeccions].[Correcto] AS [Correcto], 
+    [testinspeccions].[Anomala] AS [Anomala], 
+    [testinspeccions].[dCorrecto] AS [dCorrecto], 
+    [testinspeccions].[dAnomala] AS [dAnomala], 
+    [testinspeccions].[dCantidad] AS [dCantidad], 
+    [testinspeccions].[dCritica] AS [dCritica], 
+    [testinspeccions].[cCantidad] AS [cCantidad], 
+    [testinspeccions].[cCorrectos] AS [cCorrectos], 
+    [testinspeccions].[cAnomalas] AS [cAnomalas], 
+    [testinspeccions].[cCriticas] AS [cCriticas], 
+    [testinspeccions].[Anio] AS [Anio], 
+    [testinspeccions].[Mes] AS [Mes], 
+    [testinspeccions].[DiaMes] AS [DiaMes], 
+    [testinspeccions].[Semana] AS [Semana], 
+    [testinspeccions].[DiaSemana] AS [DiaSemana], 
+    [testinspeccions].[DiaAnio] AS [DiaAnio], 
+    [testinspeccions].[MesName] AS [MesName], 
+    [testinspeccions].[DayName] AS [DayName]
+    FROM [dbo].[testinspeccions] AS [testinspeccions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tmp_Inspeccion_Total" EntityType="Self.Tmp_Inspeccion_Total" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tmp_Inspeccion_Total].[id_Empresa] AS [id_Empresa], 
+    [Tmp_Inspeccion_Total].[id_Delegacion] AS [id_Delegacion], 
+    [Tmp_Inspeccion_Total].[Cantidad] AS [Cantidad]
+    FROM [dbo].[Tmp_Inspeccion_Total] AS [Tmp_Inspeccion_Total]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="usuario" EntityType="Self.usuario" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [usuario].[id_usuario] AS [id_usuario], 
+    [usuario].[nro_documento] AS [nro_documento], 
+    [usuario].[datos_personales] AS [datos_personales], 
+    [usuario].[correo_electronico] AS [correo_electronico], 
+    [usuario].[usuario_login] AS [usuario_login], 
+    [usuario].[contrasenia_login] AS [contrasenia_login], 
+    [usuario].[id_perfil] AS [id_perfil], 
+    [usuario].[estado] AS [estado], 
+    [usuario].[usuario_creacion] AS [usuario_creacion], 
+    [usuario].[fecha_creacion] AS [fecha_creacion], 
+    [usuario].[usuario_edicion] AS [usuario_edicion], 
+    [usuario].[fecha_edicion] AS [fecha_edicion], 
+    [usuario].[imei] AS [imei], 
+    [usuario].[version] AS [version], 
+    [usuario].[fechaInicioSesion] AS [fechaInicioSesion], 
+    [usuario].[id_Personal] AS [id_Personal]
+    FROM [dbo].[usuario] AS [usuario]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__tbl_Acces__id_pe__11007AA7" Association="Self.FK__tbl_Acces__id_pe__11007AA7">
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+      <End Role="tbl_AccesoOpciones" EntitySet="tbl_AccesoOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Areas__id_de__21D600EE" Association="Self.FK__tbl_Areas__id_de__21D600EE">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_Areas" EntitySet="tbl_Areas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_grupo__id_pa__5E1FF51F" Association="Self.FK__tbl_grupo__id_pa__5E1FF51F">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_De__64CCF2AE" Association="Self.FK__tbl_usuar__id_De__64CCF2AE">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_gr__62E4AA3C" Association="Self.FK__tbl_usuar__id_gr__62E4AA3C">
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_pa__61F08603" Association="Self.FK__tbl_usuar__id_pa__61F08603">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_pe__595B4002" Association="Self.FK__tbl_usuar__id_pe__595B4002">
+      <End Role="tbl_Perfil" EntitySet="tbl_Perfil" />
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_us__60FC61CA" Association="Self.FK__tbl_usuar__id_us__60FC61CA">
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivOt" Association="Self.FK_ActivOt">
+      <End Role="tbl_Actividad" EntitySet="tbl_Actividad" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DelegaOt" Association="Self.FK_DelegaOt">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleInspeccion_To_Inspeccion" Association="Self.FK_DetalleInspeccion_To_Inspeccion">
+      <End Role="tbl_Inspeccion_Cab" EntitySet="tbl_Inspeccion_Cab" />
+      <End Role="tbl_Inspeccion_Cab_Detalle" EntitySet="tbl_Inspeccion_Cab_Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FotoInspeccion_To_DetalleInspeccion" Association="Self.FK_FotoInspeccion_To_DetalleInspeccion">
+      <End Role="tbl_Inspeccion_Cab_Detalle" EntitySet="tbl_Inspeccion_Cab_Detalle" />
+      <End Role="tbl_Inspeccion_Cab_Detalle_Foto" EntitySet="tbl_Inspeccion_Cab_Detalle_Foto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GrupoOt" Association="Self.FK_GrupoOt">
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaisOt" Association="Self.FK_PaisOt">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_tbl_AccesoOpciones" Association="Self.Fk_tbl_AccesoOpciones">
+      <End Role="tbl_Definicion_Opciones" EntitySet="tbl_Definicion_Opciones" />
+      <End Role="tbl_perfil_accesos" EntitySet="tbl_perfil_accesos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_AccesoOpciones_tbl_Definicion_Opciones" Association="Self.FK_tbl_AccesoOpciones_tbl_Definicion_Opciones">
+      <End Role="tbl_Definicion_Opciones" EntitySet="tbl_Definicion_Opciones" />
+      <End Role="tbl_AccesoOpciones" EntitySet="tbl_AccesoOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_tbl_perfil" Association="Self.Fk_tbl_perfil">
+      <End Role="tbl_Perfil" EntitySet="tbl_Perfil" />
+      <End Role="tbl_perfil_accesos" EntitySet="tbl_perfil_accesos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

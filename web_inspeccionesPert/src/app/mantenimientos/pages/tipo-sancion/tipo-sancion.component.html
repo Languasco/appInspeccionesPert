@@ -1,0 +1,109 @@
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> MANTENIMIENTO TIPO SANCION </h5>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-between" style=" margin-top: -15px;">
+            <div class="p-1 bd-highlight">
+                <button class="btn btn-warning" (click)="nuevo()" style="font-size: 13px;">  <i class="fa fa-plus-circle"> </i> Nuevo </button>
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm resaltarTexto" placeholder="Buscar" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+            </div>
+            <div class="p-2 bd-highlight"> </div>
+        </div>
+
+        <div class="search-results tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+
+                    <tr style="height: 40px !important;">
+                        <th>#</th>
+                        <th>Descripción Tipo Sancion</th>
+                        <th>Estado</th>
+                        <th  class="text-center" >Editar</th>
+                        <th  class="text-center" >Anular</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of tiposSancion |  filter: filtrarMantenimiento  ; index as j" [ngStyle]="{'color': item.estado == '0' && 'red'}" >
+                        <td scope="row"> {{j + 1}} </td>
+                        <td>{{item.descripcion_TipoSancion}}</td> 
+                        <td>{{item.estado==1?'Activo':'Anulado'}} </td>
+                        <td class="text-center">
+                            <span class="badge badge-primary puntero" (click)=" editar(item) " style="padding: 5px;"> Editar </span>
+                        </td>
+                        <td class="text-center">
+                            <span class="badge badge-danger puntero ml-2" (click)=" anular(item) " style="padding: 5px;"> Anular </span>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade " id="modal_mantenimiento" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog   " role="document">
+        <div class="modal-content"  >
+            <div class="p-3 card  modalHeader">
+                <div class="d-flex justify-content-between flotante">
+                    <div class=" bd-highlight">
+                        <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                    <div class=" bd-highlight">
+                        <h5 class="headerTitleModal"> REGISTRO TIPO DE SANCION </h5>
+                    </div>
+                    <div class=" bd-highlight">
+                    <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="modal-body">
+                <form [formGroup]="formParams" >
+
+                    <div class="panel-body">
+                                                
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class=" control-label">ID</label>
+                                <input type="text" class="form-control disabledForm"  formControlName="id_TipoSancion"   placeholder=""  >
+                            </div>
+                        </div>      
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class=" control-label">Descripcion</label>
+                                <input type="text" class="form-control"      formControlName="descripcion_TipoSancion"   placeholder="" maxlength="150">
+                            </div>
+                        </div>                             
+                         <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label> Estado</label>
+                                <select class="form-control comboBox" formControlName="estado">
+                                    <option value="-1"> [ --SELECCIONE-- ]</option>
+                                    <option value="1"> Activo </option>
+                                    <option value="0"> Anulado </option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+  
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <button class="btn btn-success" (click)="saveUpdate()" title="Guardar la informacion"> <i class="fas fa-save"> Grabar</i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

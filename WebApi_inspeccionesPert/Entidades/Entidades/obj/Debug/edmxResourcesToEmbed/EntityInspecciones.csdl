@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DSIGE_InspeccionesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DSIGE_InspeccionesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LogsNEW_LIST_INSPECCION_CAB_WEB_II" EntityType="DSIGE_InspeccionesModel.LogsNEW_LIST_INSPECCION_CAB_WEB_II" />
+    <EntitySet Name="Megas" EntityType="DSIGE_InspeccionesModel.Megas" />
+    <EntitySet Name="Prueba" EntityType="DSIGE_InspeccionesModel.Prueba" />
+    <EntitySet Name="sysdiagrams" EntityType="DSIGE_InspeccionesModel.sysdiagrams" />
+    <EntitySet Name="tbl_AccesoOpciones" EntityType="DSIGE_InspeccionesModel.tbl_AccesoOpciones" />
+    <EntitySet Name="tbl_Actividad" EntityType="DSIGE_InspeccionesModel.tbl_Actividad" />
+    <EntitySet Name="tbl_Anomalia" EntityType="DSIGE_InspeccionesModel.tbl_Anomalia" />
+    <EntitySet Name="tbl_Anomalia_TipoInspeccion" EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_TipoInspeccion" />
+    <EntitySet Name="tbl_Areas" EntityType="DSIGE_InspeccionesModel.tbl_Areas" />
+    <EntitySet Name="tbl_Caracteristica_Vehiculo" EntityType="DSIGE_InspeccionesModel.tbl_Caracteristica_Vehiculo" />
+    <EntitySet Name="tbl_Cargo_Personal" EntityType="DSIGE_InspeccionesModel.tbl_Cargo_Personal" />
+    <EntitySet Name="tbl_Cliente" EntityType="DSIGE_InspeccionesModel.tbl_Cliente" />
+    <EntitySet Name="tbl_Definicion_Opciones" EntityType="DSIGE_InspeccionesModel.tbl_Definicion_Opciones" />
+    <EntitySet Name="tbl_Delegacion" EntityType="DSIGE_InspeccionesModel.tbl_Delegacion" />
+    <EntitySet Name="tbl_EmpresaColaboradora" EntityType="DSIGE_InspeccionesModel.tbl_EmpresaColaboradora" />
+    <EntitySet Name="tbl_Empresas" EntityType="DSIGE_InspeccionesModel.tbl_Empresas" />
+    <EntitySet Name="tbl_Estados" EntityType="DSIGE_InspeccionesModel.tbl_Estados" />
+    <EntitySet Name="tbl_FormatoInspeccion" EntityType="DSIGE_InspeccionesModel.tbl_FormatoInspeccion" />
+    <EntitySet Name="tbl_grupo" EntityType="DSIGE_InspeccionesModel.tbl_grupo" />
+    <EntitySet Name="tbl_grupo_dominio" EntityType="DSIGE_InspeccionesModel.tbl_grupo_dominio" />
+    <EntitySet Name="tbl_Inspeccion_Cab" EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab" />
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle_Foto" EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_Foto" />
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle_SubAnomalia" EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_SubAnomalia" />
+    <EntitySet Name="tbl_NivelInspeccion" EntityType="DSIGE_InspeccionesModel.tbl_NivelInspeccion" />
+    <EntitySet Name="tbl_OT" EntityType="DSIGE_InspeccionesModel.tbl_OT" />
+    <EntitySet Name="tbl_pais" EntityType="DSIGE_InspeccionesModel.tbl_pais" />
+    <EntitySet Name="tbl_Perfil" EntityType="DSIGE_InspeccionesModel.tbl_Perfil" />
+    <EntitySet Name="tbl_perfil_accesos" EntityType="DSIGE_InspeccionesModel.tbl_perfil_accesos" />
+    <EntitySet Name="tbl_Personal" EntityType="DSIGE_InspeccionesModel.tbl_Personal" />
+    <EntitySet Name="Tbl_Personal_Cargo" EntityType="DSIGE_InspeccionesModel.Tbl_Personal_Cargo" />
+    <EntitySet Name="tbl_Personal_Delegacion" EntityType="DSIGE_InspeccionesModel.tbl_Personal_Delegacion" />
+    <EntitySet Name="tbl_Proyecto" EntityType="DSIGE_InspeccionesModel.tbl_Proyecto" />
+    <EntitySet Name="tbl_Proyecto_EmpresaColaboradora" EntityType="DSIGE_InspeccionesModel.tbl_Proyecto_EmpresaColaboradora" />
+    <EntitySet Name="tbl_Tipo_Inspeccion" EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Inspeccion" />
+    <EntitySet Name="tbl_Tipo_Sancion" EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Sancion" />
+    <EntitySet Name="tbl_usuarios" EntityType="DSIGE_InspeccionesModel.tbl_usuarios" />
+    <EntitySet Name="tbl_usuarios_configuracion" EntityType="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" />
+    <EntitySet Name="tbl_usuarios_configuracion2" EntityType="DSIGE_InspeccionesModel.tbl_usuarios_configuracion2" />
+    <EntitySet Name="tbl_Valor_Inspeccion" EntityType="DSIGE_InspeccionesModel.tbl_Valor_Inspeccion" />
+    <EntitySet Name="Versiones" EntityType="DSIGE_InspeccionesModel.Versiones" />
+    <EntitySet Name="Logstbl_Inspeccion_Cab" EntityType="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab" />
+    <EntitySet Name="Logstbl_Inspeccion_Cab_Detalle_Foto" EntityType="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab_Detalle_Foto" />
+    <EntitySet Name="Logstbl_tbl_Inspeccion_Cab_Detalle" EntityType="DSIGE_InspeccionesModel.Logstbl_tbl_Inspeccion_Cab_Detalle" />
+    <EntitySet Name="T_DATA_IMPORTADO_NEW" EntityType="DSIGE_InspeccionesModel.T_DATA_IMPORTADO_NEW" />
+    <EntitySet Name="T_USUARIO_BORRADO" EntityType="DSIGE_InspeccionesModel.T_USUARIO_BORRADO" />
+    <EntitySet Name="tbl_AccesoOpciones_1" EntityType="DSIGE_InspeccionesModel.tbl_AccesoOpciones_1" />
+    <EntitySet Name="tbl_anomalia_4" EntityType="DSIGE_InspeccionesModel.tbl_anomalia_4" />
+    <EntitySet Name="tbl_Anomalia_Back" EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_Back" />
+    <EntitySet Name="tbl_Anomalia_SMS" EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_SMS" />
+    <EntitySet Name="tbl_devolucion_campo" EntityType="DSIGE_InspeccionesModel.tbl_devolucion_campo" />
+    <EntitySet Name="Tbl_Frecuencia" EntityType="DSIGE_InspeccionesModel.Tbl_Frecuencia" />
+    <EntitySet Name="Tbl_Reporte_Cobra" EntityType="DSIGE_InspeccionesModel.Tbl_Reporte_Cobra" />
+    <EntitySet Name="tbl_Tipo_Documento" EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Documento" />
+    <EntitySet Name="tbl_usuarios_Registrados" EntityType="DSIGE_InspeccionesModel.tbl_usuarios_Registrados" />
+    <EntitySet Name="Temp_Frecuencia" EntityType="DSIGE_InspeccionesModel.Temp_Frecuencia" />
+    <EntitySet Name="tempo_ec" EntityType="DSIGE_InspeccionesModel.tempo_ec" />
+    <EntitySet Name="TEMPORAL_Cargo" EntityType="DSIGE_InspeccionesModel.TEMPORAL_Cargo" />
+    <EntitySet Name="TEMPORAL_Cargo_Personal" EntityType="DSIGE_InspeccionesModel.TEMPORAL_Cargo_Personal" />
+    <EntitySet Name="testinspeccions" EntityType="DSIGE_InspeccionesModel.testinspeccions" />
+    <EntitySet Name="Tmp_Inspeccion_Total" EntityType="DSIGE_InspeccionesModel.Tmp_Inspeccion_Total" />
+    <EntitySet Name="usuario" EntityType="DSIGE_InspeccionesModel.usuario" />
+    <AssociationSet Name="FK__tbl_Acces__id_pe__11007AA7" Association="DSIGE_InspeccionesModel.FK__tbl_Acces__id_pe__11007AA7">
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+      <End Role="tbl_AccesoOpciones" EntitySet="tbl_AccesoOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_AccesoOpciones_tbl_Definicion_Opciones" Association="DSIGE_InspeccionesModel.FK_tbl_AccesoOpciones_tbl_Definicion_Opciones">
+      <End Role="tbl_Definicion_Opciones" EntitySet="tbl_Definicion_Opciones" />
+      <End Role="tbl_AccesoOpciones" EntitySet="tbl_AccesoOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivOt" Association="DSIGE_InspeccionesModel.FK_ActivOt">
+      <End Role="tbl_Actividad" EntitySet="tbl_Actividad" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Areas__id_de__21D600EE" Association="DSIGE_InspeccionesModel.FK__tbl_Areas__id_de__21D600EE">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_Areas" EntitySet="tbl_Areas" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_tbl_AccesoOpciones" Association="DSIGE_InspeccionesModel.Fk_tbl_AccesoOpciones">
+      <End Role="tbl_Definicion_Opciones" EntitySet="tbl_Definicion_Opciones" />
+      <End Role="tbl_perfil_accesos" EntitySet="tbl_perfil_accesos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_De__64CCF2AE" Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_De__64CCF2AE">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DelegaOt" Association="DSIGE_InspeccionesModel.FK_DelegaOt">
+      <End Role="tbl_Delegacion" EntitySet="tbl_Delegacion" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_grupo__id_pa__5E1FF51F" Association="DSIGE_InspeccionesModel.FK__tbl_grupo__id_pa__5E1FF51F">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_gr__62E4AA3C" Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_gr__62E4AA3C">
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GrupoOt" Association="DSIGE_InspeccionesModel.FK_GrupoOt">
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaisOt" Association="DSIGE_InspeccionesModel.FK_PaisOt">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_OT" EntitySet="tbl_OT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_pa__61F08603" Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pa__61F08603">
+      <End Role="tbl_pais" EntitySet="tbl_pais" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_pe__595B4002" Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pe__595B4002">
+      <End Role="tbl_Perfil" EntitySet="tbl_Perfil" />
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_tbl_perfil" Association="DSIGE_InspeccionesModel.Fk_tbl_perfil">
+      <End Role="tbl_Perfil" EntitySet="tbl_Perfil" />
+      <End Role="tbl_perfil_accesos" EntitySet="tbl_perfil_accesos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_usuar__id_us__60FC61CA" Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_us__60FC61CA">
+      <End Role="tbl_usuarios" EntitySet="tbl_usuarios" />
+      <End Role="tbl_usuarios_configuracion" EntitySet="tbl_usuarios_configuracion" />
+    </AssociationSet>
+    <EntitySet Name="tbl_Inspeccion_Cab_Detalle" EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle" />
+    <AssociationSet Name="FK_DetalleInspeccion_To_Inspeccion" Association="DSIGE_InspeccionesModel.FK_DetalleInspeccion_To_Inspeccion">
+      <End Role="tbl_Inspeccion_Cab" EntitySet="tbl_Inspeccion_Cab" />
+      <End Role="tbl_Inspeccion_Cab_Detalle" EntitySet="tbl_Inspeccion_Cab_Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FotoInspeccion_To_DetalleInspeccion" Association="DSIGE_InspeccionesModel.FK_FotoInspeccion_To_DetalleInspeccion">
+      <End Role="tbl_Inspeccion_Cab_Detalle" EntitySet="tbl_Inspeccion_Cab_Detalle" />
+      <End Role="tbl_Inspeccion_Cab_Detalle_Foto" EntitySet="tbl_Inspeccion_Cab_Detalle_Foto" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="LogsNEW_LIST_INSPECCION_CAB_WEB_II">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_pais" Type="Int32" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="idDelegacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idInspector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idRespCorreccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="opcion" Type="Int32" />
+    <Property Name="fecha_Ini" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_fin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Registro" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Megas">
+    <Key>
+      <PropertyRef Name="megaId" />
+    </Key>
+    <Property Name="megaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bytes" Type="Int32" />
+    <Property Name="usuario" Type="Int32" />
+    <Property Name="fecha_movil" Type="DateTime" Precision="3" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Prueba">
+    <Key>
+      <PropertyRef Name="PruebaId" />
+    </Key>
+    <Property Name="PruebaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Palabra" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_AccesoOpciones">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_opcion" Type="Int32" />
+    <Property Name="permisos_opciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_usuarios" Relationship="DSIGE_InspeccionesModel.FK__tbl_Acces__id_pe__11007AA7" FromRole="tbl_AccesoOpciones" ToRole="tbl_usuarios" />
+    <NavigationProperty Name="tbl_Definicion_Opciones" Relationship="DSIGE_InspeccionesModel.FK_tbl_AccesoOpciones_tbl_Definicion_Opciones" FromRole="tbl_AccesoOpciones" ToRole="tbl_Definicion_Opciones" />
+  </EntityType>
+  <EntityType Name="tbl_Actividad">
+    <Key>
+      <PropertyRef Name="id_Actividad" />
+    </Key>
+    <Property Name="id_Actividad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo_Actividad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Actividad" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_delegacion" Type="Int32" />
+    <NavigationProperty Name="tbl_OT" Relationship="DSIGE_InspeccionesModel.FK_ActivOt" FromRole="tbl_Actividad" ToRole="tbl_OT" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_formato" Type="Int32" />
+    <Property Name="codigo_Anomalia" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Anomalia" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica_General" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_titulo" Type="Int32" />
+    <Property Name="anomalia_orden" Type="Int32" />
+    <Property Name="id_ValorInspeccion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="anomalia_Valor" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="Int32" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="ver_Validacion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion_Anomalia_Espana" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="flag_personal_nuevo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia_TipoInspeccion">
+    <Key>
+      <PropertyRef Name="id_SubAnomalia" />
+    </Key>
+    <Property Name="id_SubAnomalia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_TipoInspeccion" Type="Int32" Nullable="false" />
+    <Property Name="id_Anomalia" Type="Int32" Nullable="false" />
+    <Property Name="Codigo_SubAnomalia" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_SubAnomalia" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="esSubTitulo_SubAnomalia" Type="Int32" Nullable="false" />
+    <Property Name="Orden_SubAnomalia" Type="Int32" Nullable="false" />
+    <Property Name="Grupo_SubAnomalia" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Critica_SubAnomalia" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario_creacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_edicion" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Areas">
+    <Key>
+      <PropertyRef Name="id_Area" />
+    </Key>
+    <Property Name="id_Area" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_Area" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_delegacion" Type="Int32" />
+    <NavigationProperty Name="tbl_Delegacion" Relationship="DSIGE_InspeccionesModel.FK__tbl_Areas__id_de__21D600EE" FromRole="tbl_Areas" ToRole="tbl_Delegacion" />
+  </EntityType>
+  <EntityType Name="tbl_Caracteristica_Vehiculo">
+    <Key>
+      <PropertyRef Name="id_Caracteristica" />
+    </Key>
+    <Property Name="id_Caracteristica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_formato" Type="Int32" />
+    <Property Name="titulo_Caracteristica" Type="Int32" />
+    <Property Name="codigo_Caracteristica" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Caracteristica" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="orden_Caracteristica" Type="Int32" />
+    <Property Name="aplica_Fecha_Caracteristica" Type="Int32" />
+    <Property Name="aplica_Obs__Caracteristica" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_cargo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_delegacion" Type="Int32" />
+    <Property Name="nombre_cargo_España" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_grupo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Cliente">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ruc_Cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_Cliente" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Definicion_Opciones">
+    <Key>
+      <PropertyRef Name="id_opcion" />
+    </Key>
+    <Property Name="id_opcion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="url_opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="parentID" Type="Int32" />
+    <Property Name="nombreParentID" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="urlImagen_Opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="orden_Opcion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_AccesoOpciones" Relationship="DSIGE_InspeccionesModel.FK_tbl_AccesoOpciones_tbl_Definicion_Opciones" FromRole="tbl_Definicion_Opciones" ToRole="tbl_AccesoOpciones" />
+    <NavigationProperty Name="tbl_perfil_accesos" Relationship="DSIGE_InspeccionesModel.Fk_tbl_AccesoOpciones" FromRole="tbl_Definicion_Opciones" ToRole="tbl_perfil_accesos" />
+  </EntityType>
+  <EntityType Name="tbl_Delegacion">
+    <Key>
+      <PropertyRef Name="id_Delegacion" />
+    </Key>
+    <Property Name="id_Delegacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="codigo_delegacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_delegacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_Personal_Representante" Type="Int32" />
+    <NavigationProperty Name="tbl_Areas" Relationship="DSIGE_InspeccionesModel.FK__tbl_Areas__id_de__21D600EE" FromRole="tbl_Delegacion" ToRole="tbl_Areas" />
+    <NavigationProperty Name="tbl_usuarios_configuracion" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_De__64CCF2AE" FromRole="tbl_Delegacion" ToRole="tbl_usuarios_configuracion" />
+    <NavigationProperty Name="tbl_OT" Relationship="DSIGE_InspeccionesModel.FK_DelegaOt" FromRole="tbl_Delegacion" ToRole="tbl_OT" />
+  </EntityType>
+  <EntityType Name="tbl_EmpresaColaboradora">
+    <Key>
+      <PropertyRef Name="id_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_EmpresaColaboradora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ruc_EmpresaColaboradora" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RazonSocial_EmpresaColaboradora" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="Directo_EmpresaColaboradora" Type="Int32" />
+    <Property Name="idempresacolaboradora" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Empresas">
+    <Key>
+      <PropertyRef Name="id_Empresas" />
+    </Key>
+    <Property Name="id_Empresas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo_interno_empresa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ruc_empresa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="razonsocial_empresa" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="direccion_empresa" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="abreviatura_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_estado" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tipoproceso_estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_tipoproceso_estado" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="orden_estado" Type="Int32" />
+    <Property Name="Backcolor_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="forecolor_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_FormatoInspeccion">
+    <Key>
+      <PropertyRef Name="id_Formato" />
+    </Key>
+    <Property Name="id_Formato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_formato" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_grupo">
+    <Key>
+      <PropertyRef Name="id_grupo" />
+    </Key>
+    <Property Name="id_grupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_pais" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_pais" Relationship="DSIGE_InspeccionesModel.FK__tbl_grupo__id_pa__5E1FF51F" FromRole="tbl_grupo" ToRole="tbl_pais" />
+    <NavigationProperty Name="tbl_usuarios_configuracion" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_gr__62E4AA3C" FromRole="tbl_grupo" ToRole="tbl_usuarios_configuracion" />
+    <NavigationProperty Name="tbl_OT" Relationship="DSIGE_InspeccionesModel.FK_GrupoOt" FromRole="tbl_grupo" ToRole="tbl_OT" />
+  </EntityType>
+  <EntityType Name="tbl_grupo_dominio">
+    <Key>
+      <PropertyRef Name="id_grupo_dominio" />
+    </Key>
+    <Property Name="id_grupo_dominio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="nombre_dominio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab">
+    <Key>
+      <PropertyRef Name="id_Inspeccion" />
+    </Key>
+    <Property Name="id_Inspeccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Pais" Type="Int32" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="fecha_Inspeccion" Type="DateTime" Precision="3" />
+    <Property Name="numero_Inspeccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_Actividad" Type="Int32" />
+    <Property Name="cliente_Inspeccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="id_Personal_Inspector" Type="Int32" />
+    <Property Name="id_Personal_JefeObra" Type="Int32" />
+    <Property Name="id_TipoInspeccion" Type="Int32" />
+    <Property Name="Resultado_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" />
+    <Property Name="iniciofin_Trabajo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="inspeccionConjunta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_Anomalia" Type="Int32" />
+    <Property Name="descripcion_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="accionPropuesta_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_Personal_Responsable" Type="Int32" />
+    <Property Name="fechaPropuesta_Correctiva" Type="DateTime" Precision="3" />
+    <Property Name="observacion_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="paralizacion_Correctiva" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sancion_Correctiva" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_TipoSancion" Type="Int32" />
+    <Property Name="nroTrabajadores_Correctiva" Type="Int32" />
+    <Property Name="lugar_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="actividadOT_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="trabajoArealizar_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_Area" Type="Int32" />
+    <Property Name="id_Personal_Coordinador" Type="Int32" />
+    <Property Name="placa_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_NivelInspeccion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="id_Personal_Inspeccionado" Type="Int32" />
+    <Property Name="Obs_Levantada" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="id_Inspeccion_Relacionada" Type="Int32" />
+    <Property Name="id_Cliente" Type="Int32" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="conjuntas" Type="Int32" />
+    <Property Name="fecha_EnvioEmail" Type="DateTime" Precision="3" />
+    <Property Name="EstadoEmail" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_OT" Type="Int32" />
+    <NavigationProperty Name="tbl_Inspeccion_Cab_Detalle" Relationship="DSIGE_InspeccionesModel.FK_DetalleInspeccion_To_Inspeccion" FromRole="tbl_Inspeccion_Cab" ToRole="tbl_Inspeccion_Cab_Detalle" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle_Foto">
+    <Key>
+      <PropertyRef Name="id_inspeccion_foto" />
+    </Key>
+    <Property Name="id_inspeccion_foto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_inspeccion_detalle" Type="Int32" />
+    <Property Name="nombre_foto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="tipo_foto" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="tbl_Inspeccion_Cab_Detalle" Relationship="DSIGE_InspeccionesModel.FK_FotoInspeccion_To_DetalleInspeccion" FromRole="tbl_Inspeccion_Cab_Detalle_Foto" ToRole="tbl_Inspeccion_Cab_Detalle" />
+  </EntityType>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle_SubAnomalia">
+    <Key>
+      <PropertyRef Name="id_inspeccion_SubAnomalia" />
+    </Key>
+    <Property Name="id_inspeccion_SubAnomalia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_inspeccion_detalle" Type="Int32" Nullable="false" />
+    <Property Name="id_SubAnomalia" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario_creacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_edicion" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_NivelInspeccion">
+    <Key>
+      <PropertyRef Name="id_NivelInspeccion" />
+    </Key>
+    <Property Name="id_NivelInspeccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_NivelInspeccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="cantidadDias_NivelInspeccion" Type="Int32" />
+    <Property Name="ColorFondo_NivelInspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ColorFuente_NivelInspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="diasEmail_NivelInspecccion" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_OT">
+    <Key>
+      <PropertyRef Name="id_OT" />
+    </Key>
+    <Property Name="id_OT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo_ot" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_ot" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_OT" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="id_Proyecto" Type="Int32" Nullable="false" />
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" />
+    <Property Name="id_delegacion" Type="Int32" Nullable="false" />
+    <Property Name="id_grupo" Type="Int32" Nullable="false" />
+    <Property Name="id_Pais" Type="Int32" Nullable="false" />
+    <Property Name="id_Personal_JefeObra" Type="Int32" Nullable="false" />
+    <Property Name="id_Personal_Coordinador" Type="Int32" Nullable="false" />
+    <Property Name="id_Actividad" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario_creacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_edicion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="existe" Type="Int32" />
+    <NavigationProperty Name="tbl_Actividad" Relationship="DSIGE_InspeccionesModel.FK_ActivOt" FromRole="tbl_OT" ToRole="tbl_Actividad" />
+    <NavigationProperty Name="tbl_Delegacion" Relationship="DSIGE_InspeccionesModel.FK_DelegaOt" FromRole="tbl_OT" ToRole="tbl_Delegacion" />
+    <NavigationProperty Name="tbl_grupo" Relationship="DSIGE_InspeccionesModel.FK_GrupoOt" FromRole="tbl_OT" ToRole="tbl_grupo" />
+    <NavigationProperty Name="tbl_pais" Relationship="DSIGE_InspeccionesModel.FK_PaisOt" FromRole="tbl_OT" ToRole="tbl_pais" />
+  </EntityType>
+  <EntityType Name="tbl_pais">
+    <Key>
+      <PropertyRef Name="id_pais" />
+    </Key>
+    <Property Name="id_pais" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="iso" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_grupo" Relationship="DSIGE_InspeccionesModel.FK__tbl_grupo__id_pa__5E1FF51F" FromRole="tbl_pais" ToRole="tbl_grupo" />
+    <NavigationProperty Name="tbl_OT" Relationship="DSIGE_InspeccionesModel.FK_PaisOt" FromRole="tbl_pais" ToRole="tbl_OT" />
+    <NavigationProperty Name="tbl_usuarios_configuracion" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pa__61F08603" FromRole="tbl_pais" ToRole="tbl_usuarios_configuracion" />
+  </EntityType>
+  <EntityType Name="tbl_Perfil">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="des_perfil" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_usuarios" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pe__595B4002" FromRole="tbl_Perfil" ToRole="tbl_usuarios" />
+    <NavigationProperty Name="tbl_perfil_accesos" Relationship="DSIGE_InspeccionesModel.Fk_tbl_perfil" FromRole="tbl_Perfil" ToRole="tbl_perfil_accesos" />
+  </EntityType>
+  <EntityType Name="tbl_perfil_accesos">
+    <Key>
+      <PropertyRef Name="id_Perfil_Acceso" />
+    </Key>
+    <Property Name="id_Perfil_Acceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="id_opcion" Type="Int32" />
+    <Property Name="permisos_opciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_Definicion_Opciones" Relationship="DSIGE_InspeccionesModel.Fk_tbl_AccesoOpciones" FromRole="tbl_perfil_accesos" ToRole="tbl_Definicion_Opciones" />
+    <NavigationProperty Name="tbl_Perfil" Relationship="DSIGE_InspeccionesModel.Fk_tbl_perfil" FromRole="tbl_perfil_accesos" ToRole="tbl_Perfil" />
+  </EntityType>
+  <EntityType Name="tbl_Personal">
+    <Key>
+      <PropertyRef Name="id_Personal" />
+    </Key>
+    <Property Name="id_Personal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="tipoDoc_Personal" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="nroDoc_Personal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos_Personal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="nombres_Personal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaIngreso_Personal" Type="DateTime" Precision="3" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="tipoPersonal" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="fechaCese_Personal" Type="DateTime" Precision="3" />
+    <Property Name="email_personal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="login_Sistema" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasenia_sistema" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_Perfil" Type="Int32" />
+    <Property Name="envio_Online" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_Pais" Type="Int32" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Alter" Type="Int32" />
+    <Property Name="IdPersonal" Type="Int32" />
+    <Property Name="delete" Type="Int32" />
+    <Property Name="codigo_personal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Personal_Cargo">
+    <Key>
+      <PropertyRef Name="id_CargoPersonal" />
+    </Key>
+    <Property Name="id_CargoPersonal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigoInterno_CargoPersonal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="descripcion_CargoPersonal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Personal_Delegacion">
+    <Key>
+      <PropertyRef Name="id_personal_Delegacion" />
+    </Key>
+    <Property Name="id_personal_Delegacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Personal" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Proyecto">
+    <Key>
+      <PropertyRef Name="id_Proyecto" />
+    </Key>
+    <Property Name="id_Proyecto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="nombre_proyecto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_Personal_JefeObra" Type="Int32" />
+    <Property Name="id_Cliente" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Proyecto_EmpresaColaboradora">
+    <Key>
+      <PropertyRef Name="id_Proyecto_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_Proyecto_EmpresaColaboradora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Inspeccion">
+    <Key>
+      <PropertyRef Name="id_TipoInspeccion" />
+    </Key>
+    <Property Name="id_TipoInspeccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_TipoInspeccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Sancion">
+    <Key>
+      <PropertyRef Name="id_TipoSancion" />
+    </Key>
+    <Property Name="id_TipoSancion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_TipoSancion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nro_documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="datos_personales" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="correo_electronico" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="contrasenia_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="imei" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fechaInicioSesion" Type="DateTime" Precision="3" />
+    <Property Name="id_Personal" Type="Int32" />
+    <Property Name="observacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_AccesoOpciones" Relationship="DSIGE_InspeccionesModel.FK__tbl_Acces__id_pe__11007AA7" FromRole="tbl_usuarios" ToRole="tbl_AccesoOpciones" />
+    <NavigationProperty Name="tbl_Perfil" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pe__595B4002" FromRole="tbl_usuarios" ToRole="tbl_Perfil" />
+    <NavigationProperty Name="tbl_usuarios_configuracion" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_us__60FC61CA" FromRole="tbl_usuarios" ToRole="tbl_usuarios_configuracion" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios_configuracion">
+    <Key>
+      <PropertyRef Name="id_usuario_configuracion" />
+    </Key>
+    <Property Name="id_usuario_configuracion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="Int32" />
+    <Property Name="id_pais" Type="Int32" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_Empresas" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="id_OT" Type="Int32" />
+    <NavigationProperty Name="tbl_Delegacion" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_De__64CCF2AE" FromRole="tbl_usuarios_configuracion" ToRole="tbl_Delegacion" />
+    <NavigationProperty Name="tbl_grupo" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_gr__62E4AA3C" FromRole="tbl_usuarios_configuracion" ToRole="tbl_grupo" />
+    <NavigationProperty Name="tbl_pais" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pa__61F08603" FromRole="tbl_usuarios_configuracion" ToRole="tbl_pais" />
+    <NavigationProperty Name="tbl_usuarios" Relationship="DSIGE_InspeccionesModel.FK__tbl_usuar__id_us__60FC61CA" FromRole="tbl_usuarios_configuracion" ToRole="tbl_usuarios" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios_configuracion2">
+    <Key>
+      <PropertyRef Name="id_usuario_configuracion" />
+    </Key>
+    <Property Name="id_usuario_configuracion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="Int32" />
+    <Property Name="id_pais" Type="Int32" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_Empresas" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="id_OT" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Valor_Inspeccion">
+    <Key>
+      <PropertyRef Name="id_ValorInspeccion" />
+    </Key>
+    <Property Name="id_ValorInspeccion" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_ValorInspeccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Versiones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Logstbl_Inspeccion_Cab">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ResultadoId" Type="Int32" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="id_Personal_Inspector" Type="Int32" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" />
+    <Property Name="lugar_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="actividadOT_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="trabajoArealizar_Inspeccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="id_Personal_Inspeccionado" Type="Int32" />
+    <Property Name="id_Area" Type="Int32" />
+    <Property Name="id_Personal_Coordinador" Type="Int32" />
+    <Property Name="id_Personal_JefeObra" Type="Int32" />
+    <Property Name="placa_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_NivelInspeccion" Type="Int32" />
+    <Property Name="id_TipoInspeccion" Type="Int32" />
+    <Property Name="Resultado_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="iniciofin_Trabajo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_Anomalia" Type="Int32" />
+    <Property Name="accionPropuesta_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_Personal_Responsable" Type="Int32" />
+    <Property Name="fechaPropuesta_Correctiva" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="observacion_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="paralizacion_Correctiva" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sancion_Correctiva" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_TipoSancion" Type="Int32" />
+    <Property Name="nroTrabajadores_Correctiva" Type="Int32" />
+    <Property Name="fecha_Inspeccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_cliente" Type="Int32" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_actividad" Type="Int32" />
+    <Property Name="conjuntas" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Logstbl_Inspeccion_Cab_Detalle_Foto">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_inspeccion_detalle" Type="Int32" />
+    <Property Name="nombre_foto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Logstbl_tbl_Inspeccion_Cab_Detalle">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_inspeccion_detalle" Type="Int32" />
+    <Property Name="id_inspeccion" Type="Int32" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_anomalia" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="valor" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="foto_levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="accionPropuesta_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fechaPropuesta_Correctiva" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="T_DATA_IMPORTADO_NEW">
+    <Key>
+      <PropertyRef Name="id_pais" />
+      <PropertyRef Name="id_grupo" />
+      <PropertyRef Name="id_Empresas" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="id_EmpresaColaboradora" />
+      <PropertyRef Name="id_Cargo" />
+      <PropertyRef Name="usuarioxx" />
+    </Key>
+    <Property Name="id_pais" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Pais" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_grupo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Grupo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_Empresas" Type="Int32" Nullable="false" />
+    <Property Name="RUC_Empresa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Empresa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_Delegacion" Type="Int32" Nullable="false" />
+    <Property Name="Delegacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" Nullable="false" />
+    <Property Name="RUC_Empresa_Colaboradora" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Empresa_Colaboradora" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nro_Documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_Cargo" Type="Int32" Nullable="false" />
+    <Property Name="Cargo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasenia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="Perfil" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioxx" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_USUARIO_BORRADO">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nro_documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="datos_personales" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="correo_electronico" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="contrasenia_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="imei" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fechaInicioSesion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_AccesoOpciones_1">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_opcion" Type="Int32" />
+    <Property Name="permisos_opciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_anomalia_4">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_formato" Type="Int32" />
+    <Property Name="codigo_Anomalia" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Anomalia" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica_General" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_titulo" Type="Int32" />
+    <Property Name="anomalia_orden" Type="Int32" />
+    <Property Name="id_ValorInspeccion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="anomalia_Valor" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="Int32" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="ver_Validacion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia_Back">
+    <Key>
+      <PropertyRef Name="id_Anomalia" />
+    </Key>
+    <Property Name="id_Anomalia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_formato" Type="Int32" />
+    <Property Name="codigo_Anomalia" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Anomalia" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_Critica_General" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_titulo" Type="Int32" />
+    <Property Name="anomalia_orden" Type="Int32" />
+    <Property Name="id_ValorInspeccion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="anomalia_Valor" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="anomalia_Grupo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Anomalia_SMS">
+    <Key>
+      <PropertyRef Name="id_anomalia_sms" />
+    </Key>
+    <Property Name="id_anomalia_sms" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_pais" Type="Int32" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="id_delegacion" Type="Int32" />
+    <Property Name="id_ot" Type="Int32" />
+    <Property Name="id_usuario" Type="Int32" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="numero_celular" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_devolucion_campo">
+    <Key>
+      <PropertyRef Name="devolucionID" />
+    </Key>
+    <Property Name="devolucionID" Type="Int32" Nullable="false" />
+    <Property Name="Campo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Empresa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Tbl_Frecuencia">
+    <Key>
+      <PropertyRef Name="id_frecuencia" />
+      <PropertyRef Name="frecuencia_Ini" />
+      <PropertyRef Name="frecuencia_Fin" />
+      <PropertyRef Name="frecuencia_Valor" />
+    </Key>
+    <Property Name="id_frecuencia" Type="Int32" Nullable="false" />
+    <Property Name="frecuencia_Ini" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="frecuencia_Fin" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="frecuencia_Valor" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tbl_Reporte_Cobra">
+    <Key>
+      <PropertyRef Name="zona" />
+      <PropertyRef Name="nro_inspeccion" />
+      <PropertyRef Name="empresa_resp_propia" />
+      <PropertyRef Name="incio_final_trabajos" />
+      <PropertyRef Name="inspeccion_conjunta" />
+      <PropertyRef Name="nro_Anomalias" />
+      <PropertyRef Name="noEliminar" />
+      <PropertyRef Name="fecha_Cierre_Corr" />
+      <PropertyRef Name="noEliminar2" />
+      <PropertyRef Name="propia" />
+      <PropertyRef Name="subContrata" />
+    </Key>
+    <Property Name="nro_visita" Type="String" MaxLength="62" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_insp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="zona" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="delegacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="actividad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cliente" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nro_inspeccion" Type="Int32" Nullable="false" />
+    <Property Name="anio" Type="Int32" />
+    <Property Name="mes" Type="Int32" />
+    <Property Name="semana" Type="Int32" />
+    <Property Name="autor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="puesto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="jefeObra" Type="String" MaxLength="201" FixedLength="false" Unicode="false" />
+    <Property Name="empresa_resp_propia" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="empresa_resp_subContrata" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tipoInspeccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="incio_final_trabajos" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="inspeccion_conjunta" Type="Int32" Nullable="false" />
+    <Property Name="resp_inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="nro_Anomalias" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="aspectoAnomalo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Decripcion_anomalia" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="anomalia_critica" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="noEliminar" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="accionPropuesta" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="respCorr" Type="String" MaxLength="201" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Prop_Corr" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Cierre_Corr" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="noEliminar2" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="paralizacionTrabajos" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sancion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="tipoSancion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nro_trabajadoresSancionados" Type="Int32" />
+    <Property Name="observaciones" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="propia" Type="Int32" Nullable="false" />
+    <Property Name="subContrata" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Documento">
+    <Key>
+      <PropertyRef Name="id_Tipo_Documento" />
+      <PropertyRef Name="id_pais" />
+      <PropertyRef Name="nombre_documento" />
+      <PropertyRef Name="estado" />
+      <PropertyRef Name="usuario_creacion" />
+    </Key>
+    <Property Name="id_Tipo_Documento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_pais" Type="Int32" Nullable="false" />
+    <Property Name="nombre_documento" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario_creacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_usuarios_Registrados">
+    <Key>
+      <PropertyRef Name="id_usuario_Registrado" />
+      <PropertyRef Name="nro_Documento" />
+      <PropertyRef Name="id_Personal" />
+      <PropertyRef Name="id_Pais" />
+      <PropertyRef Name="fechaRegistro" />
+      <PropertyRef Name="estado" />
+    </Key>
+    <Property Name="id_usuario_Registrado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nro_Documento" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_Personal" Type="Int32" Nullable="false" />
+    <Property Name="id_Pais" Type="Int32" Nullable="false" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fechaAprobacion" Type="DateTime" Precision="3" />
+    <Property Name="fechaRechazo" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Temp_Frecuencia">
+    <Key>
+      <PropertyRef Name="id_Empresa" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="Anomalia" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Porcentaje" />
+      <PropertyRef Name="Frecuencia" />
+    </Key>
+    <Property Name="id_Empresa" Type="Int32" Nullable="false" />
+    <Property Name="id_Delegacion" Type="Int32" Nullable="false" />
+    <Property Name="Anomalia" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Porcentaje" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Frecuencia" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tempo_ec">
+    <Key>
+      <PropertyRef Name="id_EmpresaColaboradora" />
+    </Key>
+    <Property Name="id_EmpresaColaboradora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ruc_EmpresaColaboradora" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RazonSocial_EmpresaColaboradora" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="Directo_EmpresaColaboradora" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TEMPORAL_Cargo">
+    <Key>
+      <PropertyRef Name="Cargo" />
+      <PropertyRef Name="CargoEsp" />
+    </Key>
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CargoEsp" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TEMPORAL_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+      <PropertyRef Name="nombre_cargo" />
+    </Key>
+    <Property Name="id_personal" Type="Int32" Nullable="false" />
+    <Property Name="nombre_cargo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="testinspeccions">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Inspeccion" Type="Int64" />
+    <Property Name="id_Pais" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" />
+    <Property Name="id_Proyecto" Type="Int32" />
+    <Property Name="fecha_Inspeccion" Type="DateTime" Precision="3" />
+    <Property Name="id_Actividad" Type="Int32" />
+    <Property Name="id_Personal_Inspector" Type="Int32" />
+    <Property Name="id_Personal_JefeObra" Type="Int32" />
+    <Property Name="id_TipoInspeccion" Type="Int32" />
+    <Property Name="Resultado_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_EmpresaColaboradora" Type="Int32" />
+    <Property Name="id_Area" Type="Int32" />
+    <Property Name="id_Personal_Coordinador" Type="Int32" />
+    <Property Name="id_NivelInspeccion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="id_Cliente" Type="Int32" />
+    <Property Name="conjuntas" Type="Int32" />
+    <Property Name="id_grupo" Type="Int32" />
+    <Property Name="Id_Inspeccion_Detalle" Type="Int64" />
+    <Property Name="Id_Personal" Type="Int32" />
+    <Property Name="Id_Anomalia" Type="Int32" />
+    <Property Name="Pais" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Grupo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CodDelegacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Delegacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Proyecto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Autor" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JefeObra" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TipoInspeccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EmpresaColaboradora" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Coordinador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NivelInspeccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Cliente" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IdFechaInspeccion" Type="Int32" />
+    <Property Name="Fecha_Registro" Type="DateTime" Precision="0" />
+    <Property Name="Personal" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ResultadoDetalle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Resultado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Row" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Correcto" Type="Int32" />
+    <Property Name="Anomala" Type="Int32" />
+    <Property Name="dCorrecto" Type="Int32" />
+    <Property Name="dAnomala" Type="Int32" />
+    <Property Name="dCantidad" Type="Int32" />
+    <Property Name="dCritica" Type="Int32" />
+    <Property Name="cCantidad" Type="Int32" />
+    <Property Name="cCorrectos" Type="Int32" />
+    <Property Name="cAnomalas" Type="Int32" />
+    <Property Name="cCriticas" Type="Int32" />
+    <Property Name="Anio" Type="Int32" />
+    <Property Name="Mes" Type="Int32" />
+    <Property Name="DiaMes" Type="Int32" />
+    <Property Name="Semana" Type="Int32" />
+    <Property Name="DiaSemana" Type="Int32" />
+    <Property Name="DiaAnio" Type="Int32" />
+    <Property Name="MesName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DayName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tmp_Inspeccion_Total">
+    <Key>
+      <PropertyRef Name="id_Empresa" />
+      <PropertyRef Name="id_Delegacion" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="id_Empresa" Type="Int32" Nullable="false" />
+    <Property Name="id_Delegacion" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nro_documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="datos_personales" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="correo_electronico" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="contrasenia_login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="imei" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fechaInicioSesion" Type="DateTime" Precision="3" />
+    <Property Name="id_Personal" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__tbl_Acces__id_pe__11007AA7">
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios" Role="tbl_usuarios" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_AccesoOpciones" Role="tbl_AccesoOpciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="tbl_AccesoOpciones">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_AccesoOpciones_tbl_Definicion_Opciones">
+    <End Type="DSIGE_InspeccionesModel.tbl_Definicion_Opciones" Role="tbl_Definicion_Opciones" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_AccesoOpciones" Role="tbl_AccesoOpciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Definicion_Opciones">
+        <PropertyRef Name="id_opcion" />
+      </Principal>
+      <Dependent Role="tbl_AccesoOpciones">
+        <PropertyRef Name="id_opcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivOt">
+    <End Type="DSIGE_InspeccionesModel.tbl_Actividad" Role="tbl_Actividad" Multiplicity="1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_OT" Role="tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Actividad">
+        <PropertyRef Name="id_Actividad" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_Actividad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Areas__id_de__21D600EE">
+    <End Type="DSIGE_InspeccionesModel.tbl_Delegacion" Role="tbl_Delegacion" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_Areas" Role="tbl_Areas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_Areas">
+        <PropertyRef Name="id_delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_tbl_AccesoOpciones">
+    <End Type="DSIGE_InspeccionesModel.tbl_Definicion_Opciones" Role="tbl_Definicion_Opciones" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_perfil_accesos" Role="tbl_perfil_accesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Definicion_Opciones">
+        <PropertyRef Name="id_opcion" />
+      </Principal>
+      <Dependent Role="tbl_perfil_accesos">
+        <PropertyRef Name="id_opcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_De__64CCF2AE">
+    <End Type="DSIGE_InspeccionesModel.tbl_Delegacion" Role="tbl_Delegacion" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" Role="tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_Delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DelegaOt">
+    <End Type="DSIGE_InspeccionesModel.tbl_Delegacion" Role="tbl_Delegacion" Multiplicity="1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_OT" Role="tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Delegacion">
+        <PropertyRef Name="id_Delegacion" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_delegacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_grupo__id_pa__5E1FF51F">
+    <End Type="DSIGE_InspeccionesModel.tbl_pais" Role="tbl_pais" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_grupo" Role="tbl_grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_grupo">
+        <PropertyRef Name="id_pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_gr__62E4AA3C">
+    <End Type="DSIGE_InspeccionesModel.tbl_grupo" Role="tbl_grupo" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" Role="tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GrupoOt">
+    <End Type="DSIGE_InspeccionesModel.tbl_grupo" Role="tbl_grupo" Multiplicity="1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_OT" Role="tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaisOt">
+    <End Type="DSIGE_InspeccionesModel.tbl_pais" Role="tbl_pais" Multiplicity="1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_OT" Role="tbl_OT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_OT">
+        <PropertyRef Name="id_Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_pa__61F08603">
+    <End Type="DSIGE_InspeccionesModel.tbl_pais" Role="tbl_pais" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" Role="tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_pais">
+        <PropertyRef Name="id_pais" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_pe__595B4002">
+    <End Type="DSIGE_InspeccionesModel.tbl_Perfil" Role="tbl_Perfil" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios" Role="tbl_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Perfil">
+        <PropertyRef Name="id_perfil" />
+      </Principal>
+      <Dependent Role="tbl_usuarios">
+        <PropertyRef Name="id_perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_tbl_perfil">
+    <End Type="DSIGE_InspeccionesModel.tbl_Perfil" Role="tbl_Perfil" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_perfil_accesos" Role="tbl_perfil_accesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Perfil">
+        <PropertyRef Name="id_perfil" />
+      </Principal>
+      <Dependent Role="tbl_perfil_accesos">
+        <PropertyRef Name="id_perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_usuar__id_us__60FC61CA">
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios" Role="tbl_usuarios" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" Role="tbl_usuarios_configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="tbl_usuarios_configuracion">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tbl_Inspeccion_Cab_Detalle">
+    <Key>
+      <PropertyRef Name="id_inspeccion_detalle" />
+    </Key>
+    <Property Name="id_inspeccion_detalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_inspeccion" Type="Int32" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_anomalia" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="foto_levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_levantamiento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_ValorInspeccion" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="accionPropuesta_Correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fechaPropuesta_Correctiva" Type="DateTime" Precision="3" />
+    <Property Name="Resultado_Inspeccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_cargo_personal" Type="Int32" />
+    <Property Name="disponividad_uso" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="id_tipoInspeccion" Type="Int32" />
+    <Property Name="personal_sancion" Type="Int32" />
+    <Property Name="anomalia_critica" Type="Int32" />
+    <Property Name="id_detalle_anomalia" Type="Int32" />
+    <Property Name="Fecha_Cierre_Correccion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Inspeccion_Cab" Relationship="DSIGE_InspeccionesModel.FK_DetalleInspeccion_To_Inspeccion" FromRole="tbl_Inspeccion_Cab_Detalle" ToRole="tbl_Inspeccion_Cab" />
+    <NavigationProperty Name="tbl_Inspeccion_Cab_Detalle_Foto" Relationship="DSIGE_InspeccionesModel.FK_FotoInspeccion_To_DetalleInspeccion" FromRole="tbl_Inspeccion_Cab_Detalle" ToRole="tbl_Inspeccion_Cab_Detalle_Foto" />
+  </EntityType>
+  <Association Name="FK_DetalleInspeccion_To_Inspeccion">
+    <End Type="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab" Role="tbl_Inspeccion_Cab" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle" Role="tbl_Inspeccion_Cab_Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Inspeccion_Cab">
+        <PropertyRef Name="id_Inspeccion" />
+      </Principal>
+      <Dependent Role="tbl_Inspeccion_Cab_Detalle">
+        <PropertyRef Name="id_inspeccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FotoInspeccion_To_DetalleInspeccion">
+    <End Type="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle" Role="tbl_Inspeccion_Cab_Detalle" Multiplicity="0..1" />
+    <End Type="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_Foto" Role="tbl_Inspeccion_Cab_Detalle_Foto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Inspeccion_Cab_Detalle">
+        <PropertyRef Name="id_inspeccion_detalle" />
+      </Principal>
+      <Dependent Role="tbl_Inspeccion_Cab_Detalle_Foto">
+        <PropertyRef Name="id_inspeccion_detalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

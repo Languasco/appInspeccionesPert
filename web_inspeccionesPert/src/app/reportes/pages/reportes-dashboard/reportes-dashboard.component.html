@@ -1,0 +1,192 @@
+
+<div class="card border-left-warning  shadow ">
+    <div class="card-header">
+        <h5 class="headerTitle"> REPORTE DASHBOARD </h5>
+    </div>
+    <div class="card-body ">
+        <div class="formPrincipal mb-1">
+            <form [formGroup]="formParamsFiltro">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class="control-label" > Pais</label>
+                        <select class="form-control comboBox" formControlName="id_pais" (change)="changePais($event)">
+                                <option value="0"> [ -- SELECCIONE -- ]</option>
+                                <option [value]="item.id_pais" *ngFor="let item of paises">{{item.Pais}}</option> 
+                            </select>
+                    </div> 
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class=" control-label" > Sociedad </label>
+                        <select class="form-control comboBox" formControlName="id_grupo" (change)="changeSociedad($event)" >
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_grupo" *ngFor="let item of sociedades">{{item.Grupo}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class=" control-label" > Delegacion </label>
+                        <select class="form-control comboBox" formControlName="id_Delegacion">
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_Delegacion" *ngFor="let item of delegaciones">{{item.Delegacion}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <label class="control-label"> Rango Fecha  </label>
+                        <div class="input-group">
+                            <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_ini"  [bsConfig]="datepiekerConfig">
+                             <span class="input-group-addon">-</span>
+                            <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_fin" [bsConfig]="datepiekerConfig">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="text-center mt-4">
+                            <button class="btn btn-sm  btn-primary" data-toggle="tooltip" title="Mostrar Informacion" (click)="mostrarInformacion()">
+                                <i class="fas fa-search"> </i> Mostrar 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr> 
+            <div class="row mb-2" *ngIf="reportesDashboard.length > 0">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-control-sm " placeholder="Auto Busquedas" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+                </div>
+                <div class="col-md-3">
+                </div>
+              
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                      <div class="search-results tableFixHead" style="height: 400px;" *ngIf="idPerfilReporte8">
+                        <table class="table  table-bordered table-hover table-sm ">
+                            <thead class="theadTable ">
+                                <tr style="height: 40px !important;">
+                                    <th>#</th>
+                                    <th>DESCRIPCIÓN</th>
+                                    <th>ANOMALIAS</th>
+                                    <th>ACCION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of reportesDashboard |  filter: filtrarMantenimiento  ; index as j"   >
+                                    <td> {{j + 1}} </td>
+                                    <td>{{item.Dato}}</td>
+                                    <td class="text-right" >{{item.anomalias}}</td>
+                                    <td class="text-center">
+                                        <span class="badge badge-primary puntero"  (click)="MostrarDetalle(item)" > {{item.ver_detalle}} </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+ 
+                    <div *ngIf="idPerfilReporteVarios" >    
+                         <div class="search-results tableFixHead" style="height: 400px;" >
+                            <table class="table  table-bordered table-hover table-sm ">
+                                <thead class="theadTable ">
+                                    <tr style="height: 40px !important;">
+                                        <th>#</th>
+                                        <th>DESCRIPCIÓN</th>
+                                        <th>TOTAL</th>
+                                        <th  >NORMALES</th>
+                                        <th>ANOMALIAS</th>
+                                        <th>LEVANTADAS</th>
+                                        <th>PENDIENTE</th>
+                                        <th>VER DETALLE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of reportesDashboard |  filter: filtrarMantenimiento  ; index as j"   >
+                                        <td> {{j + 1}} </td>
+                                        <td>{{item.Dato}}</td>
+                                        <td class="text-right" >{{item.total}}</td>
+                                        <td class="text-right">{{item.normales}}</td>
+                                        <td class="text-right" > {{item.anomalias}}</td>
+                                        <td class="text-right" >{{item.levantadas}}</td>
+                                        <td class="text-right">{{item.pendientes}}</td>
+                                        <td class="text-center">
+                                            <span class="badge badge-primary puntero"  (click)="MostrarDetalle(item)" > {{item.ver_detalle}} </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="modal_proceso" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content"  >
+            <div class="p-3 card  modalHeader">
+                <div class="d-flex justify-content-between flotante">
+                    <div class=" bd-highlight">
+                        <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                    <div class=" bd-highlight">
+                        <h5 class="headerTitleModal"> BANDEJA DE ATENCION DE INSPECCIONES </h5>
+                    </div>
+                    <div class=" bd-highlight">
+                    <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="modal-body">                 
+
+                <fieldset class="shadow" >
+                    <legend> Detallado </legend>
+                    <div class="panel panel-default">
+                      <div class="panel-body ">
+
+                        <div class="tableFixHead">
+                            <table class="table  table-hover table-sm">
+                                <thead class="theadTable">
+                
+                                    <tr style="height: 40px !important;">
+                                        <th>#</th>
+                                        <th >DESCRIPCIÓN</th>
+                                        <th >TOTAL</th>
+                                        <th >NORMALES</th>
+                                        <th >ANOMALIAS</th>
+                                        <th >LEVANTADAS</th>
+                                        <th >PENDIENTE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of reportesDashboard_det; index as j">
+                                        <td> {{j + 1}} </td>
+                                        <td>{{item.Dato}}</td>
+                                        <td class="text-right" >{{item.total}}</td>
+                                        <td class="text-right" >{{item.normales}}</td>
+                                        <td class="text-right" > {{item.anomalias}}</td>
+                                        <td class="text-right" >{{item.levantadas}}</td>
+                                        <td class="text-right">{{item.pendientes}}</td>                                                                          
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>                                           
+                      </div>
+                    </div>                          
+                </fieldset>           
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 

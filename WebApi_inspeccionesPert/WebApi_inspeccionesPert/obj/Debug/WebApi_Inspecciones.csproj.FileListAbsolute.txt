@@ -1,0 +1,490 @@
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll.config
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Owin.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Cors.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebGrease.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Helpers.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Mvc.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Optimization.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Razor.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.Owin.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csprojResolveAssemblyReference.cache
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll.config
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.pdb
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Web.Infrastructure.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Owin.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Cors.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebGrease.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.pdb
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.pdb
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.pdb
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.xml
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Helpers.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Mvc.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Optimization.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Razor.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.Owin.resources.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.Html.dep
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csprojResolveAssemblyReference.cache
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.dll
+D:\Git_Proyectos\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.pdb
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll.config
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.pdb
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Web.Infrastructure.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Owin.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Cors.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebGrease.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.pdb
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.pdb
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.pdb
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.xml
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Net.Http.Formatting.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Helpers.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.WebHost.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Mvc.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Optimization.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Razor.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\EntityFramework.SqlServer.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.Owin.resources.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.Html.dep
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csprojResolveAssemblyReference.cache
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.dll
+C:\IRVIN\ProyectoInspeccionSeguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.pdb
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll.config
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.pdb
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Web.Infrastructure.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Owin.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Cors.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebGrease.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.pdb
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll.config
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.pdb
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll.config
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.pdb
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.xml
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Helpers.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Mvc.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Optimization.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Razor.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.Owin.resources.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.Html.dep
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csprojAssemblyReference.cache
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csproj.CoreCompileInputs.cache
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csproj.CopyComplete
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.dll
+D:\Git_Proyectos\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll.config
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebApi_Inspecciones.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Web.Infrastructure.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Owin.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Cors.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\WebGrease.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Entidades.dll.config
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Negocios.dll.config
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EntityFramework.SqlServer.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Newtonsoft.Json.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.HtmlToPdf.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Net.Http.Formatting.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Cors.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Helpers.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.WebHost.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Mvc.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Optimization.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Razor.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Deployment.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.WebPages.Razor.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Antlr3.Runtime.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Google.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\System.Web.Http.Owin.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\EPPlus.xml
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Net.Http.Formatting.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Helpers.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.WebHost.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Mvc.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Optimization.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Razor.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.WebPages.Razor.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\es\System.Web.Http.Owin.resources.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\bin\Select.Html.dep
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csproj.CoreCompileInputs.cache
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csproj.CopyComplete
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.dll
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.pdb
+E:\Julio\Trabajo\Git_Proyect\Sistema_Inspeccion_Seguridad\WebApi_Inspecciones\WebApi_Inspecciones\obj\Debug\WebApi_Inspecciones.csproj.AssemblyReference.cache

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="944dd943c50841cdaa92d42a946eabfb" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.LogsNEW_LIST_INSPECCION_CAB_WEB_II" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Megas" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Prueba" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_AccesoOpciones" Width="1.5" PointX="10.25" PointY="15.375" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Actividad" Width="1.5" PointX="11" PointY="6.5" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Anomalia" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_TipoInspeccion" Width="1.5" PointX="2.75" PointY="11.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Areas" Width="1.5" PointX="10.25" PointY="3.125" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Caracteristica_Vehiculo" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Cargo_Personal" Width="1.5" PointX="13.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Cliente" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Definicion_Opciones" Width="1.5" PointX="8" PointY="20.125" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Delegacion" Width="1.5" PointX="8" PointY="5.625" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_EmpresaColaboradora" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Empresas" Width="1.5" PointX="15.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Estados" Width="1.5" PointX="15.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_FormatoInspeccion" Width="1.5" PointX="15.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_grupo" Width="1.5" PointX="8" PointY="10.375" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_grupo_dominio" Width="1.5" PointX="12.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab" Width="1.5" PointX="0.75" PointY="14.5" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_Foto" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle_SubAnomalia" Width="1.5" PointX="14.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_NivelInspeccion" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_OT" Width="1.5" PointX="13.25" PointY="9.5" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_pais" Width="1.5" PointX="5.75" PointY="10.375" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Perfil" Width="1.5" PointX="5.75" PointY="15.875" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_perfil_accesos" Width="1.5" PointX="11" PointY="19.375" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Personal" Width="1.5" PointX="16.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Tbl_Personal_Cargo" Width="1.5" PointX="17.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Personal_Delegacion" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Proyecto" Width="1.5" PointX="17.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Proyecto_EmpresaColaboradora" Width="1.5" PointX="17.75" PointY="11.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Inspeccion" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Sancion" Width="1.5" PointX="4.75" PointY="18.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_usuarios" Width="1.5" PointX="8" PointY="14.625" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_usuarios_configuracion" Width="1.5" PointX="10.25" PointY="9.875" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_usuarios_configuracion2" Width="1.5" PointX="13.75" PointY="18.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Valor_Inspeccion" Width="1.5" PointX="18.75" PointY="14.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Versiones" Width="1.5" PointX="18.75" PointY="17.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab" Width="1.5" PointX="19.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Logstbl_Inspeccion_Cab_Detalle_Foto" Width="1.5" PointX="19.75" PointY="11.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Logstbl_tbl_Inspeccion_Cab_Detalle" Width="1.5" PointX="20.75" PointY="14.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.T_DATA_IMPORTADO_NEW" Width="1.5" PointX="18.75" PointY="20.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.T_USUARIO_BORRADO" Width="1.5" PointX="20.75" PointY="19.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_AccesoOpciones_1" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_anomalia_4" Width="1.5" PointX="2.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_Back" Width="1.5" PointX="21.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Anomalia_SMS" Width="1.5" PointX="4.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_devolucion_campo" Width="1.5" PointX="21.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Tbl_Frecuencia" Width="1.5" PointX="22.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Tbl_Reporte_Cobra" Width="1.5" PointX="13.75" PointY="22.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Tipo_Documento" Width="1.5" PointX="22.75" PointY="15.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_usuarios_Registrados" Width="1.5" PointX="15.75" PointY="22.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Temp_Frecuencia" Width="1.5" PointX="22.75" PointY="18.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tempo_ec" Width="1.5" PointX="22.75" PointY="21.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.TEMPORAL_Cargo" Width="1.5" PointX="23.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.TEMPORAL_Cargo_Personal" Width="1.5" PointX="23.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.testinspeccions" Width="1.5" PointX="10.75" PointY="23.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.Tmp_Inspeccion_Total" Width="1.5" PointX="23.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.usuario" Width="1.5" PointX="6.75" PointY="24.75" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_Acces__id_pe__11007AA7" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_tbl_AccesoOpciones_tbl_Definicion_Opciones" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_ActivOt" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_Areas__id_de__21D600EE" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.Fk_tbl_AccesoOpciones" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_De__64CCF2AE" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_DelegaOt" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_grupo__id_pa__5E1FF51F" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_gr__62E4AA3C" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_GrupoOt" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_PaisOt" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pa__61F08603" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_pe__595B4002" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.Fk_tbl_perfil" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK__tbl_usuar__id_us__60FC61CA" />
+        <EntityTypeShape EntityType="DSIGE_InspeccionesModel.tbl_Inspeccion_Cab_Detalle" Width="1.5" PointX="3" PointY="27.625" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_DetalleInspeccion_To_Inspeccion" />
+        <AssociationConnector Association="DSIGE_InspeccionesModel.FK_FotoInspeccion_To_DetalleInspeccion" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

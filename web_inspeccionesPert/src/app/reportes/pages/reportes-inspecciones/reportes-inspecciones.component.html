@@ -1,0 +1,187 @@
+
+<div class="card border-left-warning  shadow ">
+    <div class="card-header">
+        <h5 class="headerTitle"> REPORTE INSPECCIONES </h5>
+    </div>
+    <div class="card-body ">
+        <div class="formPrincipal mb-1">
+            <form [formGroup]="formParamsFiltro">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class="control-label" > Pais</label>
+                        <select class="form-control comboBox" formControlName="id_pais" (change)="changePais($event)">
+                                <option value="0"> [ -- SELECCIONE -- ]</option>
+                                <option [value]="item.id_pais" *ngFor="let item of paises">{{item.Pais}}</option> 
+                            </select>
+                    </div> 
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class=" control-label" > Sociedad </label>
+                        <select class="form-control comboBox" formControlName="id_grupo" (change)="changeSociedad($event)" >
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_grupo" *ngFor="let item of sociedades">{{item.Grupo}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-2">
+                        <label class=" control-label" > Delegacion </label>
+                        <select class="form-control comboBox" formControlName="id_Delegacion">
+                            <option value="0"> [ -- SELECCIONE -- ]</option>
+                            <option [value]="item.id_Delegacion" *ngFor="let item of delegaciones">{{item.Delegacion}}</option> 
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <label class="control-label"> Rango Fecha  </label>
+                        <div class="input-group">
+                            <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_ini"  [bsConfig]="datepiekerConfig">
+                             <span class="input-group-addon">-</span>
+                            <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_fin" [bsConfig]="datepiekerConfig">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="text-center mt-4">
+                            <button class="btn btn-sm  btn-primary" data-toggle="tooltip" title="Mostrar Informacion" (click)="mostrarInformacion()">
+                                <i class="fas fa-search"> </i> Mostrar 
+                            </button>
+                            <button class="btn btn-sm btn-success ml-1"   (click)="descargarReporte()" >  <i class="fas fa-file-download"  >  </i> Descargar </button>
+                            <button class="btn btn-sm btn-warning ml-1"   (click)="descargarReporte_new()" >  <i class="fas fa-file-download"  >  </i> Descargar New</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr> 
+            <div class="row mb-2" *ngIf="reportesInspecciones.length > 0">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-control-sm " placeholder="Auto Busquedas" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+
+            <div class="search-results tableFixHead" style="height: 400px;">
+                <table class="table  table-bordered table-hover table-sm ">
+                    <thead class="theadTable ">
+                        <tr style="height: 40px !important;">
+                            <th>#</th>
+                            <th>Visita.Nº</th>
+                            <th>Fecha Insp.</th>
+                            <th>Zona</th>
+                            <th>Delegación</th>
+                            <th>Actividad</th>
+                            <th>Cliente</th>
+                            <th>NRO. INSPECCION</th>
+                            <th>AÑO</th>
+                            <th>MES</th>
+        
+                            <th>SEMANA</th>
+                            <th>Autor</th>
+                            <th>Puesto</th>
+                            <th>Jefe Area</th>
+                            <th>Empresa_resp_PROPIA</th>
+                            <th>Empresa_resp_SUBCONTRATA</th>
+                            <th>Tipo_Insp</th>
+        
+                            <th>Inicio/Final_trabajos</th>
+                            <th>Inspección_conjunta</th>
+                            <th>Res_Insp</th>
+                            <th>Nº_Anomalas</th>
+        
+                            <th>Aspecto_anómalo</th>
+                            <th>Decripción_anomalía</th>
+                            <th>Anom_crítica</th>
+        
+                            <th>NO ELIMINAR</th>
+                            <th>Acción_propuesta</th>
+                            <th>Resp_Corr</th>
+        
+                            <th>Fecha_Prop_Corr</th>
+                            <th>Fecha_Cierre_Corr</th>
+                            <th>NO_ELIMINAR</th>
+        
+                            <th>Paralización_trabajos</th>
+                            <th>Sanción</th>
+                            <th>Tipo_Sanción</th>
+        
+                            <th>Nº trabajadores_sancionados</th>
+                            <th>Observaciones</th>
+                            <th>PROPIA</th>
+                            <th>SUBCONTRATA</th>
+                            <th>Nombre Inspeccionado</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of reportesInspecciones |  filter: filtrarMantenimiento  ; index as j"   >
+                            <td> {{j + 1}} </td>
+ 
+                            <td>{{item.nro_visita}}</td>
+                            <td>{{item.fecha_insp}}</td>
+                            <td>{{item.zona}}</td>
+                            <td>{{item.delegacion}}</td>
+                            <td> {{item.actividad}}</td>
+                            <td> 
+                                <div style="width: 200px;">
+                                    {{item.cliente}}
+                                </div>
+                            </td>
+                            <td>{{item.nro_inspeccion}}</td>
+                            <td>{{item.anio}}</td>
+                            <td>{{item.mes}}</td>
+        
+                            <td>{{item.semana}}</td>
+                            <td>
+                                <div style="width: 250px;">
+                                    {{item.autor}}
+                                </div>
+                            </td>
+                            <td>{{item.puesto}}</td>
+                            <td> 
+                                <div style="width: 250px;">
+                                    {{item.jefeObra}}
+                                </div>
+                            </td>
+                            <td>{{item.empresa_resp_propia}}</td>
+                            <td>{{item.empresa_resp_subContrata}}</td>
+                            <td>{{item.tipoInspeccion}}</td>
+        
+                            <td>{{item.incio_final_trabajos}}</td>
+                            <td>{{item.inspeccion_conjunta}}</td>
+                            <td>{{item.resp_inspeccion}}</td>
+                            <td>{{item.nro_Anomalias}}</td>
+        
+                            <td>{{item.aspectoAnomalo}}</td>
+                            <td>{{item.Decripcion_anomalia}}</td>
+                            <td>{{item.anomalia_critica}}</td>
+        
+                            <td>{{item.noEliminar}}</td>
+                            <td>{{item.accionPropuesta}}</td>
+                            <td>{{item.respCorr}}</td>
+        
+                            <td>{{item.fecha_Prop_Corr}}</td>
+                            <td>{{item.fecha_Cierre_Corr}}</td>
+                            <td> {{item.noEliminar2}}</td>
+        
+                            <td>{{item.paralizacionTrabajos}}</td>
+                            <td>{{item.sancion}}</td>
+                            <td>{{item.tipoSancion}}</td>
+        
+                            <td>{{item.nro_trabajadoresSancionados}}</td>
+                            <td>{{item.observaciones}}</td>
+                            <td>{{item.propia}}</td>
+                            <td>{{item.subContrata}}</td>
+                            <td> 
+                                <div style="width: 250px;">
+                                    {{item.nombre_inspeccionado}}
+                                </div>
+                            </td>
+                            <td>{{item.estado}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
